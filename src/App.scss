@@ -1,10 +1,13 @@
-.App {
-  height: 100vh;
+@import './global.scss';
 
-  .sections{
-    width:100%;
+.app {
+  height: 100vh;
+  width: 100vw;
+
+  .sections {
+    width:100vw;
     height:calc(100vh - 50px);
-    background-color: salmon;
+    // background-color: salmon;
     text-align: center;
     position: relative;
     top: 50px;
@@ -15,7 +18,7 @@
     }
 
     > *{
-      width: 100vw;
+      width: 100%;
       height: calc(100vh - 50px);
       scroll-snap-align: start;
       }

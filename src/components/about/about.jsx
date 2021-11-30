@@ -3,7 +3,7 @@ import './about.scss'
 export default function about() {
   return (
     <div>
-
+      Camilo Gil is a master of his craft...
     </div>
   )
 }
