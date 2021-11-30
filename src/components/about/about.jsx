@@ -1,6 +1,6 @@
 import './about.scss'
 
-export default function about() {
+export default function About() {
   return (
     <div>
       Camilo Gil is a master of his craft...
