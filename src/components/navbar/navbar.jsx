@@ -7,9 +7,6 @@ export default function Navbar() {
           <a class="nav-link active" href="this-site">CAM</a>
       </div>
       <div class="nav col-lg-9 justify-content-right">
-        <li class="nav-item ">
-          <a class="nav-link active" href="www.linkedin.com">Active</a>
-        </li>
         <li class="nav-item">
           <a class="nav-link" href="www.linkedin.com">Link</a>
         </li>
