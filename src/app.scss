@@ -11,6 +11,7 @@
     text-align: center;
     position: relative;
     top: 12.5%;
+    scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     // clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
     scrollbar-width: none; //for firefox
