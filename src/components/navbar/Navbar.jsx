@@ -7,22 +7,19 @@ export default function Navbar() {
       <div className='wrapper'>
         <div className="left">
           <a href="intro" className="logo">CAM</a>
+        </div>
+        <div className="right">
           <div className="itemContainer">
-            <i class="fas fa-envelope-square"></i>
-            <span>cgilv6@gmail.com</span>
+            <i class="hamburger"></i>
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line1"></span>
           </div>
-        </div>
-        <div className="right">
-          <a href="#intro">Intro</a>
-        </div>
-        <div className="right">
-          <a href="#about">About</a>
-        </div>
-        <div className="right">
-          <a href="#projects">Projects</a>
-        </div>
-        <div className="right">
-          <a href="#contact">Contact</a>
+          <div className="col justify-content-between">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
         </div>
       </div>
     </div>
