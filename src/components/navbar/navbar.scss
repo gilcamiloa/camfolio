@@ -6,7 +6,7 @@
   height: 12.5%;
   position: fixed;
   top: 0;
-  background-color: lightgrey;
+  background-color:rgba(211, 211, 211, 1);
   z-index: 2;
 
   .wrapper {
@@ -47,8 +47,8 @@
     }
 
     .right {
-      // align-items: center;
-      // justify-content: right;
+      align-items: center;
+      justify-content: between;
 
       .hamburger {
         width: 32px;
@@ -61,10 +61,32 @@
         span {
           width: 100%;
           height: 3px;
-          background-color: $maincolor;
+          // background-color: $maincolor;
+          transform-origin: left;
+          transition: all 2s ease;
         }
-        }
+      }
 
+    }
+  }
+    &.active {
+    // background-color: $maincolor;
+    color: white;
+
+    .hamburger {
+      span {
+        &:first-child {
+          background-color: white;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          background-color: white;
+          transform: rotate(-45deg);
+        }
+      }
     }
   }
 
