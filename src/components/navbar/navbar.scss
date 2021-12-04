@@ -48,7 +48,7 @@
 
     .right {
       align-items: center;
-      justify-content: between;
+      justify-content: space-between;
 
       .hamburger {
         width: 32px;
@@ -70,7 +70,7 @@
     }
   }
     &.active {
-    // background-color: $maincolor;
+    background-color: $maincolor;
     color: white;
 
     .hamburger {
