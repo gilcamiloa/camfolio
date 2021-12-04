@@ -10,11 +10,13 @@
     background-color: salmon;
     text-align: center;
     position: relative;
+    display:flex;
     top: 12.5%;
     scroll-behavior: smooth;
     scroll-snap-type: both mandatory;
-    overflow-y: scroll;
-    // clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
+    // scroll-snap-align: center;
+    overflow-x: scroll;
+    // clip-path: polygon(0 2%, 100% 0%, 100% 98%, 0 100%);
     scrollbar-width: none; //for firefox
     &::-webkit-scrollbar{
       display:none;
@@ -24,6 +26,7 @@
       width: 100%;
       height: calc(100vh - 12.5%);
       scroll-snap-align: start;
+      flex: none;
       }
   }
 }
