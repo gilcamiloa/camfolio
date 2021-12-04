@@ -11,7 +11,9 @@ export default function contact() {
       <h2>Phone</h2> */}
 
       <h1>Contact</h1>
-
+      <br />
+      <br />
+      <br />
       <div className='wrapper justify-content-between'>
           <a href="https://www.linkedin.com/in/camilo-gil" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></a>
