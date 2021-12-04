@@ -10,9 +10,9 @@ export default function Navbar() {
         </div>
         <div className="right">
             <i class="hamburger"></i>
-            <span className="line1"></span>
-            <span className="line2"></span>
-            <span className="line3"></span>
+          <span className="line1">---</span>
+            <span className="line2">---</span>
+            <span className="line3">---</span>
           </div>
           <div className="justify-content-between">
             <a href="#about">About</a>
