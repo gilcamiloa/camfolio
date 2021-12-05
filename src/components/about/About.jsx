@@ -15,8 +15,6 @@ export default function About() {
         <div className="card col-12 col-lg-6">
           <h2>Camilo Gil is a master of his craft...</h2>
 
-          <h2>He has two Fendi purses and a silver lexus..</h2>
-
           <h2>I hear his HAIR is insured for $10,000</h2>
 
           <h2>He does car commercials... in Japan.</h2>

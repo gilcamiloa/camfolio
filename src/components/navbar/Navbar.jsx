@@ -1,4 +1,5 @@
 import './navbar.scss'
+import Menu from '../menu/Menu'
 // import { Mail } from "fortawesome/fontawesome-free"
 
 export default function Navbar() {
@@ -13,6 +14,7 @@ export default function Navbar() {
           <span className="line1">---</span>
             <span className="line2">---</span>
             <span className="line3">---</span>
+            {/* <Menu/> */}
           </div>
           <div className="justify-content-between">
             <a href="#about">About</a>
