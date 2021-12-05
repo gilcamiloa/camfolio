@@ -4,6 +4,7 @@ import './navbar.scss'
 export default function Navbar({ menuOpen, setMenuOpen }) {
   return (
     <div className='navbar'>
+    {/* <div className={"topbar " + (menuOpen && "active")}> */}
       <div className='wrapper'>
         <div className="left">
           <a href="#intro" className="logo">CAM</a>
@@ -16,12 +17,7 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
               {/* <Menu/> */}
           </div>
         </div>
-        <div className="justify-content-between">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
       </div>
     </div>
-  )
+  );
 }
