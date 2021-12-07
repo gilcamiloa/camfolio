@@ -10,6 +10,7 @@ export default function contact() {
       <h2>github</h2>
       <h2>Phone</h2> */}
 
+      <br />
       <h1>Contact</h1>
       <br />
       <br />
