@@ -14,7 +14,7 @@ function App() {
     <Router>
       <div className="app">
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        {/* <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> */}
         <div className="sections">
           <Intro/>
           <Projects/>
