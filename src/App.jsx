@@ -4,8 +4,9 @@ import Intro from './components/intro/Intro'
 import About from './components/about/About'
 import Projects from './components/projects/Projects'
 import Contact from './components/contact/Contact'
+import Footer from './components/footer/Footer'
 import { useState } from "react";
-import Menu from "./components/menu/Menu";
+// import Menu from "./components/menu/Menu";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
@@ -13,20 +14,22 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Navbar/>
+        {/* <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> */}
         {/* <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> */}
         <div className="sections">
           <Intro/>
           <Projects/>
+          <About/>
           <Contact/>
         </div>
-        <div className="about">
+        <Footer/>
+        {/* <div className="about">
           <Switch>
             <Route path="/about">
-              <About/>
             </Route>
           </Switch>
-        </div>
+        </div> */}
       </div>
     </Router>
   );
