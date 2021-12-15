@@ -28,6 +28,14 @@
         text-decoration:none;
         color:inherit;
         margin-right: 40px;
+
+        .logo:hover span {
+          display: none
+        }
+
+        .logo:hover:before {
+          content: "Reply!"
+        }
       }
 
       .itemContainer {
