@@ -26,7 +26,12 @@
     .right {
       flex: 0.5;
       background-color: salmon;
+      flex-direction: column;
       overflow: hidden;
+
+      & > * {
+        overflow: hidden;
+      }
     }
   }
 }

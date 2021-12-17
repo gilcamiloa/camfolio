@@ -1,17 +1,13 @@
-import './contact.scss'
+import './skills.scss'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faFile, faMailBulk } from '@fortawesome/free-solid-svg-icons'
 
-export default function Contact() {
+export default function Skills() {
   return (
-    <div className="contact" id="contact">
-      {/* <h2>linkedin</h2>
-      <h2>github</h2>
-      <h2>Phone</h2> */}
-
+    <div className="skills">
       <br />
-      <h1>Contact</h1>
+      <h1>Skills</h1>
       <br />
       <br />
       <br />
