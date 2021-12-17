@@ -1,53 +1,85 @@
 import './projects.scss'
+import { useState } from "react";
 
-export default function projects() {
+export default function Projects() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const data = [
+    {
+      id: "1",
+      icon: "./../images/assets/mobile.png",
+      title: "theGreenRooom",
+      desc:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      img:
+        "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+    },
+    {
+      id: "2",
+      icon: "../images/assets/globe.png",
+      title: "Camilo's Personal Website",
+      desc:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      img:
+        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+    },
+    {
+      id: "3",
+      icon: "../../images/assets/writing.png",
+      title: "Realm of Purity",
+      desc:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      img:
+        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+    },
+  ];
+
+  const handleClick = (way) => {
+    way === "left"
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
+      : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
+  };
+
   return (
-    <div className="projects" id="projects">
-      <div className="container">
-        <h1>Projects</h1>
-        <div className="d-flex text-center">
-          <div className="col-12 col-lg-4 text-center">
-            <h1>Hello</h1>
-            <h2>Is there anybody in there?</h2>
-            <h2>Just nod if you can he me</h2>
-          </div>
-          <div className="col-12 col-lg-4 text-center card-category">
-            <h1>Hello</h1>
-            <h2>Is there any DATA in there?</h2>
-            <h2>Just nod if you can he me</h2>
-          </div>
-          <div className="col-12 col-lg-4 text-center">
-            <h1>Hello</h1>
-            <h2>Is there any DATA in there?</h2>
-            <h2>Just nod if you can he me</h2>
-          </div>
-          return (
-          {/* <div className="portfolio" id="portfolio">
-            <h1>Portfolio</h1>
-            <ul>
-              {list.map((item) => (
-                <PortfolioList
-                  title={item.title}
-                  active={selected === item.id}
-                  setSelected={setSelected}
-                  id={item.id}
-                />
-              ))}
-            </ul>
-            <div className="container">
-              {data.map((d) => (
-                <div className="item">
-                  <img
-                    src={d.img}
-                    alt=""
-                  />
-                  <h3>{d.title}</h3>
+    <div className="projects">
+      <div
+        className="slider"
+        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
+      >
+        {data.map((d) => (
+          <div className="container">
+            <div className="item">
+              <div className="left">
+                <div className="leftContainer">
+                  <div className="imgContainer">
+                    <img src={d.icon} alt="" />
+                  </div>
+                  <h2>{d.title}</h2>
+                  <p>{d.desc}</p>
+                  <span>Projects</span>
                 </div>
-              ))}
+              </div>
+              <div className="right">
+                <img
+                  src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
+                  alt=""
+                />
+              </div>
             </div>
-          </div> */}
-        </div>
+          </div>
+        ))}
       </div>
+      <img
+        src="../../images/assets/arrow.png"
+        className="arrow left"
+        alt=""
+        onClick={() => handleClick("left")}
+      />
+      <img
+        src="../../images/assets/arrow.png"
+        className="arrow right"
+        alt=""
+        onClick={() => handleClick()}
+      />
     </div>
-  )
+  );
 }
