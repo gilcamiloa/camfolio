@@ -3,6 +3,7 @@ import Navbar from './components/navbar/Navbar'
 import Intro from './components/intro/Intro'
 import About from './components/about/About'
 import Projects from './components/projects/Projects'
+import Skills from './components/skills/Skills'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import { useState } from "react";
@@ -20,16 +21,17 @@ function App() {
         <div className="sections">
           <Intro/>
           <Projects/>
+          <Skills/>
           <About/>
           <Contact/>
         </div>
         <Footer/>
-        {/* <div className="about">
+        <div className="about">
           <Switch>
-            <Route path="/about">
-            </Route>
+            <Route path="/" component="Intro"/>
+            <Route path="/about" component="About"/>
           </Switch>
-        </div> */}
+        </div>
       </div>
     </Router>
   );

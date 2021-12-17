@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faFile, faMailBulk } from '@fortawesome/free-solid-svg-icons'
 
-export default function footer() {
+export default function Footer() {
   return (
-    <div className="footer" id="footer">
-      <div className='wrapper justify-content-between'>
+    <div className="footer">
+      <div className='wrapper'>
         <a href="https://www.linkedin.com/in/camilo-gil" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></a>
         <a href="https://www.github.com/gilcamiloa" target="_blank" rel="noreferrer">

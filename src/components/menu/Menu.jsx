@@ -1,4 +1,5 @@
 import "./menu.scss";
+import About from './components/about/About'
 
 export default function Menu({ menuOpen, setMenuOpen }) {
   return (

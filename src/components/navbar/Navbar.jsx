@@ -17,7 +17,7 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
             <a href="#about" className="logo">About</a>
           </div>
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-            <a href="#menu"><FontAwesomeIcon icon={faBars}/></a>
+            <a href="menu"><FontAwesomeIcon icon={faBars}/></a>
           </div>
         </div>
       </div>
