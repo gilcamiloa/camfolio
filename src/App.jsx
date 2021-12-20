@@ -7,36 +7,24 @@ import Skills from './components/skills/Skills'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 // import { browserHistory, IndexRoute } from 'react-router'
-// import { BrowserRouter as Switch, Route } from 'react-router-dom';
 // import { useState } from "react";
-// import Menu from "./components/menu/Menu";
 
 
 function App() {
   return (
     <div className="app">
-        <Navbar/>
-        <div className="sections">
-          <Intro/>
-          <Projects/>
-          <Skills/>
-          <About/>
-          <Contact/>
-        </div>
-        <Footer/>
+      <Navbar/>
+      <div className="sections">
+        <Intro exact path="/"/>
+        <Projects exact path="/projects"/>
+        <Skills exact path="/skills"/>
+        <About exact path="/about"/>
+        <Contact exact path="/contact"/>
       </div>
+      <Footer/>
+    </div>
   );
 }
 
-// function Routes() {
-//   return (
-//     <div>
-//       <Switch>
-//         <Route exact path={`/#:parameter`}><Intro/></Route>
-//       </Switch>
-//     </div>
-//   )
-
-// }
 
 export default App;
