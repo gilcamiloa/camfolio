@@ -16,6 +16,7 @@ export default function Navbar() {
           <div className="about">
             <a href="/about" className="logo">About</a>
             {/* <Link to='/about'>About</Link> */}
+            {/* <NavLink to='/about'>About</NavLink> */}
           </div>
           {/* <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <a href="menu"><FontAwesomeIcon icon={faBars}/></a>

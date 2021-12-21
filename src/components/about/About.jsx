@@ -28,3 +28,6 @@ export default function About() {
     </div>
   )
 }
+
+
+// Fuck around with margin for photo location.
