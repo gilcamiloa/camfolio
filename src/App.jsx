@@ -1,5 +1,5 @@
 import './app.scss'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import About from './components/about/About'
 import Navbar from './components/navbar/Navbar'
 import Sections from './Sections'
@@ -9,53 +9,46 @@ import Footer from './components/footer/Footer'
 
 
 function App() {
-
-
-  // useEffect(() => {
-  //   switch (aboutOpen) {
-  //     case "sections":
-  //       setPage(<Sections/>);
-  //       break;
-  //       case "about":
-  //         setPage(<About/>);
-  //         break;
-  //         default:
-  //           setPage(<Sections/>);
-  //         }
-  //       }, [selected]);
-
-  //       // toggleShowAbout = () => {
-  //         //   this.setState(prevState => ({
-  //           //     showProjects: !prevState.showProjects
-  //           //   }))
-  //           // }
-
-  const [aboutOpen, setaboutOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   if(!aboutOpen) {
     return (
       <div className="app">
-        <Navbar/>
+        <Navbar aboutOpen={aboutOpen} setAboutOpen={setAboutOpen}/>
         <Sections/>
         <Footer/>
       </div>
     );
   } else {
-      return(
+    return(
       <div className="app">
-        <Navbar/>
+        <Navbar aboutOpen={aboutOpen} setAboutOpen={setAboutOpen}/>
         <About/>
         <Footer/>
       </div>
     );
   }
-        {/* <Sections/> */}
-        {/* toggleAbout={this.toggleShowAbout} />
-        {this.state.showProjects && (
-          <About
-            page={this.state.about} />
-        {setSelected} */}
 }
 
-const [state, setstate] = useState(initialState)
 export default App;
+
+
+
+// useEffect(() => {
+//   switch (aboutOpen) {
+//     case "sections":
+//       setPage(<Sections/>);
+//       break;
+//       case "about":
+//         setPage(<About/>);
+//         break;
+//         default:
+//           setPage(<Sections/>);
+//         }
+//       }, [selected]);
+
+//       // toggleShowAbout = () => {
+//         //   this.setState(prevState => ({
+//           //     showProjects: !prevState.showProjects
+//           //   }))
+//           // }

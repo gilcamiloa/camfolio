@@ -1,9 +1,11 @@
 .about {
   background-color: #e0e0e0;
   // padding: 15px;
+  top:calc(100%-12.5%);
 
   .container {
     display: flex;
+    top:12.5%;
 
     .left {
       flex: 0.5;
