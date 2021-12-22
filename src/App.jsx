@@ -32,23 +32,14 @@ function App() {
 
 export default App;
 
+// As mentioned by Chris Sharp, your app is doing exactly what it should do, routing to the place that the url is pointing to, since you have not told it otherwise.
 
+// What you can do, is that in your app.component you can in OnInit redirect to root.This then means that when app is(re)initialized, you are being redirected to root page.
 
-// useEffect(() => {
-//   switch (aboutOpen) {
-//     case "sections":
-//       setPage(<Sections/>);
-//       break;
-//       case "about":
-//         setPage(<About/>);
-//         break;
-//         default:
-//           setPage(<Sections/>);
-//         }
-//       }, [selected]);
+// export class AppComponent {
+//   constructor(private router: Router) { }
 
-//       // toggleShowAbout = () => {
-//         //   this.setState(prevState => ({
-//           //     showProjects: !prevState.showProjects
-//           //   }))
-//           // }
+//   ngOnInit() {
+//     this.router.navigate([''])
+//   }
+// }

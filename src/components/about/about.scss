@@ -1,7 +1,23 @@
 .about {
   background-color: #e0e0e0;
   // padding: 15px;
-  top:calc(100%-12.5%);
+    width:100vw;
+    top: 12.5%;
+    max-width: 100%;
+    height:calc(100vh - 12.5%);
+    // background-color: salmon;
+    // text-align: center;
+    // position: relative;
+    // display:flex;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    scrollbar-width: none; //for firefox
+    &::-webkit-scrollbar{
+      display:none;
+    }
+
 
   .container {
     display: flex;
