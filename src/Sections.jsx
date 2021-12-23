@@ -7,10 +7,12 @@ import Contact from './components/contact/Contact'
 function Sections() {
   return (
     <div className="sections">
-      <Intro exact path="/" />
-      <Projects path="/projects" />
-      <Skills path="/skills" />
-      <Contact path="/contact" />
+      <div className="sectionsContainer">
+        <Intro exact path="/" />
+        <Projects path="/projects" />
+        <Skills path="/skills" />
+        <Contact path="/contact" />
+      </div>
     </div>
   );
 }

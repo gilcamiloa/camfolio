@@ -1,12 +1,20 @@
   .sections {
+    background-color: rgba(221, 221, 221, 1);
+    // background-color: #fff;
     width:100vw;
     max-width: 100%;
-    height:calc(100vh - 12.5%);
-    background-color: salmon;
+    height:100vh;
+    align-items: center;
+  }
+
+
+  .sectionsContainer {
+    top: 12.5%;
+    bottom: 87.5%;
+    height:75%;
     text-align: center;
     position: relative;
     display:flex;
-    top: 12.5%;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     overflow-x: scroll;
@@ -18,7 +26,7 @@
 
     > * {
       width: 100%;
-      height: calc(100vh - 12.5%);
+      height: 75vh;
       scroll-snap-align: start;
       flex: none;
     }
