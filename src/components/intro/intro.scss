@@ -1,7 +1,17 @@
 .intro {
-  background-color: rgba(221, 221, 221, 1);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 
-  & > * {
+  h1{
+    overflow: hidden;
+  }
+
+  h2{
     overflow: hidden;
   }
 }
