@@ -8,14 +8,16 @@ export default function Skills() {
     <div className="skills">
       <div className='container'>
         <h1>Skills</h1>
-        <a href="https://www.linkedin.com/in/camilo-gil" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></a>
-        <a href="https://www.github.com/gilcamiloa" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></a>
-        <a href="mailto:cgilv6@gmail.com" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faMailBulk}></FontAwesomeIcon></a>
-        <a href="https://drive.google.com/file/d/1WRmISIuZONc6EHOZwdzkxUKru2B4K0RY/view?usp=sharing" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faFile}></FontAwesomeIcon></a>
+          <div className="wrapper">
+          <a href="https://www.linkedin.com/in/camilo-gil" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></a>
+          <a href="https://www.github.com/gilcamiloa" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></a>
+          <a href="mailto:cgilv6@gmail.com" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faMailBulk}></FontAwesomeIcon></a>
+          <a href="https://drive.google.com/file/d/1WRmISIuZONc6EHOZwdzkxUKru2B4K0RY/view?usp=sharing" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faFile}></FontAwesomeIcon></a>
+        </div>
       </div>
     </div>
   )
