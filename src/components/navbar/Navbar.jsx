@@ -14,9 +14,9 @@ export default function Navbar({ aboutOpen, setAboutOpen }) {
             <a href="/" className="logo"><u>CAM</u></a>
           </div>
           <div className="right">
-              <NavLink to='/about' component={<About />} onClick={() => setAboutOpen(!aboutOpen)} activeClassName="active">
-              <u>{(!aboutOpen?about:close)}</u>
-              </NavLink>
+            <NavLink to='/about' component={<About />} onClick={() => setAboutOpen(!aboutOpen)} activeClassName="active">
+              <u>{(!aboutOpen ? about : close)}</u>
+            </NavLink>
           </div>
         </div>
       </div>

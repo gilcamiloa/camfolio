@@ -5,8 +5,6 @@ import Skills from './components/skills/Skills'
 import Contact from './components/contact/Contact'
 
 function Sections() {
-  // const xScroll = document.querySelector('.sectionsContainer');
-
 
   return (
     <div className="sections">
