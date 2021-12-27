@@ -12,8 +12,9 @@
   overflow-y: scroll;
   overflow-x: hidden;
   position: absolute;
-  animation: scroll linear infinite;
+  // animation: scroll linear infinite;
   scrollbar-width: none;
+  scroll-snap-type: x mandatory;
   -ms-overflow-style: none;
   ::-webkit-scrollbar {
     display:none;
@@ -22,6 +23,12 @@
   & > * {
     width: 100vw;
     height: 200vh;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    ::-webkit-scrollbar {
+      display:none;
+      width: none;
+    }
   }
 }
 
@@ -33,32 +40,5 @@
   transform: rotate(90deg) translateY(-100vh);
   width: 400vw;
   height:100vh;
-  // top: 12.5%;
   transform-origin: top left;
 }
-//   transform: rotate(-90deg) translateY(-100vh);
-//   transform-origin: top left;
-//   // justify-content: center;
-//   // scroll-behavior: smooth;
-// }
-// bottom: 87.5%;
-// height:75%;
-// width:75vh;
-// display: flex;
-// flex-direction: row;
-// width: 300vw;
-// transform: rotate(90deg) translateX(-100vh);
-// transform-origin: top left;
-// scrollbar-width: none; //for firefox
-// -ms-overflow-style: none;
-//   ::-webkit-scrollbar{
-  //     display:none;
-  //   }
-  // }
-
-  // > * {
-    //   width: 100%;
-    //   height: 75vh;
-    //   scroll-snap-align: start;
-    //   flex: none;
-    // }

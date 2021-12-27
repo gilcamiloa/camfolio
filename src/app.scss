@@ -5,6 +5,12 @@
   width: 100vw;
   overflow: hidden;
   position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  ::-webkit-scrollbar {
+    display:none;
+    width: none;
+  }
 }
 
 

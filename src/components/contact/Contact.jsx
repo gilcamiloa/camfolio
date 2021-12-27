@@ -16,13 +16,19 @@ export default function Contact() {
         <div className="title">
           <h1>Contact</h1>
         <div className="links container'" >
-            <h2>Please fill in the form below.</h2>
-            <form onSubmit={handleSubmit}>
-              <input type="text" placeholder="Email" />
-              <textarea placeholder="Message"></textarea>
-              <button type="submit">Send</button>
-              {message && <span>Thanks, I'll reply ASAP :)</span>}
-            </form>        </div>
+            <div className="left">
+              <img src="assets/shake.svg" alt="" />
+            </div>
+            <div className="right">
+              <h2>Contact.</h2>
+              <form onSubmit={handleSubmit}>
+                <input type="text" placeholder="Email" />
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+                {message && <span>Thanks, I'll reply ASAP :)</span>}
+              </form>
+            </div>
+        </div>
       </div>
     </div>
   </div>

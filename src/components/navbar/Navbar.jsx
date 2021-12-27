@@ -14,7 +14,7 @@ export default function Navbar({ aboutOpen, setAboutOpen }) {
         </div>
         <div className="right">
           <NavLink to={!aboutOpen ? '/about': '/'} component={<About />} onClick={() => setAboutOpen(!aboutOpen)} className='active'>
-            <u>{(!aboutOpen ? about : close)}</u>
+            {(!aboutOpen ? about : close)}
           </NavLink>
         </div>
       </div>
