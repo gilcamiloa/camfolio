@@ -1,5 +1,6 @@
 import './skills.scss'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { ReactTooltip } from 'react-tooltip'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faFile, faMailBulk } from '@fortawesome/free-solid-svg-icons'
 
