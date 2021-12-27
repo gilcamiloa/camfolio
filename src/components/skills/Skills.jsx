@@ -6,9 +6,10 @@ import { faFile, faMailBulk } from '@fortawesome/free-solid-svg-icons'
 export default function Skills() {
   return (
     <div className="skills">
-      <div className='container'>
-        <h1>Skills</h1>
-          <div className="wrapper">
+      <div id="skills">
+        <div className="title">
+          <h1>Skills</h1>
+          <div className="links container" >
           <a href="https://www.linkedin.com/in/camilo-gil" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></a>
           <a href="https://www.github.com/gilcamiloa" target="_blank" rel="noreferrer">
@@ -20,5 +21,6 @@ export default function Skills() {
         </div>
       </div>
     </div>
+  </div>
   )
 }
