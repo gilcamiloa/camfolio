@@ -46,15 +46,42 @@
     display: flex;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 4;
+    position: sticky;
   }
 
   .dot{
     height: 20px;
     width: 20px;
-    background-color: grey;
+    background-color: black;
     margin: 0 10px;
     border-radius: 50%;
     cursor: pointer;
+    z-index: 4;
+    position: sticky;
+  }
 
+  .sectionsContainer.first-active:first-child{
+    margin-left: 0;
+  }
+
+  .sections.second-active:first-child{
+    margin-left: -100%;
+  }
+
+  .sections.third-active:first-child{
+    margin-left: -200%;
+  }
+
+  .nav__dots.first-current #dot1{
+    background-color: coral;
+  }
+
+  .nav__dots.second-current #dot2{
+    background-color: coral;
+  }
+
+  .nav__dots.third-current #dot3{
+    background-color: coral;
   }
 }
