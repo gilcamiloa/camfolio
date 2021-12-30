@@ -6,10 +6,13 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+
 
   h1{
     overflow: hidden;
-  }
+  }z
 
   h2{
     overflow: hidden;
