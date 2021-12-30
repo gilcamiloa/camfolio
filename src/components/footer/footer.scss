@@ -21,30 +21,39 @@
     padding: 0px 100px 0px 100px;
 
     a {
-      color:black;
+      color:grey;
       z-index: 2;
       font-size: 1.1em;
       padding: 0px 35px 0px 35px;
+      pointer-events: stroke;
 
       a:hover{
-        box-shadow: inset 0 0 0 blue;
-        z-index: 3;
+        background-color: black;
       }
 
-      #linkedin:hover{
-        background-color:blue;
+      #linkedin{
+        color:black;
+        background-color:$maincolor;
+        border-radius: 75%;
       }
+
 
       #github{
-        background-color:blue;
+        color:black;
+        background-color:$maincolor;
+        border-radius: 75%;
       }
 
       #email{
-        background-color:blue;
+        color:black;
+        background-color:$maincolor;
+        border-radius: 75%;
       }
 
       #resume{
-        background-color:blue;
+        color:black;
+        background-color:$maincolor;
+        border-radius: 75%;
       }
     }
 

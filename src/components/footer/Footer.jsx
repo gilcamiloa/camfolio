@@ -9,8 +9,9 @@ export default function Footer() {
     <div className="footer">
       <div className='wrapper'>
         <a href="https://www.linkedin.com/in/camilo-gil" target="_blank" rel="noreferrer" id='linkedin' data-tip data-for="linkedin">
-          <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></a>
+          <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
           <ReactTooltip id="linkedin" place="top" effect="solid">LinkedIn</ReactTooltip>
+          </a>
         <a href="https://www.github.com/gilcamiloa" target="_blank" rel="noreferrer" id='github' data-tip data-for="github">
           <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
           <ReactTooltip id="github" place="top" effect="solid">GitHub</ReactTooltip>
