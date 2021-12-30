@@ -18,9 +18,4 @@ function Sections() {
   );
 }
 
-// document.querySelector('.sectionsContainer').addEventListener("wheel", (e) => {
-// e.preventDefault();
-// e.scrollLeft += e.deltaY;
-// });
-
 export default Sections;
