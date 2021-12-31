@@ -8,21 +8,21 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className='wrapper'>
-        <a href="https://www.linkedin.com/in/camilo-gil" target="_blank" rel="noreferrer" id='linkedin' data-tip data-for="linkedin">
+        <a href="https://www.linkedin.com/in/camilo-gil" target="_blank" rel="noreferrer" id='a-linkedin' data-tip data-for="linkedin">
           <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
-          <ReactTooltip id="linkedin" place="top" effect="solid">LinkedIn</ReactTooltip>
+          <ReactTooltip id="linkedin" place="top" effect="solid" backgroundColor='none' data-delay-show='700'>LinkedIn</ReactTooltip>
           </a>
-        <a href="https://www.github.com/gilcamiloa" target="_blank" rel="noreferrer" id='github' data-tip data-for="github">
+        <a href="https://www.github.com/gilcamiloa" target="_blank" rel="noreferrer" id='a-github' data-tip data-for="github">
           <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
-          <ReactTooltip id="github" place="top" effect="solid">GitHub</ReactTooltip>
+          <ReactTooltip id="github" place="top" effect="solid" backgroundColor='none' data-delay-show='1200'>GitHub</ReactTooltip>
           </a>
-        <a href="mailto:cgilv6@gmail.com" target="_blank" rel="noreferrer" id='email' data-tip data-for="email">
+        <a href="mailto:cgilv6@gmail.com" target="_blank" rel="noreferrer" id='a-email' data-tip data-for="email">
           <FontAwesomeIcon icon={faMailBulk}></FontAwesomeIcon>
-          <ReactTooltip id="email" place="top" effect="solid">Email</ReactTooltip>
+          <ReactTooltip id="email" place="top" effect="solid" backgroundColor='none' data-delay-show='700'>Email</ReactTooltip>
           </a>
-        <a href="https://drive.google.com/file/d/1WRmISIuZONc6EHOZwdzkxUKru2B4K0RY/view?usp=sharing" target="_blank" rel="noreferrer" id='resume' data-tip data-for="resume">
+        <a href="https://drive.google.com/file/d/1WRmISIuZONc6EHOZwdzkxUKru2B4K0RY/view?usp=sharing" target="_blank" rel="noreferrer" id='a-resume' data-tip data-for="resume">
           <FontAwesomeIcon icon={faFile}></FontAwesomeIcon>
-          <ReactTooltip id="resume" place="top" effect="solid">Resume / CV</ReactTooltip>
+          <ReactTooltip id="resume" place="top" effect="solid" backgroundColor='none' data-delay-show='700'>Resume / CV</ReactTooltip>
         </a>
       </div>
     </div>

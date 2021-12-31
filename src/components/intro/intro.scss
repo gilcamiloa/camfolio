@@ -1,4 +1,7 @@
+@import '../../global.scss';
+
 .intro {
+  background-color: $maincolor;
   height: 100vh;
   width: 100vw;
   display: flex;
