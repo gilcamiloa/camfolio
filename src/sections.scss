@@ -1,7 +1,7 @@
 @import "global.scss";
 
 .sections {
-  background-color: $maincolor;
+  // background-color: $maincolor;
   width: 100vh;
   height: 100vw;
   top:0;
@@ -40,14 +40,13 @@
   }
 
   .nav__dots{
-    position: absolute;
-    bottom: 6.25%;
-    z-index: 9;
+    position: fixed;
+    // bottom: 50%;
     display: flex;
-    left: 50%;
-    transform: translateX(-50%);
+    left: -20%;
     z-index: 4;
-    position: sticky;
+    // transform: scale(1); // translate(-100%, -100%);
+    // position: sticky;
   }
 
   .dot{
@@ -55,21 +54,21 @@
     width: 20px;
     background-color: black;
     margin: 0 10px;
+    transform: translate(-100%, -100%);
     border-radius: 50%;
     cursor: pointer;
     z-index: 4;
-    position: sticky;
   }
 
   .sectionsContainer.first-active:first-child{
     margin-left: 0;
   }
 
-  .sections.second-active:first-child{
+  .sectionsContainer.first-active:nth-child(2){
     margin-left: -100%;
   }
 
-  .sections.third-active:first-child{
+  .sectionsContainer.first-active:nth-child(3){
     margin-left: -200%;
   }
 
