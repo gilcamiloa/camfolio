@@ -27,25 +27,24 @@
         background-color: blue;
         transition: all 3s ease;
       }
-
     }
+
     #a-linkedin{
       color:grey;
       margin: 0%;
       opacity: none;
-      pointer-events: visibleStroke;
-      border-radius: 50%;
+      pointer-events: stroke;
     }
 
 
     #a-github{
       color:grey;
-      border-radius: 75%;
+      border-radius: 50%;
     }
 
     #a-email{
       color:grey;
-      border-radius: 75%;
+      border-radius: 50%;
     }
 
     #a-resume{
@@ -55,14 +54,14 @@
 
     #linkedin{
       color:black;
-      pointer-events: visibleStroke;
+      pointer-events: stroke;
       border-radius: 50%;
       z-index: 1;
     }
 
     #github{
       color:black;
-      border-radius: 75%;
+      pointer-events: stroke;
     }
 
     #email{
