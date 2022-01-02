@@ -38,49 +38,4 @@
     height:100vh;
     transform-origin: top left;
   }
-
-  .nav__dots{
-    position: fixed;
-    // bottom: 50%;
-    display: flex;
-    left: -20%;
-    z-index: 4;
-    // transform: scale(1); // translate(-100%, -100%);
-    // position: sticky;
-  }
-
-  .dot{
-    height: 20px;
-    width: 20px;
-    background-color: black;
-    margin: 0 10px;
-    transform: translate(-100%, -100%);
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 4;
-  }
-
-  .sectionsContainer.first-active:first-child{
-    margin-left: 0;
-  }
-
-  .sectionsContainer.first-active:nth-child(2){
-    margin-left: -100%;
-  }
-
-  .sectionsContainer.first-active:nth-child(3){
-    margin-left: -200%;
-  }
-
-  .nav__dots.first-current #dot1{
-    background-color: coral;
-  }
-
-  .nav__dots.second-current #dot2{
-    background-color: coral;
-  }
-
-  .nav__dots.third-current #dot3{
-    background-color: coral;
-  }
 }
