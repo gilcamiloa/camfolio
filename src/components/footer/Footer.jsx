@@ -7,6 +7,12 @@ import { faFile, faMailBulk } from '@fortawesome/free-solid-svg-icons'
 export default function Footer() {
   return (
     <div className="footer">
+      <div className="nav__dots first-current">
+        <div id="dot1" class="dot"></div>
+        <div id="dot2" class="dot"></div>
+        <div id="dot3" class="dot"></div>
+        <div id="dot4" class="dot"></div>
+      </div>
       <div className='wrapper'>
         <a href="https://www.linkedin.com/in/camilo-gil" target="_blank" rel="noreferrer" id='a-linkedin' data-tip data-for="linkedin">
           <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>

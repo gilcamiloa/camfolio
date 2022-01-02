@@ -11,9 +11,67 @@
   align-items: center;
   justify-content: center;
 
+  .nav__dots{
+    position: fixed;
+    // bottom: 30%;
+    left: 10%; // rotated 90deg becomes left
+    bottom: 5%; // rotated 90deg becomes bottom
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 4;
+    // transform: scale(1) translate(-100%, -100%);
+    // position: sticky;
+  }
+  // Youre gonna have to move this to footer and create an onclick that leads to the sections class viewport.
+
+  .dot{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    // transform: translate(100%);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 4;
+  }
+
+  .sections.first-active:first-child{
+    margin-left: 0;
+  }
+
+  .sections.first-active:nth-child(2){
+    margin-left: -100%;
+  }
+
+  .sections.first-active:nth-child(3){
+    margin-left: -200%;
+  }
+
+  .sections.first-active:nth-child(4){
+    margin-left: -300%;
+  }
+
+  .nav__dots.first-current #dot1{
+    background-color: coral;
+  }
+
+  .nav__dots.second-current #dot2{
+    background-color: coral;
+  }
+
+  .nav__dots.third-current #dot3{
+    background-color: coral;
+  }
+
+  .nav__dots.fourth-current #dot4{
+    background-color: coral;
+  }
+
   .wrapper {
-    display:flex;
-    justify-content: center;
+    display: flex;
+    justify-content: end;
     // padding: 0px 100px 0px 100px;
 
     a {
