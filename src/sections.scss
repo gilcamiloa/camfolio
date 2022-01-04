@@ -13,7 +13,7 @@
   overflow-x: hidden;
   position: absolute;
   scrollbar-width: none;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory; // UNCOMMENT TO REVERT
   -ms-overflow-style: none;
   ::-webkit-scrollbar {
     display:none;
