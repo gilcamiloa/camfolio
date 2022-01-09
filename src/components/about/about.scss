@@ -28,7 +28,6 @@
     height: 75%;
     display: flex;
     flex-direction: column;
-
     text-align: center;
     position: sticky;
 
@@ -41,9 +40,11 @@
 
 
       .left {
+        display: flex;
+        justify-content: center;
         flex: 0.5;
         overflow: hidden;
-        filter: drop-shadow(0 0 1.75rem gray);
+        filter: drop-shadow(-5px 0 0.3rem gray);
 
 
         .imgContainer {
@@ -57,7 +58,7 @@
 
           img {
             height: 500px;
-            border-radius: 40%;
+            border-radius: 50%;
             object-position: right;
             // max-height: 100%;
           }
@@ -67,7 +68,7 @@
       .right {
         flex: 0.5;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         overflow: hidden;
         font-size: 20px;
