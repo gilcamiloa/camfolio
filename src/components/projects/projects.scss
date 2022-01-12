@@ -11,10 +11,15 @@
   position: relative;
   overflow: hidden;
 
+  .title{
+    justify-content: center;
+  }
+
   .arrow {
     height: 50px;
     position: absolute;
     cursor: pointer;
+    z-index: 4;
 
     @include mobile {
       display: none;

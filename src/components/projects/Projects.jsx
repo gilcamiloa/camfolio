@@ -16,7 +16,7 @@ export default function Projects() {
     {
       id: "2",
       icon: "../images/assets/globe.png",
-      title: "Camilo's Personal Website",
+      title: "React Portfolio",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       img:
@@ -41,6 +41,9 @@ export default function Projects() {
 
   return (
     <div className="projects">
+      <div className="title">
+        <h1>Projects</h1>
+      </div>
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
