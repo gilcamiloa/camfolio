@@ -8,132 +8,133 @@
   position: fixed;
   overflow: hidden;
   display:flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
 
-  .nav__dots{
-    position: fixed;
-    // bottom: 30%;
-    left: 10%; // rotated 90deg becomes left
-    bottom: 5%; // rotated 90deg becomes bottom
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    z-index: 4;
-    // transform: scale(1) translate(-100%, -100%);
-    // position: sticky;
-  }
-  // Youre gonna have to move this to footer and create an onclick that leads to the sections class viewport.
+  .container{
 
-  .dot{
-    height: 20px;
-    width: 20px;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    // transform: translate(100%);
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 4;
-  }
-
-  .sections.first-active:first-child{
-    margin-left: 0;
-  }
-
-  .sections.first-active:nth-child(2){
-    margin-left: -100%;
-  }
-
-  .sections.first-active:nth-child(3){
-    margin-left: -200%;
-  }
-
-  .sections.first-active:nth-child(4){
-    margin-left: -300%;
-  }
-
-  .nav__dots.first-current #dot1{
-    background-color: coral;
-  }
-
-  .nav__dots.second-current #dot2{
-    background-color: coral;
-  }
-
-  .nav__dots.third-current #dot3{
-    background-color: coral;
-  }
-
-  .nav__dots.fourth-current #dot4{
-    background-color: coral;
-  }
-
-  .wrapper {
-    display: flex;
-    justify-content: end;
-    // padding: 0px 100px 0px 100px;
-
-    a {
-      z-index: 2;
-      font-size: 1.1em;
-      padding: 0px 35px 0px 35px;
-      pointer-events: stroke;
+    .nav__dots{
+      position: fixed;
+      left: 10%; // rotated 90deg becomes left
+      bottom: 5%; // rotated 90deg becomes bottom
       margin: 0;
-
-      // a:hover{
-      //   background-color: blue;
-      //   transition: all 3s ease;
-      // }
+      display: flex;
+      // flex-direction: row;
+      z-index: 4;
     }
+    // Youre gonna have to move this to footer and create an onclick that leads to the sections class viewport.
 
-    #a-linkedin{
-      color:grey;
-      margin: 0%;
-      opacity: none;
-      pointer-events: stroke;
-    }
-
-
-    #a-github{
-      color:grey;
+    .dot{
+      height: 20px;
+      width: 20px;
+      background-color:gray;
+      display: flex;
+      justify-content: space-between;
+      // transform: translate(100%);
       border-radius: 50%;
+      cursor: pointer;
+      z-index: 4;
+      margin-left: 20px;
     }
 
-    #a-email{
-      color:grey;
-      border-radius: 50%;
+    // .sections.first__active:first-child{
+    //   margin-left: 0;
+    // }
+
+    // .sections.second__active:nth-child(2){
+    //   margin-left: -100%;
+    // }
+
+    // .sections.third__active:nth-child(3){
+    //   margin-left: -200%;
+    // }
+
+    // .sections.fourth__active:nth-child(4){
+    //   margin-left: -300%;
+    // }
+
+    .nav__dots.first__current #dot1{
+      background-color: coral;
     }
 
-    #a-resume{
-      color:grey;
-      border-radius: 50%;
+    .nav__dots.second__current #dot2{
+      background-color: coral;
     }
 
-    #linkedin{
-      color:black;
-      pointer-events: stroke;
-      border-radius: 50%;
-      z-index: 1;
+    .nav__dots.third__current #dot3{
+      background-color: coral;
     }
 
-    #github{
-      color:black;
-      pointer-events: stroke;
+    .nav__dots.fourth__current #dot4{
+      background-color: coral;
     }
 
-    #email{
-      color:black;
-      border-radius: 75%;
-    }
+    .link-wrapper {
+      display: flex;
+      justify-content: end;
+      // padding: 0px 100px 0px 100px;
 
-    #resume{
-      color:black;
-      border-radius: 100%;
-    }
+      a {
+        z-index: 2;
+        font-size: 1.1em;
+        padding: 0px 30px 0px 30px;
+        pointer-events: stroke;
+        margin: 0;
 
-    &.active {
-      color: black;
+        // a:hover{
+        //   background-color: blue;
+        //   transition: all 3s ease;
+        // }
+      }
+
+      #a-linkedin{
+        color:grey;
+        margin: 0%;
+        opacity: none;
+        pointer-events: stroke;
+      }
+
+
+      #a-github{
+        color:grey;
+        border-radius: 50%;
+      }
+
+      #a-email{
+        color:grey;
+        border-radius: 50%;
+      }
+
+      #a-resume{
+        color:grey;
+        border-radius: 50%;
+      }
+
+      #linkedin{
+        color:black;
+        pointer-events: stroke;
+        border-radius: 50%;
+        z-index: 1;
+      }
+
+      #github{
+        color:black;
+        pointer-events: stroke;
+      }
+
+      #email{
+        color:black;
+        border-radius: 75%;
+      }
+
+      #resume{
+        color:black;
+        border-radius: 100%;
+      }
+
+      &.active {
+        color: black;
+      }
     }
   }
 }
