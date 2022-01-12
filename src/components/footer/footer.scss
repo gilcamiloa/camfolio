@@ -30,49 +30,67 @@
       background-color:gray;
       display: flex;
       justify-content: space-between;
-      // transform: translate(100%);
       border-radius: 50%;
       cursor: pointer;
-      z-index: 4;
+      z-index: 3;
       margin-left: 20px;
+      // transform: translate(100%);
     }
 
     // .sections.first__active:first-child{
-    //   margin-left: 0;
-    // }
+      //   margin-left: 0;
+      // }
 
-    // .sections.second__active:nth-child(2){
-    //   margin-left: -100%;
-    // }
+      // .sections.second__active:nth-child(2){
+        //   margin-left: -100%;
+        // }
 
-    // .sections.third__active:nth-child(3){
-    //   margin-left: -200%;
-    // }
+        // .sections.third__active:nth-child(3){
+          //   margin-left: -200%;
+          // }
 
-    // .sections.fourth__active:nth-child(4){
-    //   margin-left: -300%;
-    // }
+          // .sections.fourth__active:nth-child(4){
+            //   margin-left: -300%;
+            // }
 
     .nav__dots.first__current #dot1{
-      background-color: coral;
+      height: 15px;
+      width: 15px;
+      border-color: lightgray;
+      border-radius: 20px;
+      margin-top: 3px;
     }
 
-    .nav__dots.second__current #dot2{
-      background-color: coral;
+    .nav__dots.first__current #dot2{
+      height: 15px;
+      width: 15px;
+      border-color: lightgray;
+      border-radius: 20px;
+      margin-top: 3px;
+
     }
 
-    .nav__dots.third__current #dot3{
-      background-color: coral;
+    .nav__dots.first__current #dot3{
+      height: 15px;
+      width: 15px;
+      border-color: lightgray;
+      border-radius: 20px;
+      margin-top: 3px;
+
     }
 
-    .nav__dots.fourth__current #dot4{
-      background-color: coral;
+    .nav__dots.first__current #dot4{
+      height: 15px;
+      width: 15px;
+      border-color: lightgray;
+      border-radius: 20px;
+      margin-top: 3px;
+
     }
 
     .link-wrapper {
       display: flex;
       justify-content: end;
-      // padding: 0px 100px 0px 100px;
 
       a {
         z-index: 2;
