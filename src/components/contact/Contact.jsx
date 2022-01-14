@@ -22,7 +22,7 @@ export default function Contact() {
             <img src={shake} alt="" />
           </div>
           <div className="right">
-            <h2>Contact.</h2>
+            <h3>Feel free to reach out to me for any coding needs or collaborations.</h3>
             <form onSubmit={handleSubmit}>
               <input type="text" placeholder="Email" />
               <textarea placeholder="Message"></textarea>
