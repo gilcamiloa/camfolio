@@ -13,8 +13,8 @@ export default function Skills() {
   return (
     <div className="skills">
       <div id="skills">
-        <div className="title">
           <h1>Skills</h1>
+        <div className="title">
         </div>
         <br />
         <div className="links container" >
@@ -33,6 +33,23 @@ export default function Skills() {
             <ProgressBar now="85" visuallyHidden variant="danger" />
             <span>SQL&ensp;<FontAwesomeIcon icon={faDatabase}></FontAwesomeIcon></span>
             <ProgressBar now="70" visuallyHidden />
+            <div className="other">
+              <div className="left">
+                <h2>Other Skills</h2>
+                <h5>Heroku</h5>
+                <h5>Heroku</h5>
+                <h5>Heroku</h5>
+                <h5>Heroku</h5>
+                <h5>Heroku</h5>
+              </div>
+              <div className="right">
+                <h2>Spoken Languages</h2>
+                <h5>English (fluent)</h5>
+                <h5>Spanish (fluent)</h5>
+                <h5>Portuguese (basic)</h5>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

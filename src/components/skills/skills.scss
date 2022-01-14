@@ -12,6 +12,7 @@
 
   .title h1{
     // justify-content: center;
+    text-align: center;
   }
 
   #skills{
@@ -30,6 +31,20 @@
       .items{
         padding-bottom: 100px;
       }
+    }
+  }
+
+  .other{
+    display: flex;
+    justify-content: space-between;
+
+    .left{
+      padding: 10px;
+    }
+
+    .right{
+      padding: 10px;
+      align-items: center;
     }
   }
 }
