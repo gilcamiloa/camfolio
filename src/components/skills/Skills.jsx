@@ -17,7 +17,7 @@ export default function Skills() {
         <div className="title">
         </div>
         <br />
-        <div className="links container" >
+        <div className="links" >
           <div id="progress_bar__container" className='items'>
             <span>HTML&ensp;<FontAwesomeIcon icon={faHtml5}></FontAwesomeIcon></span>
             <ProgressBar now="90" visuallyHidden variant="warning" />
@@ -29,7 +29,7 @@ export default function Skills() {
             <ProgressBar now="75" visuallyHidden variant="info" />
             <span>Python&ensp;<FontAwesomeIcon icon={faPython}></FontAwesomeIcon></span>
             <ProgressBar now="30" visuallyHidden variant="info" />
-            <span>Ruby - Ruby on Rails&ensp;<FontAwesomeIcon icon={faGem}></FontAwesomeIcon></span>
+            <span>Ruby on Rails&ensp;<FontAwesomeIcon icon={faGem}></FontAwesomeIcon></span>
             <ProgressBar now="85" visuallyHidden variant="danger" />
             <span>SQL&ensp;<FontAwesomeIcon icon={faDatabase}></FontAwesomeIcon></span>
             <ProgressBar now="70" visuallyHidden />

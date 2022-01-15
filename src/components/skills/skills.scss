@@ -22,8 +22,9 @@
     margin-top: 12.5%;
   }
 
-  .links.container{
-    width: 80vw;
+  .links{
+    width: 75vw;
+    align-items: center;
 
     .progress_bar__container{
       width: 500px;
@@ -37,6 +38,10 @@
   .other{
     display: flex;
     justify-content: space-between;
+
+    & > * {
+      overflow-y: none;
+    }
 
     .left{
       padding: 10px;
