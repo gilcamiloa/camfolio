@@ -66,10 +66,6 @@
         .imgContainer {
           display: flex;
           position: relative;
-          // justify-content: center;
-          // align-items: center;
-          // object-fit: contain;
-          // text-align: center;
           object-fit:cover;
 
           @include mobile {
@@ -78,7 +74,6 @@
 
           img {
             height: 500px;
-            // border-radius: 50%;
             object-position: right;
 
             @include mobile {

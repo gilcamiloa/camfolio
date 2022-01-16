@@ -4,33 +4,57 @@
   background-color: $maincolor;
   height: 100vh;
   width: 100vw;
+  // top: 12.5%;
   display: flex;
   flex-direction: column;
   // justify-content: space-between;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
+  // bottom: 87.5%;
+
+    & > * {
+      overflow-y: none;
+    }
+
+    #skills{
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+    }
 
   .title h1{
     // justify-content: center;
     text-align: center;
+    overflow: none;
   }
 
-  #skills{
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    margin-top: 12.5%;
+  .container{
+    border-color: black;
+    // border:5px;
+    border-radius: 30px;
+    // background-color: rgba(231, 231, 231, 0.323);
+    background-color: white;
+    box-shadow: 3px 3px 15px gray;
+    // filter: drop-shadow(5px 5px 5px gray);
+    align-items: center;
+    margin: 25px 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
   }
 
   .links{
     width: 75vw;
     align-items: center;
+    align-content: center;
 
     .progress_bar__container{
       width: 500px;
 
       .items{
         padding-bottom: 100px;
+        margin: 30px;
       }
     }
   }
