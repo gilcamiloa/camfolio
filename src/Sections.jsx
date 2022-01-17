@@ -43,11 +43,6 @@ function Sections() {
         <Skills path="/skills" className="sectionsSlides sectionSkills"/>
         <Contact path="/contact" className="sectionsSlides sectionContact"/>
       </div>
-      <div class="nav__dots first-current">
-        <div id="dot1" class="dot"></div>
-        <div id="dot2" class="dot"></div>
-        <div id="dot3" class="dot"></div>
-      </div>
     </div>
   );
 }
