@@ -3,10 +3,7 @@
 .sections {
   width: 100vh;
   height: 100vw;
-  top:0;
-  bottom:100;
   transform: rotate(-90deg) translateX(-100vh);
-  overflow: hidden;
   transform-origin: top left;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -18,14 +15,23 @@
     display:none;
     width: none;
   }
+
+  @include mobile {
+    max-height: 400vh;
+  }
+
   & > * {
     width: 100vw;
-    height: 200vh;
+    height: 100vh;
     scrollbar-width: none;
     -ms-overflow-style: none;
     ::-webkit-scrollbar {
       display:none;
       width: none;
+    }
+
+    @include mobile {
+
     }
   }
   .sectionsContainer {

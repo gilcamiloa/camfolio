@@ -27,7 +27,7 @@ export default function Skills() {
               <span>React.js&ensp;<FontAwesomeIcon icon={faReact}></FontAwesomeIcon></span>
               <ProgressBar now="75" visuallyHidden variant="info" />
               <span>Python&ensp;<FontAwesomeIcon icon={faPython}></FontAwesomeIcon></span>
-              <ProgressBar now="30" visuallyHidden variant="info" />
+              <ProgressBar now="30" visuallyHidden variant="success" />
               <span>Ruby on Rails&ensp;<FontAwesomeIcon icon={faGem}></FontAwesomeIcon></span>
               <ProgressBar now="85" visuallyHidden variant="danger" />
               <span>SQL&ensp;<FontAwesomeIcon icon={faDatabase}></FontAwesomeIcon></span>
