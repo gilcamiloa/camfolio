@@ -21,6 +21,10 @@
       display: flex;
       // flex-direction: row;
       z-index: 4;
+      @include mobile{
+        left: 5%;
+        padding: 1px;
+      }
     }
     // Youre gonna have to move this to footer and create an onclick that leads to the sections class viewport.
 
@@ -35,6 +39,10 @@
       z-index: 3;
       margin-left: 20px;
       // transform: translate(100%);
+
+      @include mobile{
+        margin-left: 2px;
+      }
     }
 
     // .sections.first__active:first-child{
@@ -99,9 +107,13 @@
         pointer-events: stroke;
 
         // a:hover{
-        //   background-color: blue;
-        //   transition: all 3s ease;
-        // }
+          //   background-color: blue;
+          //   transition: all 3s ease;
+          // }
+
+        @include mobile {
+          padding: 0px 5px 0px 5px;
+        }
       }
 
       #a-linkedin{
