@@ -42,12 +42,9 @@ export default function Projects() {
   return (
     <div className="projects">
       <div className="title">
-        <h1>Projects</h1>
+        <h1>PROJECTS</h1>
       </div>
-      <div
-        className="slider"
-        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
-      >
+      <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
         {data.map((d) => (
           <div className="container">
             <div className="item">
@@ -58,7 +55,7 @@ export default function Projects() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span>Projects</span>
+                  <span>Source Code</span>
                 </div>
               </div>
               <div className="right">
