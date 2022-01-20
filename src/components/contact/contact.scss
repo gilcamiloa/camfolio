@@ -6,15 +6,10 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   overflow: hidden;
-
-  #contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 12.5%;
-  }
+  // margin-top: 12.5%;
 
   .container {
     width: 70vw;
@@ -33,7 +28,9 @@
     overflow: hidden;
 
     img {
-      height: 10%;
+      width: 100%;
+      max-width: 300px;
+      height: auto;
     }
   }
   .right {

@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container">
         <div className="nav__dots first__current">
           <div id="dot1" className="dot"></div>
-          <div id="dot2" className="dot"></div>
+          <div id="dotf2" className="dot"></div>
           <div id="dot3" className="dot"></div>
           <div id="dot4" className="dot"></div>
         </div>

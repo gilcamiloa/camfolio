@@ -61,41 +61,40 @@
 
         @include mobile {
           flex: 1;
+          align-items: center;
+          // width: 100%;
+          // max-width: 300px;
+          // height: auto;
         }
 
-        .imgContainer {
-          display: flex;
-          position: relative;
-          object-fit:cover;
+        img {
+          // height: 100%;
+          max-width: 100%;
+          height: auto;
+          object-position: right;
 
           @include mobile {
+            border-radius: 20px;
+            width: 100%;
+            max-width: 225px;
+            height: auto;
             align-items: center;
-          }
-
-          img {
-            height: 500px;
-            object-position: right;
-
-            @include mobile {
-              max-width: 200px;
-              height: auto;
-              align-items: center;
-            }
+            overflow-y: hidden;
           }
         }
       }
 
       .right {
         display: flex;
-        align-items: center;
         flex: 0.5;
-        flex-direction: row;
+        // flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         overflow: hidden;
         font-size: 20px;
         text-align: left;
         // object-position: center;
-        // vertical-align: middle;
+        vertical-align: middle;
         display: inline-block;
 
 

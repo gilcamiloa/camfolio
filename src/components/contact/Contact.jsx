@@ -13,25 +13,23 @@ export default function Contact() {
 
   return (
     <div className="contact" >
-      <div id="contact">
-        <div className="title">
-          <h1>Contact</h1>
+      <div className="title">
+        <h1>Contact</h1>
       </div>
-      <div className="container'" >
-          <div className="left">
-            <img src={shake} alt="" />
-          </div>
-          <div className="right">
-            <h3>Feel free to reach out to me for any coding needs or collaborations.</h3>
-            <form onSubmit={handleSubmit}>
-              <input type="text" placeholder="Email" />
-              <textarea placeholder="Message"></textarea>
-              <button type="submit">Send</button>
-              {message && <span>Thanks, I'll reply ASAP :)</span>}
-            </form>
-          </div>
+      <div className="container" >
+        <div className="left">
+          <img src={shake} alt="" />
+        </div>
+        <div className="right">
+          <h3>Feel free to reach out to me for any coding needs or collaborations.</h3>
+          <form onSubmit={handleSubmit}>
+            <input type="text" placeholder="Email" />
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+            {message && <span>Thanks, I'll reply ASAP :)</span>}
+          </form>
+        </div>
       </div>
     </div>
-  </div>
   )
 }
