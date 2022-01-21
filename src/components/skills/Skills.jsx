@@ -36,9 +36,9 @@ export default function Skills() {
                 <div className="left">
                   <h2>Other Skills</h2>
                   <h5>Heroku</h5>
-                  <h5>Heroku</h5>
-                  <h5>Heroku</h5>
-                  <h5>Heroku</h5>
+                  <h5>PostgreSQL</h5>
+                  <h5>Bootstrap</h5>
+                  <h5>UI/UX</h5>
                 </div>
                 <div className="right">
                   <h2>Spoken Languages</h2>

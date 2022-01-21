@@ -23,17 +23,23 @@
     height: 75%;
   }
   .aboutContainer{
-    top:12.5%;
+    top:20vh;
     bottom:87.5%;
-    height: 75%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     position: sticky;
 
     @include mobile {
       h1{
+        top:20%;
         font-size: 16px;
+      }
+
+      p {
+        bottom:80%;
+
       }
     }
 
@@ -47,9 +53,9 @@
         height: 75vh;
       }
 
-      & > * {
-        padding:15px;
-      }
+      // & > * {
+      //   padding:15px;
+      // }
 
 
       .left {
@@ -60,16 +66,17 @@
         filter: drop-shadow(-5px 0 0.3rem gray);
 
         @include mobile {
-          flex: 1;
+          flex: 0.5;
           align-items: center;
+          // height: 225px;
           // width: 100%;
           // max-width: 300px;
           // height: auto;
         }
 
         img {
-          // height: 100%;
-          max-width: 100%;
+          width: 100%;
+          max-width: 500px;
           height: auto;
           object-position: right;
 
