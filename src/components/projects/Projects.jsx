@@ -2,6 +2,7 @@ import './projects.scss'
 
 export default function projects() {
   return (
+<<<<<<< Updated upstream
     <div className="projects" id="projects">
       <div className="container">
         <h1>Projects</h1>
@@ -47,6 +48,49 @@ export default function projects() {
             </div>
           </div> */}
         </div>
+=======
+    <div className="projects">
+      <div className="projectsContainer">
+        <div className="title">
+          <h1>PROJECTS</h1>
+        </div>
+        <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
+          {data.map((d) => (
+            <div className="container">
+              <div className="item">
+                <div className="left">
+                  <div className="leftContainer">
+                    <div className="imgContainer">
+                      <img src={d.icon} alt="" />
+                    </div>
+                    <h2>{d.title}</h2>
+                    <p>{d.desc}</p>
+                    <span>Source Code</span>
+                  </div>
+                </div>
+                <div className="right">
+                  <img
+                    src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <img
+          src="../../images/assets/arrow.png"
+          className="arrow left"
+          alt=""
+          onClick={() => handleClick("left")}
+        />
+        <img
+          src="../../images/assets/arrow.png"
+          className="arrow right"
+          alt=""
+          onClick={() => handleClick()}
+        />
+>>>>>>> Stashed changes
       </div>
     </div>
   )
