@@ -1,14 +1,15 @@
 @import '../../global.scss';
 
 .navbar {
-  color: $maincolor;
-  width: 100%;
+  opacity: 0.7;
+  width: 100vw;
   height: 12.5%;
   position: fixed;
   top: 0;
-  background-color:rgba(211, 211, 211, 1);
-  z-index: 3;
-  transition: all 1s ease;
+  z-index: 2;
+  cursor: pointer;
+  pointer-events:none;
+
 
   .wrapper {
     width:100vw;
@@ -18,16 +19,25 @@
     justify-content: space-between;
 
     .left {
+      pointer-events:fill;
       display: flex;
       align-items: center;
 
 
       .logo {
+        width: 100%;
+        max-width: 120px;
+        height: auto;
         font-size: 40px;
         font-weight:700;
         text-decoration:none;
-        color:inherit;
+        color:rgba(93, 133, 33, 1.1);
         margin-right: 40px;
+
+        .logo:hover {
+          // display: none;
+          // content: "Reply!";
+        }
       }
 
       .itemContainer {
@@ -48,44 +58,14 @@
     }
 
     .right {
-      .hamburger {
-        width: 32px;
-        height: 25px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        cursor: pointer;
-        color:black;
+      pointer-events:fill;
+      padding-right: 30px;
+      transform-origin: left;
+      transition: all 2s ease;
 
-        span {
-          width: 100%;
-          height: 3px;
-          background-color: $maincolor;
-          transform-origin: left;
-          transition: all 2s ease;
-        }
-      }
-
-    }
-  }
-    &.active {
-    background-color: $maincolor;
-    color: white;
-
-    .hamburger {
-      span {
-        &:first-child {
-          background-color: white;
-          transform: rotate(45deg);
-        }
-        &:nth-child(2) {
-          opacity: 0;
-        }
-        &:last-child {
-          background-color: white;
-          transform: rotate(-45deg);
-        }
+      .active{
+        color:grey;
+        transition-duration: 3s;
       }
     }
   }

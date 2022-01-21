@@ -3,29 +3,26 @@ import cam from '../../images/cam-linkedin.jpg';
 
 export default function About() {
   return (
-    <div className="about" id="about">
-      <br />
-      <h1>About</h1>
-      <br />
-      <br />
-      <div className="row">
-        <div className="card col-12 col-lg-6">
-          <img src={cam} alt=""/>
-        </div>
-        <div className="card col-12 col-lg-6">
-          <h2>Camilo Gil is a master of his craft...</h2>
-
-          <h2>I hear his HAIR is insured for $10,000</h2>
-
-          <h2>He does car commercials... in Japan.</h2>
-
-          <h2>I am a software engineer based in Brooklyn, NYC.</h2>
-
-          <p>I’m a Software Engineer based in Brooklyn, New York City. My background in full stack development started at Le Wagon in London, United Kingdom where I was introduced to full stack development. Currently learning react.js and node.js as well as Python. I hold a Bachelor's of Science in Civil Engineering from the University of Central Florida in Orlando and am currently pursuing a Master's degree in Computer Science from the University of Florida in Gainesville. I’m passionate about the digital transformations happening in the Age of Information and what it will entail for the years to come. In my free time, I am an avid reader of nonfiction and explorer of NYC museums.</p>
-
-
+    <div className="about">
+      <div className="aboutContainer">
+            <h1><u>HELLO</u> I am a full stack engineer based in Brooklyn.</h1>
+        <div className="container">
+          <div className="left">
+            <div className="imgContainer">
+              <img src={cam} alt=""/>
+            </div>
+          </div>
+          <div className="right">
+            <br />
+            <p>My interests include construction technology suited to create large infrastructure applications. I studied full stack development in Le Wagon London and hold a Bachelor's of Science in Civil Engineering from the University of Central Florida. Currently creating projects via react.js and Ruby on Rails as well as learning Java and Python. In my free time, I am a voracious reader and an aspiring explorer of NYC museums.</p>
+            <br />
+            <p>Feel free to reach out for any coding needs or collabs. 🤙🏽</p>
+          </div>
         </div>
       </div>
     </div>
   )
 }
+
+
+// Fuck around with margin for photo location.

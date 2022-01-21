@@ -1,29 +1,34 @@
-import './contact.scss'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faFile, faMailBulk } from '@fortawesome/free-solid-svg-icons'
+import './contact.scss';
+import shake from '../../images/assets/shake.svg';
+import {useState} from 'react';
 
-export default function contact() {
+export default function Contact() {
+
+  const [message, setMessage] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setMessage(true);
+  };
+
   return (
-    <div className="contact" id="contact">
-      {/* <h2>linkedin</h2>
-      <h2>github</h2>
-      <h2>Phone</h2> */}
-
-      <br />
-      <h1>Contact</h1>
-      <br />
-      <br />
-      <br />
-      <div className='wrapper justify-content-between'>
-          <a href="https://www.linkedin.com/in/camilo-gil" target="_blank" rel="noreferrer">
-            <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></a>
-          <a href="https://www.github.com/gilcamiloa" target="_blank" rel="noreferrer">
-            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></a>
-          <a href="mailto:cgilv6@gmail.com" target="_blank" rel="noreferrer">
-            <FontAwesomeIcon icon={faMailBulk}></FontAwesomeIcon></a>
-            <a href="https://drive.google.com/file/d/1WRmISIuZONc6EHOZwdzkxUKru2B4K0RY/view?usp=sharing" target="_blank" rel="noreferrer">
-            <FontAwesomeIcon icon={faFile}></FontAwesomeIcon></a>
+    <div className="contact" >
+      <div className="title">
+        <h1>Contact</h1>
+      </div>
+      <div className="container" >
+        <div className="left">
+          <img src={shake} alt="" />
+        </div>
+        <div className="right">
+          <h3>Feel free to reach out to me for any coding needs or collaborations.</h3>
+          <form onSubmit={handleSubmit}>
+            <input type="text" placeholder="Email" />
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+            {message && <span>Thanks, I'll reply ASAP :)</span>}
+          </form>
+        </div>
       </div>
     </div>
   )

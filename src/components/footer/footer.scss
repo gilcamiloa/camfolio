@@ -1,0 +1,169 @@
+@import '../../global.scss';
+
+.footer {
+  width: 100%;
+  height: 12.5%;
+  top: 87.5%;
+  opacity: 0.7;
+  position: fixed;
+  overflow: hidden;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .container{
+
+    .nav__dots{
+      position: fixed;
+      left: 10%; // rotated 90deg becomes left
+      bottom: 5%; // rotated 90deg becomes bottom
+      margin: 0;
+      display: flex;
+      // flex-direction: row;
+      z-index: 4;
+      @include mobile{
+        left: 5%;
+        padding: 1px;
+      }
+    }
+    // Youre gonna have to move this to footer and create an onclick that leads to the sections class viewport.
+
+    .dot{
+      height: 20px;
+      width: 20px;
+      background-color:gray;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 3;
+      margin-left: 20px;
+      // transform: translate(100%);
+
+      @include mobile{
+        margin-left: 2px;
+      }
+    }
+
+    // .sections.first__active:first-child{
+      //   margin-left: 0;
+      // }
+
+      // .sections.second__active:nth-child(2){
+        //   margin-left: -100%;
+        // }
+
+        // .sections.third__active:nth-child(3){
+          //   margin-left: -200%;
+          // }
+
+          // .sections.fourth__active:nth-child(4){
+            //   margin-left: -300%;
+            // }
+
+    .nav__dots.first__current #dot1{
+      height: 15px;
+      width: 15px;
+      border-color: lightgray;
+      border-radius: 20px;
+      margin-top: 3px;
+    }
+
+    .nav__dots.first__current #dot2{
+      height: 15px;
+      width: 15px;
+      border-color: lightgray;
+      border-radius: 20px;
+      margin-top: 3px;
+
+    }
+
+    .nav__dots.first__current #dot3{
+      height: 15px;
+      width: 15px;
+      border-color: lightgray;
+      border-radius: 20px;
+      margin-top: 3px;
+
+    }
+
+    .nav__dots.first__current #dot4{
+      height: 15px;
+      width: 15px;
+      border-color: lightgray;
+      border-radius: 20px;
+      margin-top: 3px;
+
+    }
+
+    .link-wrapper {
+      display: flex;
+      justify-content: end;
+
+      a {
+        z-index: 2;
+        font-size: 1.1em;
+        padding: 0px 20px 0px 20px;
+        pointer-events: stroke;
+
+        // a:hover{
+          //   background-color: blue;
+          //   transition: all 3s ease;
+          // }
+
+        @include mobile {
+          padding: 0px 5px 0px 5px;
+        }
+      }
+
+      #a-linkedin{
+        color:grey;
+        margin: 0%;
+        opacity: none;
+        pointer-events: stroke;
+      }
+
+
+      #a-github{
+        color:grey;
+        border-radius: 50%;
+      }
+
+      #a-email{
+        color:grey;
+        border-radius: 50%;
+      }
+
+      #a-resume{
+        color:grey;
+        border-radius: 50%;
+      }
+
+      #linkedin{
+        color:black;
+        pointer-events: stroke;
+        border-radius: 50%;
+        z-index: 1;
+      }
+
+      #github{
+        color:black;
+        pointer-events: stroke;
+      }
+
+      #email{
+        color:black;
+        border-radius: 75%;
+      }
+
+      #resume{
+        color:black;
+        border-radius: 100%;
+      }
+
+      &.active {
+        color: black;
+      }
+    }
+  }
+}
