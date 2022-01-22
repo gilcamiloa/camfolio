@@ -47,7 +47,7 @@ export default function Projects() {
         </div>
         <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
           {data.map((d) => (
-            <div className="container">
+            <div className="sliderContainer">
               <div className="item">
                 <div className="left">
                   <div className="leftContainer">
@@ -69,32 +69,9 @@ export default function Projects() {
             </div>
           ))}
         </div>
-        <img
-          src="../../images/assets/arrow.png"
-          className="arrow left"
-          alt=""
-          onClick={() => handleClick("left")}
-        />
-        <img
-          src="../../images/assets/arrow.png"
-          className="arrow right"
-          alt=""
-          onClick={() => handleClick()}
-        />
-
       </div>
-      <img
-        src="../../images/assets/arrow.png"
-        className="arrow left"
-        alt=""
-        onClick={() => handleClick("left")}
-      />
-      <img
-        src="../../images/assets/arrow.png"
-        className="arrow right"
-        alt=""
-        onClick={() => handleClick()}
-      />
+      <img src="../../images/assets/arrow.png" className="arrow left" alt="" onClick={() => handleClick("left")}/>
+      <img src="../../images/assets/arrow.png" className="arrow right" alt="" onClick={() => handleClick()}/>
     </div>
   );
 }
