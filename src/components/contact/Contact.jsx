@@ -12,16 +12,14 @@ export default function Contact() {
 
   return (
     <div className="contact" >
-      <div className="contactContainer">
         <div className="title">
           <h1>CONTACT</h1>
         </div>
+      <div className="contactContainer">
         <div className="container">
-          <div className="left">
-            <img src={shake} alt="" />
-          </div>
+          <div className="left"><img src={shake} alt=""/></div>
           <div className="right">
-            <h3>Feel free to reach out to me for any coding needs or collaborations.</h3>
+            <h4>Feel free to reach out to me for any coding needs or collaborations.</h4>
             <form onSubmit={handleSubmit}>
               <input type="text" placeholder="Email" />
               <textarea placeholder="Message"></textarea>
