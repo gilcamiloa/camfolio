@@ -5,18 +5,24 @@
   height: 100vh;
   width: 100vw;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  // flex-direction: column;
+  justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
 
   .projectsContainer{
-    top: 12.5%;
-    bottom: 87.5%;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
 
     .title{
-      justify-content: center;
+      top: 12.5%;
+      bottom: 87.5%;
+      z-index: 4;
+      display: flex;
+      justify-content: start;
     }
 
     .slider {
@@ -25,7 +31,7 @@
       position: absolute;
       justify-content: center;
       left: 100;
-      transition: all 0.5s ease-out;
+      transition: all 0.75s ease-out;
 
       @include mobile {
         height: 100vh;
@@ -33,18 +39,15 @@
         justify-content: center;
       }
 
-      .container {
+      .sliderContainer {
         width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
+      }
 
     .arrow {
       height: 50px;
       position: absolute;
       cursor: pointer;
-      z-index: 4;
+      z-index: 5;
 
       @include mobile {
         display: none;
@@ -52,10 +55,12 @@
 
       &.left {
         left: 100px;
+        color: black;
         transform: rotateY(180deg);
       }
 
       &.right {
+        color: black;
         right: 100px;
       }
     }
@@ -149,4 +154,3 @@
       }
     }
   }
-}
