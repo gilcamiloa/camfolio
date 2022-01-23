@@ -5,6 +5,7 @@ export default function Intro() {
     <div className='intro' id="intro">
       <div className="IntroContainer">
         <div className="justify-content-left">
+          <h1>HELLO</h1>
           <h1>My name is Camilo André Gil Velasquez Carvajal Mendoza..</h1>
         </div>
         <br />
