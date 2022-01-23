@@ -9,6 +9,7 @@
   z-index: 2;
   cursor: pointer;
   pointer-events:none;
+  overflow: hidden;
 
   @include mobile {
     max-height: 12.5vh;
@@ -40,10 +41,10 @@
         color:rgba(93, 133, 33, 1.1);
         // margin-right: 40px;
 
-        .logo:hover {
-          // display: none;
-          // content: "Reply!";
-        }
+        // .logo:hover {
+        //   display: none;
+        //   content: "Reply!";
+        // }
       }
 
       .itemContainer {
