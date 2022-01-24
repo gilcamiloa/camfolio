@@ -38,7 +38,10 @@
         max-width: 120px;
         font-size: 40px;
         text-decoration:none;
-        color:rgba(93, 133, 33, 1.1);
+        fill: white;
+        filter: invert(1%);
+        color: blanchedalmond;
+        // background-color:rgba(93, 133, 33, 1.1);
         // margin-right: 40px;
 
         // .logo:hover {
