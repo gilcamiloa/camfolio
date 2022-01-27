@@ -4,14 +4,19 @@ import About from './components/about/About'
 import Navbar from './components/navbar/Navbar'
 import Sections from './Sections'
 import Footer from './components/footer/Footer'
+import ParticleBackground from '../src/particleBackground'
+
+
 
 
 function App() {
   const [aboutOpen, setAboutOpen] = useState(false);
+
   return (
     <div className="app">
+      <ParticleBackground className='particles-js'></ParticleBackground>
       <Navbar aboutOpen={aboutOpen} setAboutOpen={setAboutOpen}/>
-      {(!aboutOpen ? <Sections/> : <About/>)}
+        {(!aboutOpen ? <Sections/> : <About/>)}
       <Footer/>
     </div>
   );
