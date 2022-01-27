@@ -1,6 +1,8 @@
 import './contact.scss';
 import shake from '../../images/assets/shake.svg';
 import {useState} from 'react';
+import faLinkedin from '@fortawesome/free-brands-svg-icons'
+
 
 export default function Contact() {
 
