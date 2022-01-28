@@ -19,51 +19,51 @@
     overflow: none;
   }
 
-  .container{
-    border-color: black;
-    border-radius: 30px;
-    background-color: white;
-    box-shadow: 3px 3px 15px gray;
-    align-items: center;
-    padding: 35px;
-    display: flex;
-    justify-content: center;
+  // .container{
+  //   border-color: black;
+  //   border-radius: 30px;
+  //   background-color: white;
+  //   box-shadow: 3px 3px 15px gray;
+  //   align-items: center;
+  //   padding: 35px;
+  //   display: flex;
+  //   justify-content: center;
 
-    @include mobile{
-      width: 80vw;
-    }
-  }
+  //   @include mobile{
+  //     width: 80vw;
+  //   }
+  // }
 
-  .links{
-    width: 75vw;
-    align-items: center;
-    align-content: center;
+  // .links{
+  //   width: 75vw;
+  //   align-items: center;
+  //   align-content: center;
 
-    .progress_bar__container{
-      width: 500px;
+  //   .progress_bar__container{
+  //     width: 500px;
 
-      .items{
-        padding-bottom: 100px;
-        margin: 30px;
-      }
-    }
-  }
+  //     .items{
+  //       padding-bottom: 100px;
+  //       margin: 30px;
+  //     }
+  //   }
+  // }
 
-  .other{
-    display: flex;
-    justify-content: space-between;
+  // .other{
+  //   display: flex;
+  //   justify-content: space-between;
 
-    & > * {
-      overflow-y: none;
-    }
+  //   & > * {
+  //     overflow-y: none;
+  //   }
 
-    .left{
-      padding: 10px;
-    }
+  //   .left{
+  //     padding: 10px;
+  //   }
 
-    .right{
-      padding: 10px;
-      align-items: center;
-    }
-  }
+  //   .right{
+  //     padding: 10px;
+  //     align-items: center;
+  //   }
+  // }
 }

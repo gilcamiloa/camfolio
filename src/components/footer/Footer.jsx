@@ -7,14 +7,14 @@ import { faFile, faMailBulk } from '@fortawesome/free-solid-svg-icons'
 export default function Footer() {
   return (
     <div className="footer">
-      <div className="container">
+      <div className="items">
         <div className="nav__dots first__current">
           <div id="dot1" className="dot"></div>
-          <div id="dotf2" className="dot"></div>
+          <div id="dot2" className="dot"></div>
           <div id="dot3" className="dot"></div>
           <div id="dot4" className="dot"></div>
         </div>
-        <div className='link-wrapper'>
+        <div className='link__wrapper'>
           <a href="https://www.linkedin.com/in/camilo-gil" target="_blank" rel="noreferrer" id='a-linkedin' data-tip data-for="linkedin">
             <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
             <ReactTooltip id="linkedin" place="top" effect="solid" backgroundColor='none' data-delay-show='700'>LinkedIn</ReactTooltip>
