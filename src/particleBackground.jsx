@@ -5,6 +5,7 @@ import Particles from "react-tsparticles";
 // import { useHref } from 'react-router';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import faLinkedin from '@fortawesome/free-brands-svg-icons'
+import icon1 from '../src/images/cam-icon.svg'
 
 export default function ParticlesBackground () {
   const particlesInit = (main) => {
@@ -52,7 +53,7 @@ export default function ParticlesBackground () {
               quantity: 4,
             },
             repulse: {
-              distance: 100,
+              distance: 80,
               duration: 0.6,
             },
           },
@@ -63,7 +64,7 @@ export default function ParticlesBackground () {
           },
           links: {
             color: "e7e7e752",
-            distance: 150,
+            distance: 10,
             enable: true,
             opacity: 0.5,
             width: 1,
@@ -74,15 +75,15 @@ export default function ParticlesBackground () {
           move: {
             direction: "none",
             enable: true,
-            outMode: "bounce",
+            outMode: "out",
             random: false,
-            speed: 1,
+            speed: 3,
             straight: false,
           },
           number: {
             density: {
               enable: true,
-              area: 800,
+              area: 600,
             },
             value: 100,
           },
@@ -90,12 +91,23 @@ export default function ParticlesBackground () {
             value: 0.5,
           },
           shape: {
-            type: "circle",
-            // type:  <faLinkedin></faLinkedin>,
+            type: "star",
+            // images: [
+            //   // {
+            //   //   src: "img/shapes/0.svg",
+            //   //   width: 100,
+            //   //   height: 100
+            //   // },
+            //   {
+            //     src: '../src/images/cam-icon.svg',
+            //     width: 10,
+            //     height: 10
+            //   }
+            // ]
           },
           size: {
             random: true,
-            value: 5,
+            value: 2,
           },
         },
         detectRetina: true,
