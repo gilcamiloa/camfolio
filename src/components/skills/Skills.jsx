@@ -1,33 +1,17 @@
 import './skills.scss'
-import TagCloud from 'TagCloud';
+// import MyCloud from '../../skillsTagcloud'
+import TagCloud from '../../skillsTagcloud.js'
 
 export default function Skills() {
-
-  const container = '.tagcloud';
-  const items = [
-    '3D', 'TagCloud', 'JavaScript',
-    'CSS3', 'Animation', 'Interactive',
-    'Mouse', 'Rolling', 'Sphere',
-    '6KB', 'v2.x',
-    ];
-  const options = {
-    radius: 230,
-    maxSpeed: 'normal',
-    initSpeed: 'fast',
-    direction: 135,
-    kept: true
-    };
-
-  const tagCloud = TagCloud(container, items, options);
-
 
     return (
       <div className="skills">
         <div className="title">
           <h1>SKILLS</h1>
         </div>
-        <div className="container">
-          <TagCloud tags={items} minSize={1} maxSize={5} renderer={tagCloud} />
+        <div>
+          {/* Insert function here */}
+          {TagCloud}
         </div>
     </div>
   )

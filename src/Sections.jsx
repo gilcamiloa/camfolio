@@ -5,7 +5,7 @@ import Projects from './components/projects/Projects'
 import Skills from './components/skills/Skills'
 import Contact from './components/contact/Contact'
 
-function Sections() {
+export default function Sections() {
   const [dotNav, setDotNav] = useState(false);
   // const imgContainer = document.querySelector('.sections')
   // const dotsContainer = document.querySelector('.nav__dots')
@@ -46,4 +46,3 @@ function Sections() {
     </div>
   );
 }
-export default Sections;

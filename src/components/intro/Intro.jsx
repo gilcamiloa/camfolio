@@ -29,7 +29,15 @@ export default function Intro() {
             <h2><Typed
                   typeSpeed={15}
                   backSpeed={25}
-                  strings={strings}/>
+                  strings={strings}
+              // onComplete: function (t) {
+              //   // existing text has now been removed so let's actually clear everything out
+              //   // and setup the proper Typed loop we want. If we don't do this, the original
+              //   // text content breaks the flow of the loop.
+              //   t.destroy();
+              // document.getElementsByClassName(typed_class)[0].textContent = '';
+              // new Typed('.' + typed_class, options);
+                  />
             </h2>
           </div>
         </div>

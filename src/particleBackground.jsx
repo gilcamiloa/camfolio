@@ -1,11 +1,9 @@
 import './global.scss'
 import React from 'react';
 import Particles from "react-tsparticles";
-// import particleConfig from './particleConfig';
-// import { useHref } from 'react-router';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import faLinkedin from '@fortawesome/free-brands-svg-icons'
-import icon1 from '../src/images/cam-icon.svg'
+// import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+// import faLinkedin from '@fortawesome/free-brands-svg-icons'
+// import icon1 from '../src/images/cam-icon.svg'
 
 export default function ParticlesBackground () {
   const particlesInit = (main) => {
@@ -22,7 +20,6 @@ export default function ParticlesBackground () {
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
-      // params={particleConfig}
       options={{
         background: {
           color: {
