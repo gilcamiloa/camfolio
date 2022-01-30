@@ -1,6 +1,5 @@
 import './skills.scss'
-// import MyCloud from '../../skillsTagcloud'
-import TagCloud from '../../skillsTagcloud.js'
+import Box from '../../jqueryCloud'
 
 export default function Skills() {
 
@@ -10,8 +9,7 @@ export default function Skills() {
           <h1>SKILLS</h1>
         </div>
         <div>
-          {/* Insert function here */}
-          {TagCloud}
+          {Box}
         </div>
     </div>
   )
