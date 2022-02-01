@@ -7,33 +7,6 @@ import Contact from './components/contact/Contact'
 
 export default function Sections() {
   const [dotNav, setDotNav] = useState(false);
-  // const imgContainer = document.querySelector('.sections')
-  // const dotsContainer = document.querySelector('.nav__dots')
-
-  // React.useEffect(() => {
-
-
-
-    // document.getElementById('.sectionsIntro').addEventListener("click", <Intro/>);
-    // document.getElementById('.sectionsProjects').addEventListener("click", <Projects/>);
-    // document.getElementById('.sectionsSkills').addEventListener("click", <Skills/>);
-    // document.getElementById('.sectionsContact').addEventListener("click", <Contact/>);
-    // window.addEventListener('click', (event) => {
-    //   window.getElementById('dot1')('click', (e) => {
-    //     imgContainer.className = 'sections first-active'
-    //     dotsContainer.className = 'nav__dots first-current'
-    //   })
-    //   document.getElementById('dot2').addEventListener('click', () => {
-    //     imgContainer.className = 'sections second-active'
-    //     dotsContainer.className = 'nav__dots second-current'
-    //   })
-    //   document.getElementById('dot3').addEventListener('click', () => {
-    //     imgContainer.className = 'sections third-active'
-    //     dotsContainer.className = 'nav__dots third-current'
-    //   })
-    // });
-
-
 
   return (
     <div className="sections">
