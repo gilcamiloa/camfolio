@@ -1,5 +1,4 @@
 import './skills.scss'
-// import React from "react";
 import allIcons from 'simple-icons';
 import { v4 } from "uuid";
 import { Cloud } from "react-icon-cloud";
@@ -34,12 +33,12 @@ export default function Skills() {
     // bgRadius: number
     // centreFunc: any
     // centreImage: any
-    // clickToFront: 100,
+    clickToFront: 0,
     // decel: number
-    depth: 0.5,
+    // depth: 0.5,
     // dragControl: boolean
     // dragThreshold: number
-    // fadeIn: number
+    // fadeIn: 100,
     // freezeActive: boolean
     // freezeDecel: boolean
     // frontSelect: boolean
@@ -51,7 +50,7 @@ export default function Skills() {
     // imageRadius: number | string
     imageScale: 4,
     // imageVAlign: 'top' | 'bottom' | 'middle'
-    initial: [0.1, -0.1],
+    initial: [0.5, -0.5],
     // interval: number
     // lock: null | 'x' | 'y' | 'xy'
     // maxBrightness: number
@@ -59,7 +58,7 @@ export default function Skills() {
     // minBrightness: number
     // minSpeed: number
     // minTags: 0 - 200
-    // noMouse: boolean
+    // noMouse: true,
     // noSelect: boolean
     // noTagsMessage: string
     // offsetX: number
@@ -76,9 +75,9 @@ export default function Skills() {
     pinchZoom: 0,
     // pulsateTime: number
     // pulstateTo: number
-    radiusX: 200,
-    radiusY: 200,
-    radiusZ: 200,
+    // radiusX: 200,
+    // radiusY: 200,
+    // radiusZ: 200,
     // repeatTagsTags: 0 - 64
     reverse: true,
     // scrollPause: boolean
@@ -88,8 +87,8 @@ export default function Skills() {
     // shape: 'sphere' | 'hcylinder' | 'vcylinder' | 'hring' | 'vring'
     // shuffleTags: boolean
     // splitWidth: number
-    // stretchX: number
-    // stretchY: number
+    stretchX: 10000,
+    stretchY: 10000,
     // textAlign: 'centre' | 'left' | 'right'
     // textColour: string
     // textFont: string
@@ -107,8 +106,8 @@ export default function Skills() {
     // weightSize: number
     // weightSizeMax: number | null
     // weightSizeMin: number | null
-    wheelZoom: false,
-    zoom: 0,
+    wheelZoom: true,
+    // zoom: 0,
     // zoomMax: number
     // zoomMin: number
     // zoomStep: number
@@ -160,7 +159,7 @@ export default function Skills() {
             key={v4()}
             id={"icon"}
             minContrastRatio={1}
-            iconSize={50}
+            iconSize={100}
             backgroundHexColor={"#fff"}
             fallbackHexColor={"#000"}
             tags={iconTags}
@@ -203,124 +202,10 @@ export default function Skills() {
                 <img src={git} height="100" width="100" alt="git"/>
               </a>
               <a href="#" title="PostgreSQL" rel="noopener">
-                <img src={PostgreSQL} height="100" width="100" alt="git"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={JS} height="100" width="100" alt="JS"/>
-              </a>
-              <a href="#" title="VSC" rel="noopener">
-                <img src={VSC} height="100" width="100" alt="Visual Studio Code"/>
-              </a>
-              <a href="#" rel="noopener">
-                <img src={Java} height="100" width="100" alt="Java"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={HTML5} height="100" width="100" alt="HTML5"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={CSS3} height="100" width="100" alt="CSS3"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={React} height="100" width="100" alt="Rails"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={Rails} height="100" width="100" alt="Rails"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={Heroku} height="100" width="100" alt="Visual Studio Code"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={MSOffice} height="100" width="100" alt="Visual Studio Code"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={NPM} height="100" width="100" alt="Visual Studio Code"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={Bootstrap} height="100" width="100" alt="Visual Studio Code"/>
-              </a>
-              <a href="#" title="git" rel="noopener">
-                <img src={git} height="100" width="100" alt="git"/>
+                <img src={PostgreSQL} height="100" width="100" alt="PostgreSQL"/>
               </a>
               <a href="#" title="PostgreSQL" rel="noopener">
-                <img src={PostgreSQL} height="100" width="100" alt="git"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={JS} height="100" width="100" alt="JS"/>
-              </a>
-              <a href="#" title="VSC" rel="noopener">
-                <img src={VSC} height="100" width="100" alt="Visual Studio Code"/>
-              </a>
-              <a href="#" rel="noopener">
-                <img src={Java} height="100" width="100" alt="Java"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={HTML5} height="100" width="100" alt="HTML5"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={CSS3} height="100" width="100" alt="CSS3"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={React} height="100" width="100" alt="Rails"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={Rails} height="100" width="100" alt="Rails"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={Heroku} height="100" width="100" alt="Visual Studio Code"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={MSOffice} height="100" width="100" alt="Visual Studio Code"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={NPM} height="100" width="100" alt="Visual Studio Code"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={Bootstrap} height="100" width="100" alt="Visual Studio Code"/>
-              </a>
-              <a href="#" title="git" rel="noopener">
-                <img src={git} height="100" width="100" alt="git"/>
-              </a>
-              <a href="#" title="PostgreSQL" rel="noopener">
-                <img src={PostgreSQL} height="100" width="100" alt="git"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={JS} height="100" width="100" alt="JS"/>
-              </a>
-              <a href="#" title="VSC" rel="noopener">
-                <img src={VSC} height="100" width="100" alt="Visual Studio Code"/>
-              </a>
-              <a href="#" rel="noopener">
-                <img src={Java} height="100" width="100" alt="Java"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={HTML5} height="100" width="100" alt="HTML5"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={CSS3} height="100" width="100" alt="CSS3"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={React} height="100" width="100" alt="Rails"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={Rails} height="100" width="100" alt="Rails"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={Heroku} height="100" width="100" alt="Visual Studio Code"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={MSOffice} height="100" width="100" alt="Visual Studio Code"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={NPM} height="100" width="100" alt="Visual Studio Code"/>
-              </a>
-              <a href="#" title="JS" rel="noopener">
-                <img src={Bootstrap} height="100" width="100" alt="Visual Studio Code"/>
-              </a>
-              <a href="#" title="git" rel="noopener">
-                <img src={git} height="100" width="100" alt="git"/>
-              </a>
-              <a href="#" title="PostgreSQL" rel="noopener">
-                <img src={PostgreSQL} height="100" width="100" alt="git"/>
+                <span>SQL</span>
               </a>
             </Cloud>
         </div>
