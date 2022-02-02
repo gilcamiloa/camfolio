@@ -13,11 +13,252 @@
     & > * {
       overflow-y: none;
     }
-
   .title h1{
     text-align: center;
     overflow: none;
   }
+
+  .skills-content h3 {
+  // font-family: $poppins;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 108px;
+  // display: flex;
+  // align-items: center;
+  color: #454545;
+  }
+
+  .section-four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: #1b1b1b;
+    margin-top: 10vh;
+    margin: 30vh auto;
+  }
+
+  .skills-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s all linear;
+  }
+
+  .skills-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -0.7rem;
+  }
+
+  .skills-content h3 {
+    transition: 0.5s all ease-in-out;
+    &:hover {
+      color: white;
+      transition: 0.5s all ease-in-out;
+      cursor: pointer;
+    }
+  }
+
+  .appear-header {
+    opacity: 1 !important;
+    transform: translateY(0px) !important;
+    transition: 1s all ease-in-out !important;
+  }
+
+  @media (max-width: 1170px) {
+    .skills-content h3 {
+      font-size: 64px;
+    }
+    .skill {
+      margin-top: -1.7rem;
+    }
+    .section-four svg {
+      // margin-bottom: 1.5rem;
+    }
+  }
+
+  @media (max-width: 1054px) {
+    .skills-content h3 {
+      font-size: 55px;
+    }
+    #skills-one {
+      margin-top: 0;
+    }
+    .skill {
+      margin-top: -2.5rem;
+    }
+
+    .skill-modal {
+      h4 {
+        font-size: 5rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+
+    .skill-layout {
+      padding: 50px 39px;
+    }
+  }
+
+  @media (max-width: 934px) {
+    .skills-content h3 {
+      font-size: 48px;
+    }
+    .skill {
+      margin-top: -3rem;
+    }
+    .section-four {
+      margin-bottom: 10vh;
+    }
+    .skills-header svg {
+      width: 736px;
+    }
+    .skill-modal {
+      h4 {
+        font-size: 5rem;
+      }
+      svg {
+        margin-right: 25px;
+      }
+    }
+  }
+
+  @media (max-width: 820px) {
+    .skills-content h3 {
+      font-size: 39px;
+    }
+    .skill {
+      margin-top: -4rem;
+    }
+    .skills-header svg {
+      width: 600px;
+    }
+    .section-four {
+      margin-bottom: 5vh;
+    }
+  }
+
+  @media (max-width: 675px) {
+    .skills-content h3 {
+      font-size: 33px;
+    }
+    .skill {
+      margin-top: -4.7rem;
+    }
+    .section-four {
+      margin-bottom: 0;
+      margin-top: 8vh;
+    }
+    .skills-header svg {
+      width: 600px;
+    }
+    .section-four {
+      margin-bottom: 5vh;
+    }
+
+    .skill-modal h4 {
+      font-size: 3.3rem;
+    }
+    .skill-modal p {
+      font-size: 1.2rem;
+    }
+    .exit svg {
+      width: 43px;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .skills-content h3 {
+      font-size: 27px;
+    }
+    .skill {
+      margin-top: -5.5rem;
+    }
+    .section-four {
+      margin-bottom: 0;
+    }
+    .skills-header svg {
+      width: 350px;
+      margin-bottom: 0;
+    }
+
+    .skill-modal p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .skills-content h3 {
+      font-size: 22px;
+    }
+    .skill {
+      margin-top: -5rem;
+    }
+    .section-four {
+      margin-top: 10vh;
+      margin-bottom: 0;
+    }
+
+    .skills-header svg {
+      width: 350px;
+    }
+
+    .skill-modal h4 {
+      font-size: 2.5rem;
+    }
+    .exit svg {
+      width: 32px;
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .skills-content h3 {
+      font-size: 44px;
+      margin-bottom: -55px;
+    }
+    .ruby-rails {
+      font-size: 40px !important;
+    }
+    .skill {
+      margin-top: -5rem;
+      flex-direction: column;
+      margin-bottom: 80px;
+      align-items: flex-start;
+    }
+
+    .skills-header {
+      margin-right: 121px;
+      margin-bottom: -45px;
+    }
+    .skill-layout {
+      justify-content: flex-start;
+    }
+    .skill-modal h4 {
+      font-size: 2rem;
+    }
+  }
+}
+
+
 
   // .container{
   //   border-color: black;
@@ -66,4 +307,3 @@
   //     align-items: center;
   //   }
   // }
-}

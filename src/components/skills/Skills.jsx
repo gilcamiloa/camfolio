@@ -1,19 +1,28 @@
 import './skills.scss'
-import Box from '../../jqueryCloud'
+// import MyCloud from '../../react-tag-cloud'
+import Componente from '../../reactIconCloud.js'
+// import {tagCloud} from '../../reactTagCloud'
 
 export default function Skills() {
-
     return (
       <div className="skills">
         <div className="title">
           <h1>SKILLS</h1>
         </div>
         <div>
-          {Box}
+          {/* <tagCloud/> */}
+        <Componente/>
         </div>
     </div>
   )
 }
+
+
+
+
+
+
+
 
 
 
@@ -33,8 +42,8 @@ export default function Skills() {
 // import { faDatabase, faGem } from '@fortawesome/free-solid-svg-icons'
 // import { ProgressBar } from 'react-bootstrap'
 
-{/* // <div className="links"> */}
-{/* {/* <div id="progress_bar__container" className='items'>
+/* // <div className="links"> */
+/* {/* <div id="progress_bar__container" className='items'>
   <span>HTML&ensp;<FontAwesomeIcon icon={faHtml5}></FontAwesomeIcon></span>
   <ProgressBar now="90" visuallyHidden variant="warning" />
   <span>CSS&ensp;<FontAwesomeIcon icon={faCss3Alt}></FontAwesomeIcon></span>
@@ -63,6 +72,6 @@ export default function Skills() {
       <h5>Spanish (fluent)</h5>
       <h5>Portuguese (basic)</h5>
     </div>
-  </div> */}
-{/* </div>
-</div> */}
+  </div> */
+/* </div>
+</div> */

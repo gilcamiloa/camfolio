@@ -5,9 +5,10 @@ import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion';
 export default function About() {
   return (
     <AnimatePresence>
-      <motion.div initial={{opacity: 0}}
-                  animate={{opacity: 2}}
-                  exit={{opacity: 2}}
+      <motion.div initial={{opacity: 0.5}}
+                  transition={{ duration: 0.5 }}
+                  animate={{opacity: 1}}
+                  exit={{opacity: 0}}
                   className="about">
         <div className="aboutContainer">
           <div className="container">
@@ -20,7 +21,6 @@ export default function About() {
               <h1><u>I'M A FULL STACK ENGINEER CURRENTLY BASED IN BROOKLYN..</u></h1>
               <br />
               <p>My interests include construction technology suited to create large infrastructure applications. I studied full stack development in Le Wagon London and hold a Bachelor's of Science in Civil Engineering from the University of Central Florida. Currently creating projects via react.js and Ruby on Rails as well as learning Java and Python. In my free time, I am a voracious reader and an aspiring explorer of NYC museums.</p>
-              {/* <br /> */}
               <p>Feel free to reach out for any coding needs or collabs. 🤙🏽</p>
             </div>
           </div>
