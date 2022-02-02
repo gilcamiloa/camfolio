@@ -1,6 +1,6 @@
 import './intro.scss'
 import Typed from 'react-typed'
-import { useState, useEffect } from 'react-dom'
+// import { useState, useEffect } from 'react-dom'
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion';
 
 export default function Intro() {
@@ -14,9 +14,10 @@ export default function Intro() {
 
   return (
     <AnimatePresence>
-      <motion.div initial={{opacity: 2}}
-              animate={{opacity: 2}}
-              exit={{opacity: 2}}
+      <motion.div initial={{opacity: 0}}
+                  transition={{ duration: 0.5}}
+                  animate={{opacity: 1}}
+                  exit={{opacity: 0}}
               className='intro' id="intro">
         <div className="IntroContainer">
           <div className="justify-content-left">
@@ -27,9 +28,13 @@ export default function Intro() {
           <br />
           <div className="typed-text">
             <h2><Typed
-                  typeSpeed={15}
+                  typeSpeed={35}
                   backSpeed={25}
                   strings={strings}
+                  loop='true'
+                  // count={count}
+                  // setCount={setCount}
+
               // onComplete: function (t) {
               //   // existing text has now been removed so let's actually clear everything out
               //   // and setup the proper Typed loop we want. If we don't do this, the original

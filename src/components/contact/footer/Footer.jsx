@@ -1,11 +1,13 @@
 import './footer.scss'
+// import {useState} from 'react'
 import ReactTooltip from 'react-tooltip'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faFile, faMailBulk } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
-  return (
+
+  return(
     <div className="footer">
       <div className="items">
         <div className="nav__dots first__current">
