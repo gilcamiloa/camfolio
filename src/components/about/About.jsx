@@ -1,12 +1,12 @@
 import './about.scss'
-import cam from '../../images/cam-linkedin-nobg.png';
+import cam from '../../images/cam-images/cam-linkedin-nobg.png';
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion';
 
 export default function About() {
   return (
     <AnimatePresence>
       <motion.div initial={{opacity: 0.5}}
-                  transition={{ duration: 0.5 }}
+                  transition={{ duration: 1 }}
                   animate={{opacity: 1}}
                   exit={{opacity: 0}}
                   className="about">

@@ -7,8 +7,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // align-items: center;
+  align-items: center;
   overflow: hidden;
+
+  .title{
+    align-items: center;
+  }
 
   .contactContainer {
     top: 12.5%;

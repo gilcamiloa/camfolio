@@ -15,7 +15,7 @@ export default function Intro() {
   return (
     <AnimatePresence>
       <motion.div initial={{opacity: 0}}
-                  transition={{ duration: 0.5}}
+                  transition={{ duration: 1}}
                   animate={{opacity: 1}}
                   exit={{opacity: 0}}
               className='intro' id="intro">
@@ -28,8 +28,8 @@ export default function Intro() {
           <br />
           <div className="typed-text">
             <h2><Typed
-                  typeSpeed={35}
-                  backSpeed={25}
+                  typeSpeed={30}
+                  backSpeed={20}
                   strings={strings}
                   loop='true'
                   // count={count}
