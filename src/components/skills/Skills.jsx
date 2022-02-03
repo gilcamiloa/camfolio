@@ -1,5 +1,5 @@
 import './skills.scss'
-import allIcons from 'simple-icons';
+// import allIcons from 'simple-icons';
 import { v4 } from "uuid";
 import { Cloud } from "react-icon-cloud";
 import JS from '../../images/assets/js-logo.png'
@@ -15,10 +15,12 @@ import NPM from '../../images/assets/npm-logo.png'
 import Bootstrap from '../../images/assets/bootstrap-logo.png'
 import git from '../../images/assets/git-logo.png'
 import PostgreSQL from '../../images/assets/postgresql-logo.png'
+import SQL from '../../images/assets/sql-logo.png'
+import Github from '../../images/assets/github-logo.png'
 
 export default function Skills() {
 
-  const tagCanvasOptions = {
+  const options = {
     // activateAudio: string
     // activeCursor: string
     // altImage: boolean
@@ -33,12 +35,12 @@ export default function Skills() {
     // bgRadius: number
     // centreFunc: any
     // centreImage: any
-    clickToFront: 0,
+    clickToFront: 400,
     // decel: number
-    // depth: 0.5,
+    depth: 1,
     // dragControl: boolean
     // dragThreshold: number
-    // fadeIn: 100,
+    // fadeIn: number
     // freezeActive: boolean
     // freezeDecel: boolean
     // frontSelect: boolean
@@ -48,22 +50,22 @@ export default function Skills() {
     // imagePadding: number
     // imagePosition: 'top' | 'bottom' | 'left' | 'right'
     // imageRadius: number | string
-    imageScale: 4,
+    imageScale: 1,
     // imageVAlign: 'top' | 'bottom' | 'middle'
-    initial: [0.5, -0.5],
+    initial: [0.1, -0.1],
     // interval: number
     // lock: null | 'x' | 'y' | 'xy'
     // maxBrightness: number
     // maxSpeed: number
     // minBrightness: number
-    // minSpeed: number
+    minSpeed: 500,
     // minTags: 0 - 200
-    // noMouse: true,
+    // noMouse: boolean
     // noSelect: boolean
     // noTagsMessage: string
     // offsetX: number
     // offsetY: number
-    outlineColour: '#0000',
+    outlineColour: "#0000",
     // outlineDash: number
     // outlineDashSpace: number
     // outlineIncrease: number
@@ -72,14 +74,14 @@ export default function Skills() {
     // outlineRadius: number
     // outlineThickness: number
     // padding: number
-    pinchZoom: 0,
+    // pinchZoom: boolean
     // pulsateTime: number
     // pulstateTo: number
-    // radiusX: 200,
-    // radiusY: 200,
-    // radiusZ: 200,
+    // radiusX: number
+    // radiusY: number
+    // radiusZ: number
     // repeatTagsTags: 0 - 64
-    reverse: true,
+    reverse: false,
     // scrollPause: boolean
     // shadow: string
     // shadowBlur: number
@@ -87,14 +89,14 @@ export default function Skills() {
     // shape: 'sphere' | 'hcylinder' | 'vcylinder' | 'hring' | 'vring'
     // shuffleTags: boolean
     // splitWidth: number
-    stretchX: 10000,
-    stretchY: 10000,
+    // stretchX: number
+    // stretchY: number
     // textAlign: 'centre' | 'left' | 'right'
     // textColour: string
     // textFont: string
     // textHeight: number
     // textVAlign: 'top' | 'bottom' | 'middle'
-    tooltip: 'native', // null | 'div'
+    tooltip: "native", // null | 'div'
     // tooltipClass: string
     tooltipDelay: 0,
     // txtOpt: boolean
@@ -106,47 +108,47 @@ export default function Skills() {
     // weightSize: number
     // weightSizeMax: number | null
     // weightSizeMin: number | null
-    wheelZoom: true,
-    // zoom: 0,
+    wheelZoom: false
+    // zoom: number
     // zoomMax: number
     // zoomMin: number
     // zoomStep: number
   }
-  const iconSlugs = [
-    "JS",
-    "dart",
-    "java",
-    "react",
-    "flutter",
-    "android",
-    "html5",
-    "css3",
-    "nodedotjs",
-    "express",
-    "nextdotjs",
-    "prisma",
-    "amazonaws",
-    "postgresql",
-    "firebase",
-    "nginx",
-    "vercel",
-    "testinglibrary",
-    "jest",
-    "cypress",
-    "docker",
-    "git",
-    "jira",
-    "github",
-    "gitlab",
-    "visualstudiocode",
-    "androidstudio",
-    "sonarqube",
-    "figma"
-  ];
-  const iconTags = iconSlugs.map((slug) => ({
-    id: slug,
-    simpleIcon: allIcons.Get(slug)
-  }));
+  // const iconSlugs = [
+  //   "JS",
+  //   "dart",
+  //   "java",
+  //   "react",
+  //   "flutter",
+  //   "android",
+  //   "html5",
+  //   "css3",
+  //   "nodedotjs",
+  //   "express",
+  //   "nextdotjs",
+  //   "prisma",
+  //   "amazonaws",
+  //   "postgresql",
+  //   "firebase",
+  //   "nginx",
+  //   "vercel",
+  //   "testinglibrary",
+  //   "jest",
+  //   "cypress",
+  //   "docker",
+  //   "git",
+  //   "jira",
+  //   "github",
+  //   "gitlab",
+  //   "visualstudiocode",
+  //   "androidstudio",
+  //   "sonarqube",
+  //   "figma"
+  // ];
+  // const iconTags = iconSlugs.map((slug) => ({
+  //   id: slug,
+  //   simpleIcon: allIcons.Get(slug)
+  // }));
 
 
   return (
@@ -154,7 +156,7 @@ export default function Skills() {
         <div className="title">
           <h1>SKILLS</h1>
         </div>
-        <div>
+        <div id='icon-cloud'>
           <Cloud
             key={v4()}
             id={"icon"}
@@ -162,8 +164,8 @@ export default function Skills() {
             iconSize={100}
             backgroundHexColor={"#fff"}
             fallbackHexColor={"#000"}
-            tags={iconTags}
-            tagCanvasOptions={tagCanvasOptions}
+            options={options}
+            wheelZoom={false}
             >
               <a href="#" title="JS" rel="noopener">
                 <img src={JS} height="100" width="100" alt="JS"/>
@@ -204,70 +206,14 @@ export default function Skills() {
               <a href="#" title="PostgreSQL" rel="noopener">
                 <img src={PostgreSQL} height="100" width="100" alt="PostgreSQL"/>
               </a>
-              <a href="#" title="PostgreSQL" rel="noopener">
-                <span>SQL</span>
+              <a href="#" title="SQL" rel="noopener">
+                <img src={SQL} height="100" width="100" alt="PostgreSQL" />
+              </a>
+              <a href="#" title="Github" rel="noopener">
+                <img src={Github} height="100" width="100" alt="PostgreSQL" />
               </a>
             </Cloud>
         </div>
     </div>
   )
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Progress bar container code..
-
-// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-// import {  faJsSquare,
-//           faCss3Alt,
-//           faHtml5,
-//           faReact,
-//           faPython
-//          } from '@fortawesome/free-brands-svg-icons'
-// import { faDatabase, faGem } from '@fortawesome/free-solid-svg-icons'
-// import { ProgressBar } from 'react-bootstrap'
-
-/* // <div className="links"> */
-/* {/* <div id="progress_bar__container" className='items'>
-  <span>HTML&ensp;<FontAwesomeIcon icon={faHtml5}></FontAwesomeIcon></span>
-  <ProgressBar now="90" visuallyHidden variant="warning" />
-  <span>CSS&ensp;<FontAwesomeIcon icon={faCss3Alt}></FontAwesomeIcon></span>
-  <ProgressBar now="85" visuallyHidden variant="success" />
-  <span>JavaScript&ensp;<FontAwesomeIcon icon={faJsSquare}></FontAwesomeIcon></span>
-  <ProgressBar now="75" visuallyHidden variant="info" />
-  <span>React.js&ensp;<FontAwesomeIcon icon={faReact}></FontAwesomeIcon></span>
-  <ProgressBar now="75" visuallyHidden variant="info" />
-  <span>Python&ensp;<FontAwesomeIcon icon={faPython}></FontAwesomeIcon></span>
-  <ProgressBar now="30" visuallyHidden variant="success" />
-  <span>Ruby on Rails&ensp;<FontAwesomeIcon icon={faGem}></FontAwesomeIcon></span>
-  <ProgressBar now="85" visuallyHidden variant="danger" />
-  <span>SQL&ensp;<FontAwesomeIcon icon={faDatabase}></FontAwesomeIcon></span>
-  <ProgressBar now="70" visuallyHidden />
-  <div className="other">
-    <div className="left">
-      <h2>Other Skills</h2>
-      <h5>Heroku</h5>
-      <h5>PostgreSQL</h5>
-      <h5>Bootstrap</h5>
-      <h5>UI/UX</h5>
-    </div>
-    <div className="right">
-      <h2>Spoken Languages</h2>
-      <h5>English (fluent)</h5>
-      <h5>Spanish (fluent)</h5>
-      <h5>Portuguese (basic)</h5>
-    </div>
-  </div> */
-/* </div>
-</div> */

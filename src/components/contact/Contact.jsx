@@ -1,7 +1,7 @@
 import './contact.scss';
-import shake from '../../images/assets/shake.svg';
+import HTMLBanner from '../../images/assets/html-banner.png';
 import {useState} from 'react';
-import faLinkedin from '@fortawesome/free-brands-svg-icons'
+// import faLinkedin from '@fortawesome/free-brands-svg-icons'
 
 
 export default function Contact() {
@@ -19,7 +19,7 @@ export default function Contact() {
         </div>
       <div className="contactContainer">
         <div className="container">
-          <div className="left"><img src={shake} alt=""/></div>
+          <div className="left"><img src={HTMLBanner} alt=""/></div>
           <div className="right">
             <h4>Feel free to reach out to me for any coding needs or collaborations.</h4>
             <form onSubmit={handleSubmit}>
