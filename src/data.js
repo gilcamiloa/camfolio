@@ -1,5 +1,3 @@
-import greenroomIntro from './images/data-images/greenroom-intro.png'
-
 export const products = [
   {
     id: 1,
