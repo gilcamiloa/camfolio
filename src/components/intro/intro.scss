@@ -12,12 +12,15 @@
   scroll-snap-align: start;
   scroll-behavior: smooth;
 
+  .introContainer{
+    background-image: url('https://res.cloudinary.com/cgilv6/image/upload/v1643950289/camfolio/intro-banner-colorado_mdrvr6.jpg');
 
-  h1{
-    overflow: hidden;
-  }
+    h1{
+      overflow: hidden;
+    }
 
-  h2{
-    overflow: hidden;
+    h2{
+      overflow: hidden;
+    }
   }
 }

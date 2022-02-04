@@ -19,7 +19,7 @@ export default function Intro() {
                   animate={{opacity: 1}}
                   exit={{opacity: 0}}
               className='intro' id="intro">
-        <div className="IntroContainer">
+        <div className="introContainer">
           <div className="justify-content-left">
             <h1>HELLO</h1>
             <br />
