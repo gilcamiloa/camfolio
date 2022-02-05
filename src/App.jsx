@@ -1,12 +1,10 @@
 import './app.scss'
 import { useState } from 'react';
+import ParticleBackground from '../src/particleBackground'
 import About from './components/about/About'
 import Navbar from './components/navbar/Navbar'
 import Sections from './Sections'
 import Footer from './components/footer/Footer'
-import ParticleBackground from '../src/particleBackground'
-
-
 
 
 function App() {

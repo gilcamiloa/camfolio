@@ -4,8 +4,9 @@
   background-color: $maincolor;
   height: 100vh;
   width: 100vw;
+  flex: none;
   display: flex;
-  // flex-direction: column;
+  scroll-snap-align: start;
   justify-content: center;
   align-items: center;
   position: relative;
