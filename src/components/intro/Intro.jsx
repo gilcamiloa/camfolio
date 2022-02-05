@@ -1,6 +1,6 @@
 import './intro.scss'
 import Typed from 'react-typed'
-// import { useState, useEffect } from 'react-dom'
+import cam from '../../images/cam-images/cam-linkedin-nobg.png'
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion';
 
 export default function Intro() {
@@ -20,30 +20,23 @@ export default function Intro() {
                   exit={{opacity: 0}}
               className='intro' id="intro">
         <div className="introContainer">
-          <div className="justify-content-left">
+          <div className="left justify-content-left">
             <h1>HELLO</h1>
             <br />
-            <h1>My name is Camilo André Gil Velasquez Carvajal Mendoza..</h1>
-          </div>
+            <h1>My name is Camilo</h1>
+            <h1>but you can call me Cam..</h1>
           <br />
           <div className="typed-text">
             <h2><Typed
                   typeSpeed={30}
                   backSpeed={20}
                   strings={strings}
-                  loop='true'
-                  // count={count}
-                  // setCount={setCount}
-
-              // onComplete: function (t) {
-              //   // existing text has now been removed so let's actually clear everything out
-              //   // and setup the proper Typed loop we want. If we don't do this, the original
-              //   // text content breaks the flow of the loop.
-              //   t.destroy();
-              // document.getElementsByClassName(typed_class)[0].textContent = '';
-              // new Typed('.' + typed_class, options);
-                  />
-            </h2>
+                  loop='true'/>
+              </h2>
+          </div>
+          </div>
+          <div className="right">
+            <img src={cam} alt="" />
           </div>
         </div>
       </motion.div>

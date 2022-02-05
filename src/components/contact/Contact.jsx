@@ -14,15 +14,15 @@ export default function Contact() {
 
   return (
     <div className="contact" >
-        <div className="title">
-          <h1>CONTACT</h1>
-        </div>
       <div className="contactContainer">
-        <div className="container">
-          <div className="left"><img src={HTMLBanner} alt=""/></div>
+        <div className="left">
+          <h4>Let's connect!</h4>
+          <img src={HTMLBanner} alt=""/>
+        </div>
+        {/* <div className="container"> */}
           <div className="right">
-            <h4>Feel free to reach out to me for any coding needs or collaborations.</h4>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className='form'>
+            <span><input type="text" placeholder="First name" /><input type="text" placeholder="Last Name" /></span>
               <input type="text" placeholder="Email" />
               <textarea placeholder="Message"></textarea>
               <button type="submit">Send</button>
@@ -31,6 +31,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    // </div>
   )
 }
