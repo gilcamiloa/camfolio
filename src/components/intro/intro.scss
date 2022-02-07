@@ -1,6 +1,9 @@
 @import '../../global.scss';
 
 .intro {
+  background-image: url('https://res.cloudinary.com/cgilv6/image/upload/v1644181827/camfolio/joshua-sky-nobg_xk4gln.png');
+  background-size: 100vw;
+  height: 100vh;
   background-color: $maincolor;
   height: 100vh;
   width: 100vw;
@@ -11,10 +14,14 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  // scroll-behavior: ;
+
+  @include mobile {
+    background-size: cover;
+    background-position: center;
+  }
 
   .introContainer{
-    flex-direction: row;
+    display: flex;
     .left{
       h1{
         overflow: hidden;

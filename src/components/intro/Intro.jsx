@@ -1,6 +1,6 @@
 import './intro.scss'
 import Typed from 'react-typed'
-import cam from '../../images/cam-images/cam-linkedin-nobg.png'
+import cam from '../../images/cam-images/cam-airjoshuaa-removebg.png'
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion';
 
 export default function Intro() {
@@ -18,26 +18,29 @@ export default function Intro() {
                   transition={{ duration: 1}}
                   animate={{opacity: 1}}
                   exit={{opacity: 0}}
-              className='intro' id="intro">
+        className='intro' id="intro">
         <div className="introContainer">
           <div className="left justify-content-left">
             <h1>HELLO</h1>
             <br />
-            <h1>My name is Camilo</h1>
-            <h1>but you can call me Cam..</h1>
-          <br />
-          <div className="typed-text">
-            <h2><Typed
-                  typeSpeed={30}
-                  backSpeed={20}
-                  strings={strings}
-                  loop='true'/>
-              </h2>
+            <h1>My name's Camilo..</h1>
+            <h1>but you can call me Cam</h1>
+            <br />
+            <div className="typed-text">
+              <h2><Typed
+                    typeSpeed={30}
+                    backSpeed={20}
+                    strings={strings}
+                    loop='true'/>
+                </h2>
+            </div>
           </div>
-          </div>
-          <div className="right">
+          <motion.div initial={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}className="right">
             <img src={cam} alt="" />
-          </div>
+          </motion.div>
         </div>
       </motion.div>
     </AnimatePresence>
