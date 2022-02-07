@@ -71,6 +71,7 @@
           height: auto;
           object-position: right;
           border-radius: 35%;
+          // transform: scaleX(-1); Flip image
 
           @include mobile {
             border-radius: 20px;

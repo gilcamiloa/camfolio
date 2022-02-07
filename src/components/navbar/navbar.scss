@@ -23,48 +23,20 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
+
     @include mobile {
       max-height: 12.5vh;
     }
 
     .left {
       pointer-events:fill;
-      display: flex;
-      align-items: center;
-
 
       .logo {
         width: 100%;
         height: auto;
         max-width: 120px;
-        font-size: 40px;
-        text-decoration:none;
-        fill: white;
-        filter: invert(1%);
-        color: blanchedalmond;
-        // background-color:rgba(93, 133, 33, 1.1);
-        // margin-right: 40px;
-
-        // .logo:hover {
-        //   display: none;
-        //   content: "Reply!";
-        // }
-      }
-
-      .itemContainer {
-        display: flex;
-        align-items: center;
-        margin-left: 30px;
-      }
-
-      .icon {
-        font-size: 18px;
-        margin-right: 5px;
-      }
-
-      span {
-        font-size: 15px;
-        font-weight: 700;
+        opacity: 1;
+        // background-color: black;
       }
     }
 
@@ -73,9 +45,10 @@
       padding-right: 30px;
       transform-origin: left;
       transition: all 2s ease;
+      font-weight: bold;
 
       .active{
-        color:grey;
+        color:black;
         transition-duration: 3s;
       }
     }

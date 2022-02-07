@@ -1,6 +1,7 @@
 import './global.scss'
 import React from 'react';
 import Particles from "react-tsparticles";
+import camIcon from '../src/images/cam-images/cam-icon.svg'
 // import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 // import faLinkedin from '@fortawesome/free-brands-svg-icons'
 // import icon1 from '../src/images/cam-icon.svg'
@@ -89,18 +90,18 @@ export default function ParticlesBackground () {
           },
           shape: {
             type: "star",
-            // images: [
-            //   // {
-            //   //   src: "img/shapes/0.svg",
-            //   //   width: 100,
-            //   //   height: 100
-            //   // },
-            //   {
-            //     src: '../src/images/cam-icon.svg',
-            //     width: 10,
-            //     height: 10
-            //   }
-            // ]
+            images: [
+              // {
+              //   src: "img/shapes/0.svg",
+              //   width: 100,
+              //   height: 100
+              // },
+              {
+                src:{camIcon},
+                width: 10,
+                height: 10
+              }
+            ]
           },
           size: {
             random: true,

@@ -80,7 +80,7 @@
 // import "./productList.css";
 import "./projects.scss";
 import Product from "./Product";
-import { products } from "../../data";
+import { products } from "./productData";
 
 const ProductList = () => {
   return (
@@ -88,11 +88,9 @@ const ProductList = () => {
     <div className='projectsContainer'>
     <div className="pl">
       <div className="pl-texts">
-        <h1 className="pl-title title">Create & inspire. It's Lama</h1>
+        <h1 className="pl-title title">Projects</h1>
         <p className="pl-desc">
-          Lama is a creative portfolio that your work has been waiting for.
-          Beautiful homes, stunning portfolio styles & a whole lot more awaits
-          inside.
+          Here are some of the projects I have been able to create and collaborate on so far..
         </p>
       </div>
       <div className="pl-list">

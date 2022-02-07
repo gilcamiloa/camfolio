@@ -154,7 +154,7 @@ export default function Skills() {
   return (
     <div className="skills">
         <div className="title">
-          <h1>SKILLS</h1>
+          <h1>Skills</h1>
         </div>
         <div id='icon-cloud'>
           <Cloud
@@ -167,49 +167,49 @@ export default function Skills() {
             options={options}
             wheelZoom={false}
             >
-              <a href="#" title="JS" rel="noopener">
+              <a href=" " title="JS" rel="noopener">
                 <img src={JS} height="100" width="100" alt="JS"/>
               </a>
-              <a href="#" title="VSC" rel="noopener">
+              <a href=" " title="VSC" rel="noopener">
                 <img src={VSC} height="100" width="100" alt="Visual Studio Code"/>
               </a>
-              <a href="#" rel="noopener">
+              <a href=" " rel="noopener">
                 <img src={Java} height="100" width="100" alt="Java"/>
               </a>
-              <a href="#" title="JS" rel="noopener">
+              <a href=" " title="JS" rel="noopener">
                 <img src={HTML5} height="100" width="100" alt="HTML5"/>
               </a>
-              <a href="#" title="JS" rel="noopener">
+              <a href=" " title="JS" rel="noopener">
                 <img src={CSS3} height="100" width="100" alt="CSS3"/>
               </a>
-              <a href="#" title="JS" rel="noopener">
+              <a href=" " title="JS" rel="noopener">
                 <img src={React} height="100" width="100" alt="Rails"/>
               </a>
-              <a href="#" title="JS" rel="noopener">
+              <a href=" " title="JS" rel="noopener">
                 <img src={Rails} height="100" width="100" alt="Rails"/>
               </a>
-              <a href="#" title="JS" rel="noopener">
+              <a href=" " title="JS" rel="noopener">
                 <img src={Heroku} height="100" width="100" alt="Visual Studio Code"/>
               </a>
-              <a href="#" title="JS" rel="noopener">
+              <a href=" " title="JS" rel="noopener">
                 <img src={MSOffice} height="100" width="100" alt="Visual Studio Code"/>
               </a>
-              <a href="#" title="JS" rel="noopener">
+              <a href=" " title="JS" rel="noopener">
                 <img src={NPM} height="100" width="100" alt="Visual Studio Code"/>
               </a>
-              <a href="#" title="JS" rel="noopener">
+              <a href=" " title="JS" rel="noopener">
                 <img src={Bootstrap} height="100" width="100" alt="Visual Studio Code"/>
               </a>
-              <a href="#" title="git" rel="noopener">
+              <a href=" " title="git" rel="noopener">
                 <img src={git} height="100" width="100" alt="git"/>
               </a>
-              <a href="#" title="PostgreSQL" rel="noopener">
+              <a href=" " title="PostgreSQL" rel="noopener">
                 <img src={PostgreSQL} height="100" width="100" alt="PostgreSQL"/>
               </a>
-              <a href="#" title="SQL" rel="noopener">
+              <a href=" " title="SQL" rel="noopener">
                 <img src={SQL} height="100" width="100" alt="PostgreSQL" />
               </a>
-              <a href="#" title="Github" rel="noopener">
+              <a href=" " title="Github" rel="noopener">
                 <img src={Github} height="100" width="100" alt="PostgreSQL" />
               </a>
             </Cloud>
