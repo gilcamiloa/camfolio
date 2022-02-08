@@ -16,7 +16,7 @@ export default function Footer([dotNav, setDotNav]) {
     <div className="footer">
       <div className="items">
         <div className="nav__dots first__current">
-          <div id="dot1" className="dot" onClick={}><Link to={<Intro/>}></Link></div>
+          <div id="dot1" className="dot"><Link to={<Intro/>}></Link></div>
           <div id="dot2" className="dot"><Link to={<Projects/>}></Link></div>
           <div id="dot3" className="dot"><Link to={<Skills/>}></Link></div>
           <div id="dot4" className="dot"><Link to={<Contact/>}></Link></div>

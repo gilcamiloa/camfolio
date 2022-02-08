@@ -11,41 +11,23 @@
   position: absolute;
   scroll-snap-type: x mandatory;
   -ms-overflow-style: none;
-}
-::-webkit-scrollbar {
-  display:none;
-  width: none;
-  // scroll-snap-type: x mandatory;
+  ::-webkit-scrollbar {
+    display:none;
+    width: none;
+    // scroll-snap-type: x mandatory;
 
-  @include mobile {
-    max-height: 400vh;
+    @include mobile {
+      max-height: 400vh;
+    }
   }
 
-  // & > * {
-    //   scrollbar-width: none;
-    //   -ms-overflow-style: none;
-    //   ::-webkit-scrollbar {
-      //     display:none;
-      //     width: none;
-      //   }
-
-      @include mobile {
-
-      }
-
-      .sectionsContainer {
-        width: 100vw;
-        height: 100vh;
-        flex: none;
-        display: flex;
-        // flex-direction: row;
-
-
-        //     width: 400vw;
-        // height:100vh;
-      }
-    }
-
+  .sectionsContainer {
+    width: 100vw;
+    height: 100vh;
+    flex: none;
+    display: flex;
+  }
+}
 
     // Parent container (CSS Horizontal transform)
     // transform: rotate(-90deg) translateX(-100vh);
