@@ -5,7 +5,7 @@ import Intro from './components/intro/Intro'
 import Projects from './components/projects/Projects'
 import Skills from './components/skills/Skills'
 import Contact from './components/contact/Contact'
-import Footer from './components/footer/Footer'
+// import Footer from './components/footer/Footer'
 
 export default function Sections() {
   const [dotNav, setDotNav] = useState(false);

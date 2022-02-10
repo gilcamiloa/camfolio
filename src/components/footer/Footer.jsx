@@ -3,14 +3,14 @@ import Intro from '../intro/Intro'
 import Projects from '../projects/Projects'
 import Skills from '../skills/Skills'
 import Contact from '../contact/Contact'
-import { Link, Route, HistoryRouterProps} from 'react-router-dom'
-import {useState, useEffect} from 'react'
+import { Link } from 'react-router-dom' //, Route, HistoryRouterProps
+// import {useState, useEffect} from 'react'
 import ReactTooltip from 'react-tooltip'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faFile, faMailBulk } from '@fortawesome/free-solid-svg-icons'
 
-export default function Footer([dotNav, setDotNav]) {
+export default function Footer() {
 
   return(
     <div className="footer">

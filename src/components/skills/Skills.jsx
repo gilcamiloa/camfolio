@@ -149,7 +149,7 @@ export default function Skills() {
   return (
     <div className="skills">
         <div className="title">
-          <h1>Skills</h1>
+        <h1>&lt;&lt;<span>&nbsp;Skills&nbsp;</span>&gt;&gt;</h1>
         </div>
         <div id='icon-cloud'>
           <Cloud options={options}>{makeIcons()}</Cloud>
