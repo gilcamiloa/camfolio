@@ -57,7 +57,7 @@
         filter: drop-shadow(-5px 0 0.3rem gray);
 
         @include mobile {
-          flex: 0.5;
+          flex: 0.3;
           align-items: center;
           // height: 225px;
           // width: 100%;
@@ -86,7 +86,7 @@
 
       .right {
         display: flex;
-        flex: 0.5;
+        flex: 0.7;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;

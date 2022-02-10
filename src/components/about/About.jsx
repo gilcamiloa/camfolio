@@ -18,10 +18,12 @@ export default function About() {
               </div>
             </div>
             <div className="right">
-              <h1><u>I'M A FULL STACK ENGINEER CURRENTLY BASED IN BROOKLYN..</u></h1>
+              <h1><u>CAMILO IS A FULL STACK ENGINEER CURRENTLY BASED IN BROOKLYN..</u></h1>
               <br />
-              <p>My interests include construction technology suited to create large infrastructure applications. I studied full stack development in Le Wagon London and hold a Bachelor's of Science in Civil Engineering from the University of Central Florida. Currently creating projects via react.js and Ruby on Rails as well as learning Java and Python. In my free time, I am a voracious reader and an aspiring explorer of NYC museums.</p>
-              <p>Feel free to reach out for any coding needs or collabs. 🤙🏽</p>
+              {/* <p>His interests include construction technology suited to create large infrastructure applications.</p> */}
+              <p>Pursuing a keen interest in code originating while immersed in his university studies, Camilo dove into full stack web development at Le Wagon London. He hold a Bachelor's of Science in Civil Engineering from the University of Central Florida in which he followed by a stint in the heavy civil construction industry.</p>
+              <p>In addition to some of the works he has collaborated on via Ruby on Rails and React, Camilo is currently pursuing a foundation in Java in order to pursue more complex applications. In his free time he enjoys the occasional jog around Pospect Park, devouring several works of nonfiction, and playing his guitalele.</p>
+              <p>Aside from picking up the occassional callab to propel his development skills further, he is also open to entering a team environment as a developer / software engineer in the NYC metro area.</p>
             </div>
           </div>
         </div>
@@ -29,6 +31,3 @@ export default function About() {
     </AnimatePresence>
   )
 }
-
-
-// Fuck around with margin for photo location.
