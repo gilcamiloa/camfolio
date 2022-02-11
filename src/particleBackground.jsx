@@ -89,7 +89,7 @@ export default function ParticlesBackground () {
             value: 0.5,
           },
           shape: {
-            type: "star",
+            type: "circle",
             images: [
               // {
               //   src: "img/shapes/0.svg",
@@ -98,14 +98,14 @@ export default function ParticlesBackground () {
               // },
               {
                 src:{camIcon},
-                width: 10,
-                height: 10
+                width: 20,
+                height: 20
               }
             ]
           },
           size: {
             random: true,
-            value: 2,
+            value: 3,
           },
         },
         detectRetina: true,

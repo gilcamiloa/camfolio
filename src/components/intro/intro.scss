@@ -16,13 +16,32 @@
   overflow: hidden;
 
   @include mobile {
+    top: 12.5%;
     background-size: cover;
     background-position: center;
   }
 
   .introContainer{
     display: flex;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
     .left{
+      top: 12.5%;
+      padding-top: 150px;
+
+      @include mobile{
+      }
+
+      .typed-text{
+
+        @include mobile{
+        font-size: 14px;
+        }
+      }
+
       h1{
         overflow: hidden;
       }
@@ -32,7 +51,14 @@
       }
     }
     .right{
-
+      img{
+        padding-top: 250px;
+        // width: 400px;
+        @include mobile{
+          max-width: 200px;
+          height: 100%;
+        }
+      }
     }
   }
 }

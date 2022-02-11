@@ -5,11 +5,10 @@ import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion';
 
 export default function Intro() {
 
-  const strings = ['Full Stack Engineer',
-    'Brooklyn based 🗽',
+  const strings = [
     'Avid reader 📚',
-    'Lover of good music 🎷🎼',
-    'and some ol ⚽️'
+    'Music lover 🎷🎼',
+    'soccer aficionado ⚽️'
   ];
 
   return (
@@ -20,11 +19,11 @@ export default function Intro() {
                   exit={{opacity: 0}}
         className='intro' id="intro">
         <div className="introContainer">
-          <div className="left justify-content-left">
-            <h1>HELLO</h1>
+          <div className="left">
+            <h1>CAMILO GIL</h1>
             <br />
-            <h1>My name's Camilo..</h1>
-            <h1>but you can call me Cam</h1>
+            {/* <h1>My name's Camilo..</h1> */}
+            <h1>Brooklyn based Full Stack Engineer</h1>
             <br />
             <div className="typed-text">
               <h2><Typed
