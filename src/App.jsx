@@ -14,7 +14,7 @@ function App() {
     <div className="app">
       <ParticleBackground className='particles-js'></ParticleBackground>
       <Navbar aboutOpen={aboutOpen} setAboutOpen={setAboutOpen}/>
-        {(!aboutOpen ? <Sections/> : <About/>)}
+      {(!aboutOpen ? <Sections/> : <About/>)}
       <Footer/>
     </div>
   );
