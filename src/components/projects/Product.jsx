@@ -1,6 +1,6 @@
 import "./product.scss";
 
-const Product = ({ img, link, desc }) => {
+const Product = ({ name, img, link, desc }) => {
   return (
     <div className="p">
       <div className="p-browser">
@@ -10,8 +10,11 @@ const Product = ({ img, link, desc }) => {
       </div>
       <a href={link} target="_blank" rel="noreferrer">
         <img src={img} alt='' className="p-img" />
-        <span>{desc}</span>
       </a>
+      <div className="p-desc">
+        <h1>{name}</h1>
+        <p>{desc}</p>
+      </div>
     </div>
   );
 };
