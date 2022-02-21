@@ -22,16 +22,15 @@ export default function Intro() {
           <div className="left">
             <h1>CAMILO GIL</h1>
             <br />
-            {/* <h1>My name's Camilo..</h1> */}
-            <h1>Brooklyn based Full Stack Engineer</h1>
-            <br />
+            <h2>Brooklyn based Software Engineer</h2>
+            <br />d
             <div className="typed-text">
-              <h2><Typed
+              <h3><d
                     typeSpeed={30}
                     backSpeed={20}
                     strings={strings}
                     loop='true'/>
-                </h2>
+                </h3>
             </div>
           </div>
           <motion.div initial={{ opacity: 0 }}
