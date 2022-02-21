@@ -23,9 +23,9 @@ export default function Intro() {
             <h1>CAMILO GIL</h1>
             <br />
             <h2>Brooklyn based Software Engineer</h2>
-            <br />d
+            <br />
             <div className="typed-text">
-              <h3><d
+              <h3><Typed
                     typeSpeed={30}
                     backSpeed={20}
                     strings={strings}
