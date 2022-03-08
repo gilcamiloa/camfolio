@@ -1,9 +1,9 @@
 import './footer.scss'
-import Intro from '../intro/Intro'
-import Projects from '../projects/Projects'
-import Skills from '../skills/Skills'
-import Contact from '../contact/Contact'
-import { Link } from 'react-router-dom' //, Route, HistoryRouterProps
+// import Intro from '../intro/Intro'
+// import Projects from '../projects/Projects'
+// import Skills from '../skills/Skills'
+// import Contact from '../contact/Contact'
+// import { Link } from 'react-router-dom' //, Route, HistoryRouterProps
 // import {useState, useEffect} from 'react'
 import ReactTooltip from 'react-tooltip'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -15,12 +15,6 @@ export default function Footer() {
   return(
     <div className="footer">
       <div className="items">
-        <div className="nav__dots first__current">
-          <div id="dot1" className="dot"><Link to={<Intro/>}></Link></div>
-          <div id="dot2" className="dot"><Link to={<Projects/>}></Link></div>
-          <div id="dot3" className="dot"><Link to={<Skills/>}></Link></div>
-          <div id="dot4" className="dot"><Link to={<Contact/>}></Link></div>
-        </div>
         <div className='link__wrapper'>
           <a href="https://www.linkedin.com/in/camilo-gil" target="_blank" rel="noreferrer" id='a-linkedin' data-tip data-for="linkedin">
             <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
