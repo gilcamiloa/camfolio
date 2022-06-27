@@ -1,4 +1,5 @@
 import './footer.scss'
+import { React } from 'react';
 // import Intro from '../intro/Intro'
 // import Projects from '../projects/Projects'
 // import Skills from '../skills/Skills'
@@ -8,7 +9,8 @@ import './footer.scss'
 import ReactTooltip from 'react-tooltip'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faFile, faMailBulk } from '@fortawesome/free-solid-svg-icons'
+import { faMailBulk } from '@fortawesome/free-solid-svg-icons'
+// import { faFile } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
 
@@ -28,10 +30,10 @@ export default function Footer() {
             <FontAwesomeIcon icon={faMailBulk}></FontAwesomeIcon>
             <ReactTooltip id="email" place="top" effect="solid" backgroundColor='none' data-delay-show='700'>Email</ReactTooltip>
             </a>
-          <a href="https://drive.google.com/file/d/1WRmISIuZONc6EHOZwdzkxUKru2B4K0RY/view?usp=sharing" target="_blank" rel="noreferrer" id='a-resume' data-tip data-for="resume">
+          {/* <a href="https://drive.google.com/file/d/1WRmISIuZONc6EHOZwdzkxUKru2B4K0RY/view?usp=sharing" target="_blank" rel="noreferrer" id='a-resume' data-tip data-for="resume">
             <FontAwesomeIcon icon={faFile}></FontAwesomeIcon>
             <ReactTooltip id="resume" place="top" effect="solid" backgroundColor='none' data-delay-show='700'>Resume / CV</ReactTooltip>
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

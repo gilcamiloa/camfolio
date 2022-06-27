@@ -1,7 +1,8 @@
 import './navbar.scss'
+import { React } from 'react';
 import { NavLink } from 'react-router-dom'
 import About from "../about/About.jsx"
-import logo from '../../images/assets/logo2-apple-touch-icon.png'
+import logo from '../../images/cloud-images/logo2-apple-touch-icon.png'
 
 export default function Navbar({ aboutOpen, setAboutOpen }) {
   return (

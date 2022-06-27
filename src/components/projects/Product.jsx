@@ -1,4 +1,5 @@
 import "./product.scss";
+import { React } from 'react';
 
 const Product = ({ name, img, link, desc }) => {
   return (
