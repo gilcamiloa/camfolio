@@ -9,9 +9,9 @@
   align-content: center;
   position: fixed;
 
-  .items{
+  .items {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     margin-right: auto; /* 1 */
     margin-left:  auto; /* 1 */
     top: 93.75vh;
@@ -20,7 +20,7 @@
 
       .link__wrapper {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         position: relative;
         right: 10%; // rotated 90deg becomes left
 
