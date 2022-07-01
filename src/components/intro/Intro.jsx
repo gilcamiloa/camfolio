@@ -1,4 +1,4 @@
-import './intro.scss'
+import './intro.scss';
 import { React } from 'react';
 import Typed from 'react-typed'
 import cam from '../../images/cam-images/cam-airjoshuaa-removebg.png'
