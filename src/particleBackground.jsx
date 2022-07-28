@@ -1,4 +1,4 @@
-import './global.scss'
+import './global.scss';
 import React from 'react';
 import Particles from "react-tsparticles";
 import camIcon from '../src/images/cam-images/cam-icon.svg'
