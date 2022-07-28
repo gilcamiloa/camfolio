@@ -1,6 +1,6 @@
-import './skills.scss'
-import { Cloud, renderSimpleIcon } from "react-icon-cloud";
-import {React} from 'react';
+import './skills.scss';
+import React from 'react';
+import { Cloud, renderSimpleIcon } from 'react-icon-cloud';
 import {
   siGithub,
   siPostgresql,
@@ -16,10 +16,12 @@ import {
   siJava,
   siVisualstudiocode,
   siJavascript,
-} from 'simple-icons/icons'
+} from 'simple-icons/icons';
 
-function makeIcons(){
-  return [
+
+export default function Skills() {
+
+  const icons = [
     siGithub,
     siPostgresql,
     siGit,
@@ -34,21 +36,22 @@ function makeIcons(){
     siJava,
     siVisualstudiocode,
     siJavascript,
-  ].map(icon => {
-    return renderSimpleIcon({
-      bgHex: '#fff',
-      fallbackHex: '#000',
-      icon,
-      minContrastRatio: 2,
-      size: 100,
-      aProps: {
-        onClick: e => e.preventDefault()
-      }
-    });
-  })
-}
+  ]
 
-export default function Skills() {
+  const makeIcons = () => {
+    icons.map(icon => {
+      return renderSimpleIcon({
+        icon,
+        bgHex: '#fff',
+        fallbackHex: '#000',
+        minContrastRatio: 2,
+        size: 100,
+        aProps: {
+          onClick: e => e.preventDefault()
+        }
+      })
+    })
+  }
 
   const options = {
     // activateAudio: string
@@ -145,15 +148,15 @@ export default function Skills() {
     // zoomStep: number
   }
 
-
-
   return (
     <div className="skills">
         <div className="title">
         <h1>&lt;&lt;<span>&nbsp;Skills&nbsp;</span>&gt;&gt;</h1>
         </div>
         <div id='icon-cloud'>
-          <Cloud options={options}>{makeIcons()}</Cloud>
+          <Cloud options={options}>
+            { makeIcons }
+          </Cloud>
         </div>
     </div>
   )

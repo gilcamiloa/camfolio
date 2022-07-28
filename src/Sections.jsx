@@ -1,21 +1,20 @@
-import './sections.scss'
-import { React} from 'react'
-// import { React,useState } from 'react'
-// import { Link } from 'react-router-dom'
+import './sections.scss';
+import React from 'react'
 import { Link } from 'react-scroll'
 import Intro from './components/intro/Intro'
 import Projects from './components/projects/Projects'
 import Skills from './components/skills/Skills'
 import Contact from './components/contact/Contact'
+// import { Link } from 'react-router-dom'
 
 export default function Sections() {
-  var Scroll = require('react-scroll');
-  var scroll = Scroll.animateScroll;
+  // var Scroll = require('react-scroll');
+  // var scroll = Scroll.animateScroll;
 
-  scroll.scrollTo(0);
-  scroll.scrollToPro(100);
-  scroll.scrollToSkills(200);
-  scroll.scrollToContact(300);
+  // scroll.scrollTo(0);
+  // scroll.scrollToPro(100);
+  // scroll.scrollToSkills(200);
+  // scroll.scrollToContact(300);
   return (
     <div className="sections" >
       <div className="nav__dots first__current">
