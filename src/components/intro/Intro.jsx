@@ -1,16 +1,9 @@
 import './intro.scss';
 import React from 'react';
-import Typed from 'react-typed'
 import cam from '../../images/cam-images/cam-airjoshuaa-removebg.png'
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion';
 
 export default function Intro() {
-
-  const strings = [
-    'Avid reader 📚',
-    'Music lover 🎷🎼',
-    'soccer aficionado ⚽️'
-  ];
 
   return (
     <AnimatePresence>
@@ -21,18 +14,10 @@ export default function Intro() {
         className='intro' id="intro">
         <div className="introContainer">
           <div className="left">
-            <h1>CAMILO GIL</h1>
+            <h1>CAMILO GIL</h1> {/*Copperplate or Lobster*/}
             <br />
-            <h2>Brooklyn based Software Engineer</h2>
+            <h2>Full Stack Developer</h2>
             <br />
-            <div className="typed-text">
-              <h3><Typed
-                    typeSpeed={30}
-                    backSpeed={20}
-                    strings={strings}
-                    loop='true'/>
-                </h3>
-            </div>
           </div>
           <motion.div initial={{ opacity: 0 }}
             transition={{ duration: 1 }}

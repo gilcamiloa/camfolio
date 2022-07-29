@@ -10,8 +10,7 @@ const ProductList = () => {
         <div className="pl-texts">
           <h1 className="pl-title">&lt;&lt;<span>&nbsp;Projects&nbsp;</span>&gt;&gt;</h1>
           <p className="pl-desc">
-            I am keen taking on projects in various capacities in order to expand my knowledge of programming as a whole..
-            Below are some of the projects I have been able to create and collaborate on so far..
+            Recent projects, widgets and collaborations
           </p>
         </div>
         <div className="pl-list">

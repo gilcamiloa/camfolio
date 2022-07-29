@@ -1,28 +1,23 @@
 import './skills.scss';
 import React from 'react';
 import { Cloud, renderSimpleIcon } from 'react-icon-cloud';
-import {
-  siGithub,
-  siPostgresql,
-  siGit,
-  siBootstrap,
-  siNpm,
-  siMicrosoftoffice,
-  siHeroku,
-  siRubyonrails,
-  siReact,
-  siCss3,
-  siHtml5,
-  siJava,
-  siVisualstudiocode,
-  siJavascript,
-} from 'simple-icons/icons';
+import { siGithub,
+        siPostgresql,
+        siCss3,
+        siGit,
+        siBootstrap,
+        siNpm,
+        siMicrosoftoffice,
+        siHeroku,
+        siRubyonrails,
+        siReact,
+        siHtml5,
+        siJava,
+        siVisualstudiocode,
+        siJavascript, } from 'simple-icons/icons/';
 
-
-export default function Skills() {
-
-  const icons = [
-    siGithub,
+function makeIcons() {
+  [ siGithub,
     siPostgresql,
     siGit,
     siBootstrap,
@@ -36,38 +31,37 @@ export default function Skills() {
     siJava,
     siVisualstudiocode,
     siJavascript,
-  ]
-
-  const makeIcons = () => {
-    icons.map(icon => {
-      return renderSimpleIcon({
-        icon,
-        bgHex: '#fff',
-        fallbackHex: '#000',
-        minContrastRatio: 2,
-        size: 100,
-        aProps: {
-          onClick: e => e.preventDefault()
-        }
-      })
+  ].map(icon => {
+    return renderSimpleIcon({
+      icon,
+      bgHex: '#fff',
+      fallbackHex: '#000',
+      minContrastRatio: 2,
+      size: 100,
+      aProps: {
+        onClick: e => e.preventDefault()
+      }
     })
-  }
+  })
+}
+
+export default function Skills() {
 
   const options = {
-    // activateAudio: string
-    // activeCursor: string
-    // altImage: boolean
-    // animTiming: 'Smooth' | 'Linear'
-    // audioIcon: boolean
-    // audioIconDark: boolean
-    // audioIconSize: number
-    // audioIconThickness: number
-    // audioVolume: number
-    // bgColor: null | string
-    // bgOutlineThickness: number
-    // bgRadius: number
-    // centreFunc: any
-    // centreImage: any
+    // activateAudio: string,
+    // activeCursor: string,
+    // altImage: boolean,
+    // animTiming: 'Smooth' | 'Linear',
+    // audioIcon: boolean,
+    // audioIconDark: boolean,
+    // audioIconSize: number,
+    // audioIconThickness: number,
+    // audioVolume: number,
+    // bgColor: null | string,
+    // bgOutlineThickness: number,
+    // bgRadius: number,
+    // centreFunc: any,
+    // centreImage: any,
     clickToFront: 400,
     // decel: number
     depth: 1,
@@ -151,7 +145,7 @@ export default function Skills() {
   return (
     <div className="skills">
         <div className="title">
-        <h1>&lt;&lt;<span>&nbsp;Skills&nbsp;</span>&gt;&gt;</h1>
+        <h1>&lt;&lt;<span>&nbsp;What I do..&nbsp;</span>&gt;&gt;</h1>
         </div>
         <div id='icon-cloud'>
           <Cloud options={options}>
