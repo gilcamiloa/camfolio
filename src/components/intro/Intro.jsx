@@ -7,27 +7,23 @@ export default function Intro() {
 
   return (
     <AnimatePresence>
-      <motion.div initial={{opacity: 0}}
-                  transition={{ duration: 1}}
-                  animate={{opacity: 1}}
-                  exit={{opacity: 0}}
-        className='intro'>
-        <div className="introContainer">
-          <div className="left">
-            <h1>CAMILO GIL</h1> {/*Copperplate or Lobster*/}
-            <br />
-            <h2>Full Stack Developer</h2>
-            <br />
-          </div>
-          <motion.div initial={{ opacity: 0 }}
-            transition={{ duration: 1 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="right">
-            <img src={cam} alt="" />
+        <div className="intro">
+          <motion.div initial={{opacity: 0}}
+                      transition={{ duration: 1}}
+                      animate={{opacity: 1}}
+                      exit={{opacity: 0}}
+            className='intro_container'>
+              <div className="intro_left">
+                <h1>CAMILO GIL</h1> {/*Copperplate or Lobster*/}
+                <br />
+                <h2>Full Stack Developer</h2>
+                <br />
+              </div>
+              <div className="intro_right">
+                <img src={cam} alt="" />
+              </div>
           </motion.div>
         </div>
-      </motion.div>
     </AnimatePresence>
   )
 }

@@ -18,14 +18,12 @@ export default function About() {
                   transition={{ duration: 1 }}
                   animate={{opacity: 1}}
                   exit={{opacity: 0}}
-                  className="about">
-        <div className="aboutContainer">
-          <div className="left">
-            <div className="imgContainer">
+                  className='about'>
+        <div className="about_container">
+          <div className="about_left">
               <img src={cam} alt=""/>
-            </div>
           </div>
-          <div className="right">
+          <div className="about_right">
             <h1><u>CAMILO IS A FULL STACK DEVELOPER AND ENGINEER..</u></h1>
             <br />
             <p>Camilo has a demonstrated ability of being a agile team player capable of tackling a wide range of analytical problems. He dove into full stack web development after a stint in the heavy-civil construction industry and is an excellent communicator with an ability to adapt to any team environment.</p>
@@ -38,11 +36,7 @@ export default function About() {
                 loop='true' /><s/>
               </span>
             </h5>
-            <break></break>
           </div>
-          <div className="footer">
-          </div>
-
         </div>
       </motion.div>
     </AnimatePresence>

@@ -11,12 +11,12 @@ export default function Contact() {
 
   return (
     <div className="contact" >
-      <div className="contactContainer">
-        <div className="left">
+      <div className="contact_container">
+        <div className="contact_left">
           <h5>Any questions?..</h5>
           <h4>Let's connect!</h4>
         </div>
-        <div className="right">
+        <div className="contact_right">
           <form onSubmit={handleSubmit} className='form'>
             <span><input type="text" placeholder="First Name" id='firstName'/><input type="text" placeholder="Last Name" id='lastName'/></span>
             <input type="text" placeholder="Email" />

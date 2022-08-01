@@ -2,9 +2,6 @@
 
 .contact {
   background-color: $maincolor;
-  width: 100vw;
-  height: 100vh;
-  flex: none;
   display: flex;
   scroll-snap-align: start;
   flex-direction: column;
@@ -12,7 +9,7 @@
   align-items: center;
   overflow: hidden;
 
-  .contactContainer {
+  .contact_container {
     top: 12.5%;
     width: 100vw;
     display: flex;
@@ -24,7 +21,7 @@
       flex-direction: column;
     }
 
-    .left {
+    .contact_left {
     overflow: hidden;
     justify-content: start;
     align-items: start;
@@ -50,7 +47,7 @@
       }
     }
 
-    h5{
+    h5 {
       top: 0%;
       font-style: italic;
       font-size: 32px;
@@ -76,7 +73,7 @@
     }
 
 
-    .right {
+    .contact_right {
       display: flex;
       flex-direction: column;
       align-items: center;
