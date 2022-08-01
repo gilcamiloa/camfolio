@@ -11,7 +11,7 @@ export default function Intro() {
                   transition={{ duration: 1}}
                   animate={{opacity: 1}}
                   exit={{opacity: 0}}
-        className='intro' id="intro">
+        className='intro'>
         <div className="introContainer">
           <div className="left">
             <h1>CAMILO GIL</h1> {/*Copperplate or Lobster*/}
@@ -22,7 +22,8 @@ export default function Intro() {
           <motion.div initial={{ opacity: 0 }}
             transition={{ duration: 1 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}className="right">
+            exit={{ opacity: 0 }}
+            className="right">
             <img src={cam} alt="" />
           </motion.div>
         </div>

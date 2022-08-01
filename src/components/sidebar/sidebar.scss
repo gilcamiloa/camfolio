@@ -1,0 +1,143 @@
+@import '../../global.scss';
+
+.sidebar {
+  background-color: lightcoral;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  height: 100%;
+  // display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  cursor: pointer;
+  pointer-events:none;
+  overflow: hidden;
+
+  @include mobile {
+    max-height: 15vh;
+  }
+
+
+  .container {
+    top:20vh;
+    justify-content: space-between;
+    flex-direction: vertical;
+    padding:40px 10px 40px 10px;
+    height: 80%;
+
+    @include mobile {
+      max-height: 12.5vh;
+    }
+
+    .left {
+      pointer-events:fill;
+
+      .logo {
+        width: 100%;
+        height: auto;
+        max-width: 120px;
+        opacity: 1;
+        // background-color: black;
+      }
+    }
+
+    .right {
+      flex-direction: column;
+      pointer-events:fill;
+      padding-right: 30px;
+      flex-direction: vertical;
+      transform-origin: left;
+      transition: all 2s ease;
+      font-weight: bold;
+
+      .active{
+        color:black;
+        transition-duration: 3s;
+      }
+    }
+    .items {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: auto;
+      /* 1 */
+      margin-left: auto;
+      /* 1 */
+      top: 93.75vh;
+      left: 93.5vw;
+      padding: 10px 30px;
+
+      .link__wrapper {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        right: 10%; // rotated 90deg becomes left
+
+        a {
+          z-index: 2;
+          font-size: 1.1em;
+          padding: 0px 20px 0px 20px;
+          pointer-events: stroke;
+
+          // a:hover{
+          //   background-color: blue;
+          //   transition: all 3s ease;
+          // }
+
+          @include mobile {
+            padding: 0px 5px 0px 5px;
+          }
+        }
+
+        #a-linkedin {
+          color: black;
+          margin: 0%;
+          opacity: none;
+          pointer-events: stroke;
+        }
+
+
+        #a-github {
+          color: black;
+          border-radius: 50%;
+        }
+
+        #a-email {
+          color: black;
+          border-radius: 50%;
+        }
+
+        #a-resume {
+          color: black;
+          border-radius: 50%;
+        }
+
+        #linkedin {
+          color: black;
+          pointer-events: stroke;
+          border-radius: 50%;
+          z-index: 1;
+        }
+
+        #github {
+          color: black;
+          pointer-events: stroke;
+        }
+
+        #email {
+          color: black;
+          border-radius: 75%;
+        }
+
+        #resume {
+          color: black;
+          border-radius: 100%;
+        }
+
+        &.active {
+          color: black;
+        }
+      }
+    }
+  }
+}

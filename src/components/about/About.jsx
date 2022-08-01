@@ -39,9 +39,10 @@ export default function About() {
               </span>
             </h5>
             <break></break>
-            {/* <div className="typed-text"> */}
-            {/* </div> */}
           </div>
+          <div className="footer">
+          </div>
+
         </div>
       </motion.div>
     </AnimatePresence>
