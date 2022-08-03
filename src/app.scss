@@ -12,14 +12,14 @@
   }
 }
 .sidebar {
-  background-color: lightcoral;
+  background-color: rgb(154, 149, 149);
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: auto;
   cursor: pointer;
   pointer-events: none;
   @include mobile {
@@ -29,8 +29,9 @@
 
 .sections {
   display: grid;
+  padding-left: 0px;
   overflow: hidden;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: y mandatory;
   -ms-overflow-style: none;
   ::-webkit-scrollbar {
     display: none;
@@ -39,7 +40,6 @@
 
   & > * {
     height: 100vh;
-    width: 85vw;
   }
 }
 
