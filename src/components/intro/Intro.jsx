@@ -7,7 +7,7 @@ export default function Intro() {
 
   return (
     <AnimatePresence>
-        <div className="intro">
+        <div className='intro'>
           <motion.div initial={{opacity: 0}}
                       transition={{ duration: 1}}
                       animate={{opacity: 1}}

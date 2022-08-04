@@ -5,60 +5,40 @@ import ReactTooltip from 'react-tooltip'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faMailBulk } from '@fortawesome/free-solid-svg-icons'
-// import { HashLink } from 'react-router-hash-link'
-// import Scroll from 'react-scroll';
-// const ScrollLink = Scroll.ScrollLink
-// import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-// import Intro from '../intro/Intro'
-// import Skills from '../skills/Skills'
-// import About from '../about/About'
-// import Projects from '../projects/Projects'
-// import Contact from '../contact/Contact'
 // // import { faFile } from '@fortawesome/free-solid-svg-icons'
 
 export default function Sidebar() {
   return (
     <div className='container'>
-      <div className="sidebar_left">
-        <a href='' className="logo"><img src={logo} alt='' className="logo"/></a>
+      <div className="sidebar_logo">
+        <a href='#intro' className="a_logo"><img src={logo} alt='' className="img_logo"/></a>
       </div>
       <div className="sidebar_router">
-        {/* <div><HashLink to={<Intro/>} spy={true} smooth={true} offset={50} duration={500}>Intro</HashLink></div>
-        <div><HashLink to={<Skills />} spy={true} smooth={true} offset={50} duration={500}>Skills</HashLink></div>
-        <div><HashLink to={<Intro />} spy={true} smooth={true} offset={50} duration={500}>Projects</HashLink></div>
-        <div><HashLink to={<Intro />} spy={true} smooth={true} offset={50} duration={500}>About</HashLink></div>
-        <div><HashLink to={<Intro />} spy={true} smooth={true} offset={50} duration={500}>Contact</HashLink></div> */}
-      <div>
-        <div
-          style={{"cursor":"pointer"}}
-          onClick={() => {
-            const intro = document.querySelector('#intro')
-            intro.scrollIntoView({ top:0,behavior: 'smooth', block: 'center' })
-          }}>
-              <span>Intro</span>
+        <div className='intro_link'>
+          <a href='#intro'>
+            <span>Intro</span>
+          </a>
         </div>
-        <div
-          style={{"cursor":"pointer"}}
-          onClick={() => {
-            const skills = document.querySelector('#skills')
-            skills.scrollIntoView({ top: 100,behavior: 'smooth', block: 'center' })
-          }}>
-              <span>Skills</span>
+        <div className='skills_link'>
+          <a href='#skills'>
+            <span>Skills</span>
+          </a>
         </div>
-
-        {/* <a href='#skills'>
-            <span>Intro</span>
-        </a>
-        <a href='#projects'>
-            <span>Intro</span>
-        </a>
-        <a href='#intro'>
-            <span>Intro</span>
-        </a>
-        <a href='#intro'>
-            <span>Intro</span>
-        </a> */}
-      </div>
+        <div className='projects_link'>
+          <a href='#projects'>
+            <span>Projects</span>
+          </a>
+        </div>
+        <div className='about_link'>
+          <a href='#about'>
+            <span>About</span>
+          </a>
+        </div>
+        <div className='about_link'>
+          <a href='#contact'>
+            <span>Contact</span>
+          </a>
+        </div>
       </div>
       <div className="sidebar_links">
         <div className='link__wrapper'>

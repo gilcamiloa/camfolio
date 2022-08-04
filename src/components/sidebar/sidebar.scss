@@ -1,58 +1,93 @@
 @import '../../global.scss';
 
-  .sidebar_left {
-    pointer-events:fill;
 
-    .logo {
-      width: 100%;
-      height: auto;
-      max-width: 120px;
-      opacity: 1;
-      // background-color: black;
+.container {
+  height: 70vh;
+
+  .sidebar_logo {
+    height: calc(70vh * (1/3));
+    pointer-events:fill;
+    display: grid;
+    place-items: center;
+    a {
+      display: grid;
+      place-items: center;
+      object-fit: cover;
+      .img_logo {
+        opacity: 1;
+      }
+      :hover {
+
+      }
     }
   }
-
   .sidebar_router {
-    flex-direction: column;
-    pointer-events:fill;
-    padding: 0px 50px;
-    flex-direction: vertical;
+    height: calc(70vh * (1/3));
+    display: grid;
+    place-items: center;
+    color: rgb(43, 43, 50);
     transform-origin: left;
-    transition: all 2s ease;
-    font-weight: bold;
 
-    .active{
-      color:black;
-      transition-duration: 3s;
+    a {
+      color: rgb(43, 43, 50);
+      font-size: 24px;
+      font-weight: 600;
+      font-style: medium;
+      letter-spacing: 1px;
+      transition: 0.2s ease-out;
+      pointer-events: stroke;
+      // float: right;
+      :hover{
+        color:inherit;
+        transition: 0.2s ease;
+        font-weight: 800;
+        // -webkit-transition: background-color 0.2s ease-out;
+        // -moz-transition: background-color 0.2s ease-out;
+        // -o-transition: background-color 0.2s ease-out;
+        // transition: background-color 0.2s ease-out;
+      }
+    }
+
+
+    .intro_link {
+
+      padding: 0px 50px;
+    }
+
+    .skills_link {
+      padding: 0px 50px;
+    }
+
+    .projects_link {
+      padding: 0px 50px;
+    }
+
+    .about_link {
+      padding: 0px 50px;
+    }
+
+    .contact_link {
+      padding: 0px 50px;
     }
   }
   .sidebar_links {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: auto;
-    /* 1 */
-    margin-left: auto;
-    /* 1 */
-    top: 93.75vh;
-    left: 93.5vw;
-    padding: 10px 30px;
+    height: calc(70vh * (1/3));
+    display: grid;
+    top: 50%;
+    left: 50%;
+    padding: 30px 10px;
 
     .link__wrapper {
       display: flex;
-      justify-content: flex-end;
+      place-items: center;
       position: relative;
-      right: 10%; // rotated 90deg becomes left
+      justify-content: space-between;
 
       a {
         z-index: 2;
-        font-size: 1.1em;
+        font-size: 1.4em;
         padding: 0px 20px 0px 20px;
         pointer-events: stroke;
-
-        // a:hover{
-        //   background-color: blue;
-        //   transition: all 3s ease;
-        // }
 
         @include mobile {
           padding: 0px 5px 0px 5px;
@@ -109,3 +144,4 @@
       }
     }
   }
+}

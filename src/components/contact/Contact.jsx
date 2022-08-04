@@ -57,10 +57,10 @@ export default function Contact() {
 const ContactLinks = ({ name, icon, link, desc }) => {
   return (
       <div className='contact_links_style'>
+            <FontAwesomeIcon icon={icon}></FontAwesomeIcon>
         <a href={link} target="_blank" rel="noopener noreferrer" id='#a_icon'>
             <h1>{name}</h1>
             <p>{desc}</p>
-            <FontAwesomeIcon icon={icon}></FontAwesomeIcon>
         </a>
       </div>
   );

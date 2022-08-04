@@ -3,6 +3,7 @@
 .contact {
   background-color: $maincolor;
   display: flex;
+  height: 100vh;
   scroll-snap-align: start;
   flex-direction: column;
   justify-content: center;

@@ -2,6 +2,8 @@
 
 .about{
   background-color: $maincolor;
+  height: 100vh;
+  align-items: center;
   scrollbar-width: none; //for firefox
   &::-webkit-scrollbar{
     display:none;
@@ -10,9 +12,9 @@
   & > * {
     overflow-y: hidden;
   }
-}
 
-.about_container{
+  .about_container{
+    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -93,5 +95,6 @@
       }
     }
   }
+}
 // BR as diamond
 // clip-path: polygon(100% 100%, 100% 100%, 100% 100%)

@@ -1,21 +1,21 @@
 @import '../../global.scss';
 
-.intro {
-  background-color: $maincolor;
-  background-image: url('https://res.cloudinary.com/cgilv6/image/upload/v1644181827/camfolio/joshua-sky-nobg_xk4gln.png');
-  background-size: 100%;
-  // box-shadow: 20px 1px 10px gray;
-  display: flex;
-  scroll-snap-align: start;
-  align-items: center;
-  justify-content: center;
-  // overflow: hidden;
+    .intro {
+      background-color: $maincolor;
+      background-image: url('https://res.cloudinary.com/cgilv6/image/upload/v1644181827/camfolio/joshua-sky-nobg_xk4gln.png');
+      background-size: 100%;
+      // box-shadow: 20px 1px 10px gray;
+      height: 100vh;
+      display: flex;
+      scroll-snap-align: start;
+      align-items: center;
+      justify-content: center;
+      // overflow: hidden;
 
-  @include mobile {
-    background-size: cover;
-    background-position: center;
-  }
-
+      @include mobile {
+        background-size: cover;
+        background-position: center;
+      }
   .intro_container{
     display: flex;
     @include mobile {
@@ -54,4 +54,4 @@
       }
     }
   }
-}
+    }

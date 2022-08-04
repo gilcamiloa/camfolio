@@ -15,12 +15,12 @@ function App() {
         <div className="col-2 col-lg-2 sidebar">
           <Sidebar/>
         </div>
-        <div className="col-10 col-lg-10 sections" >
-          <Intro exact path="/" id='#intro'/>
-          <Skills path="skills" id='#skills' />
-          <Projects path="projects" id='#projects' />
-          <About path="about" id='#about' />
-          <Contact path="contact" id='/contact' />
+        <div className="col-10 col-lg-10 sections">
+          <div id='intro'><Intro exact path="/"/></div>
+          <div id='skills'><Skills path="/skills"/></div>
+          <div id='projects'></div><Projects path="/projects" />
+          <div id='about'></div><About path="/about"/>
+          <div id='contact'></div><Contact path="/contact"/>
         </div>
     </div>
     </div>
