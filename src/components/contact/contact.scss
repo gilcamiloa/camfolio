@@ -11,10 +11,9 @@
   overflow: hidden;
 
   .contact_container {
-    top: 12.5%;
-    width: 100vw;
+    width: 80vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     @include mobile{
@@ -77,9 +76,7 @@
     .contact_right {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin: 30px;
+      padding: 30px;
 
       @include mobile{
         flex: none;
@@ -88,23 +85,55 @@
       }
 
       .contact_links_style {
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-        right: 10%; // rotated 90deg becomes left
+        .contact_links_style:hover{
+          background-color: rgba(58, 2, 77, 1);
+        }
 
         a {
-          z-index: 2;
-          font-size: 1.1em;
-          padding: 0px 20px 0px 20px;
-          pointer-events: stroke;
-
-          #a_icon {
-              color: black;
-              margin: 0%;
-              opacity: none;
-              pointer-events: stroke;
-            }
+          display: flex;
+          font-size: 22px;
+          text-decoration: none;
+          color: black;
+          z-index: 1;
+          justify-content: start;
+          margin: 0px, 50px;
+          padding-right: 0px 20px;
+          :hover {
+            cursor: pointer;
+            font-size: 1.1em;
+            pointer-events: stroke;
+            width: auto;
+            transition: 0.2s ease-in-out;
+            align-items: center;
+          }
+          h1 {
+            font-size: inherit;
+            padding: 10px;
+            margin: 10px;
+          }
+          #github {
+            display: flex;
+            padding: 10px;
+            align-items: center;
+          }
+          #linkedin {
+            display: flex;
+            padding: 10px;
+            align-items: center;
+          }
+          #email {
+            display: flex;
+            padding: 10px;
+            align-items: center;
+          }
+          #resume {
+            display: flex;
+            padding: 10px;
+            align-items: center;
+          }
+          #link-icon {
+            padding: 20px;
+          }
         }
       }
     }

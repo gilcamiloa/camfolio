@@ -11,32 +11,33 @@ export default function Contact() {
     {
       id: 1,
       name: 'github',
-      icon: { faGithub },
+      icon: faGithub,
       link: "https://github.com/gilcamiloa",
       desc: "View my work on GitHub"
     },
     {
       id: 2,
       name: 'linkedin',
-      icon: { faLinkedin },
+      icon: faLinkedin,
       link: "https://www.linkedin.com/in/camilo-gil/",
       desc: "Connect on LinkedIn"
     },
     {
       id: 3,
-      name: 'mail',
-      icon: { faMailBulk },
+      name: 'email',
+      icon: faMailBulk,
       link: "mailto:cgilv6@gmail.com",
       desc: "Shoot me an email"
     },
     {
       id: 4,
       name: 'resume',
-      icon: { faFile },
-      link: "mailto:cgilv6@gmail.com",
+      icon: faFile,
+      link: "https://drive.google.com/file/d/1WRmISIuZONc6EHOZwdzkxUKru2B4K0RY/view?usp=sharing",
       desc: "Download my resume"
     }
   ];
+
   return (
     <div className="contact" >
       <div className="contact_container">
@@ -46,7 +47,7 @@ export default function Contact() {
         </div>
          <div className="contact_right">
           {contact_data.map((item) => (
-            <ContactLinks key={item.id} icon={item.icon} link={item.link} desc={item.desc} />
+            <ContactLinks key={item.id} name={item.name} icon={item.icon} link={item.link} desc={item.desc} />
             ))}
         </div>
       </div>
@@ -57,10 +58,11 @@ export default function Contact() {
 const ContactLinks = ({ name, icon, link, desc }) => {
   return (
       <div className='contact_links_style'>
+        <a href={link} target="_blank" rel="noopener noreferrer" >
+          <div id={name}>
             <FontAwesomeIcon icon={icon}></FontAwesomeIcon>
-        <a href={link} target="_blank" rel="noopener noreferrer" id='#a_icon'>
-            <h1>{name}</h1>
-            <p>{desc}</p>
+          </div>
+          <h1>{desc}</h1>
         </a>
       </div>
   );

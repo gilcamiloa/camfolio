@@ -4,29 +4,33 @@
 .container {
   height: 70vh;
 
-  .sidebar_logo {
+  & > * {
     height: calc(70vh * (1/3));
-    pointer-events:fill;
+  }
+  .sidebar_logo {
     display: grid;
     place-items: center;
+
     a {
       display: grid;
       place-items: center;
       object-fit: cover;
-      .img_logo {
-        opacity: 1;
-      }
       :hover {
-
+        height: calc(70vh * (2/7));
+        filter: grayscale(80%);
+        width: auto;
+        transition: 2s ease-out;
+      }
+      img {
+        pointer-events: stroke;
+        opacity: 1;
       }
     }
   }
   .sidebar_router {
-    height: calc(70vh * (1/3));
     display: grid;
     place-items: center;
     color: rgb(43, 43, 50);
-    transform-origin: left;
 
     a {
       color: rgb(43, 43, 50);
@@ -36,42 +40,15 @@
       letter-spacing: 1px;
       transition: 0.2s ease-out;
       pointer-events: stroke;
-      // float: right;
       :hover{
         color:inherit;
         transition: 0.2s ease;
         font-weight: 800;
-        // -webkit-transition: background-color 0.2s ease-out;
-        // -moz-transition: background-color 0.2s ease-out;
-        // -o-transition: background-color 0.2s ease-out;
-        // transition: background-color 0.2s ease-out;
       }
     }
-
-
-    .intro_link {
-
-      padding: 0px 50px;
-    }
-
-    .skills_link {
-      padding: 0px 50px;
-    }
-
-    .projects_link {
-      padding: 0px 50px;
-    }
-
-    .about_link {
-      padding: 0px 50px;
-    }
-
-    .contact_link {
-      padding: 0px 50px;
-    }
   }
+
   .sidebar_links {
-    height: calc(70vh * (1/3));
     display: grid;
     top: 50%;
     left: 50%;
@@ -88,7 +65,11 @@
         font-size: 1.4em;
         padding: 0px 20px 0px 20px;
         pointer-events: stroke;
-
+        a:hover {
+            font-size: 1.2em;
+            width: auto;
+            transition: 0.2s ease;
+          }
         @include mobile {
           padding: 0px 5px 0px 5px;
         }
@@ -117,24 +98,22 @@
         border-radius: 50%;
       }
 
-      #linkedin {
-        color: black;
-        pointer-events: stroke;
-        border-radius: 50%;
-        z-index: 1;
-      }
-
-      #github {
+      #tip-linkedin {
         color: black;
         pointer-events: stroke;
       }
 
-      #email {
+      #tip-github {
+        color: black;
+        pointer-events: stroke;
+      }
+
+      #tip-email {
         color: black;
         border-radius: 75%;
       }
 
-      #resume {
+      #tip-resume {
         color: black;
         border-radius: 100%;
       }
