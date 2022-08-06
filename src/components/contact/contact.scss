@@ -96,16 +96,17 @@
           color: black;
           z-index: 1;
           justify-content: start;
-          margin: 0px, 50px;
+          margin: 0px 100px;
           padding-right: 0px 20px;
           :hover {
             cursor: pointer;
-            font-size: 1.1em;
+            background-color: rgba(58, 2, 77, 0.4);
             pointer-events: stroke;
             width: auto;
             transition: 0.2s ease-in-out;
             align-items: center;
           }
+
           h1 {
             font-size: inherit;
             padding: 10px;

@@ -22,11 +22,6 @@
 
     @include mobile {
       flex-direction: column;
-
-      h1{
-        font-size: 16px;
-        margin-left: 100px;
-      }
     }
 
     .about_left {
@@ -70,27 +65,38 @@
       overflow: hidden;
       font-size: 20px;
       padding: 50px 0px;
-      padding-right: 30px;
-      line-height: 1.8;
-      text-align: left;
-
+      padding-right: 100px;
+      line-height: 1.9;
+      .about_right:nth-child(-1){
+        display: flex;
+      }
       @include mobile {
         text-align: center;
         line-height: 1.4;
         font-size: 12px;
         padding: 0px 0px;
 
-        h1 {
-          justify-content: center;
-          align-items: center;
-          margin-left: 100px;
+      h1 {
+        font-size: 28px;
+        // margin-left: 200px;
+        justify-content: center;
+        text-align: justify;
+      }
+
+        .typed_wrapper {
+          display: flex;
+          justify-content: space-evenly;
+          width: auto;
+          justify-content: start;
+          flex: 0.3;
+          justify-content: start;
         }
 
-        .typed-text {
-          position: fixed;
-          @include mobile {
-            font-size: 14px;
-          }
+        #typed_right {
+          padding: 100px;
+          flex: 0.7;
+          justify-content: center;
+          width: 200px;
         }
       }
     }

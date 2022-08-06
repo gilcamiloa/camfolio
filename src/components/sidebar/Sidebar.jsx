@@ -14,11 +14,11 @@ export default function Sidebar() {
         <a href='#intro' className="a_logo"><img src={logo} alt='' className="img_logo"/></a>
       </div>
       <div className="sidebar_router">
-        <div className='intro_link'>
+        {/* <div className='intro_link'>
           <a href='#intro'>
             <span>Intro</span>
           </a>
-        </div>
+        </div> */}
         <div className='skills_link'>
           <a href='#skills'>
             <span>Skills</span>
@@ -42,15 +42,15 @@ export default function Sidebar() {
       </div>
       <div className="sidebar_links">
         <div className='link__wrapper'>
-          <a href="https://www.linkedin.com/in/camilo-gil" target="_blank" rel="noopener noreferrer" id='a-linkedin' data-tip data-for="linkedin">
+          <a href="https://www.linkedin.com/in/camilo-gil" target="_blank" rel="noopener noreferrer" id='a-linkedin' data-tip data-for="tip-linkedin">
             <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
             <ReactTooltip id="tip-linkedin" place="top" effect="solid" backgroundColor='none' data-delay-show='700'>LinkedIn</ReactTooltip>
           </a>
-          <a href="https://www.github.com/gilcamiloa" target="_blank" rel="noopener noreferrer" id='a-github' data-tip data-for="github">
+          <a href="https://www.github.com/gilcamiloa" target="_blank" rel="noopener noreferrer" id='a-github' data-tip data-for="tip-github">
             <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
             <ReactTooltip id="tip-github" place="top" effect="solid" backgroundColor='none' data-delay-show='1200'>GitHub</ReactTooltip>
           </a>
-          <a href="mailto:cgilv6@gmail.com" target="_blank" rel="noopener noreferrer" id='a-email' data-tip data-for="email">
+          <a href="mailto:cgilv6@gmail.com" target="_blank" rel="noopener noreferrer" id='a-email' data-tip data-for="tip-email">
             <FontAwesomeIcon icon={faMailBulk}></FontAwesomeIcon>
             <ReactTooltip id="tip-email" place="top" effect="solid" backgroundColor='none' data-delay-show='700'>Email</ReactTooltip>
           </a>
