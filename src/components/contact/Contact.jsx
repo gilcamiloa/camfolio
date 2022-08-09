@@ -10,17 +10,17 @@ export default function Contact() {
   const contact_data = [
     {
       id: 1,
-      name: 'github',
-      icon: faGithub,
-      link: "https://github.com/gilcamiloa",
-      desc: "View my work on GitHub"
-    },
-    {
-      id: 2,
       name: 'linkedin',
       icon: faLinkedin,
       link: "https://www.linkedin.com/in/camilo-gil/",
       desc: "Connect on LinkedIn"
+    },
+    {
+      id: 2,
+      name: 'github',
+      icon: faGithub,
+      link: "https://github.com/gilcamiloa",
+      desc: "View my work on GitHub"
     },
     {
       id: 3,

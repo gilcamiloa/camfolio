@@ -3,7 +3,7 @@ import React from 'react';
 import Product from "./Product";
 import { products } from "./productData";
 
-const ProductList = () => {
+const Projects = () => {
   return (
     <div className='projects'>
       <div className="pl">
@@ -15,7 +15,7 @@ const ProductList = () => {
         </div>
         <div className="pl-list">
           {products.map((item) => (
-          <Product key={item.id} img={item.img} link={item.link} desc={item.desc} />
+          <Product key={item.id} name={item.name} img={item.img} link={item.link} desc={item.desc} />
           ))}
         </div>
       </div>
@@ -23,4 +23,4 @@ const ProductList = () => {
   );
 };
 
-export default ProductList;
+export default Projects;

@@ -1,7 +1,10 @@
 import "./product.scss";
-import React from 'react';
+import React, { useState } from 'react';
 
 const Product = ({ name, img, link, desc }) => {
+
+  const [isShown, setIsShown] = useState(false);
+
   return (
     <div className="p">
       <div className="p-browser">
@@ -9,12 +12,18 @@ const Product = ({ name, img, link, desc }) => {
         <div className="p-circle"></div>
         <div className="p-circle"></div>
       </div>
-      <a href={link} target="_blank" rel="noopener noreferrer">
-        <img src={img} alt='' className="p-img" />
-      </a>
-      <div className="p-desc">
-        <h1>{name}</h1>
-        <p>{desc}</p>
+      <div className="p-desc" onClick={() => window.open(link)}
+                              style={{  backgroundImage: `url(${img})`,
+                                        objectFit: 'cover'}}
+                              onMouseOver={() => setIsShown(true)}
+                              onMouseLeave={() => setIsShown(false)}
+                              >
+          {isShown && (
+          <div className='p-hover'>
+              <h1>{name}</h1>
+              <p>{desc}</p>
+            </div>
+          )}
       </div>
     </div>
   );

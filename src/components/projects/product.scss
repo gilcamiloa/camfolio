@@ -1,5 +1,5 @@
 .p {
-  width: 30%;
+  width: 40vh;
   height: 40vh;
   margin: 20px 10px;
   border: 2px solid rgb(243, 242, 242);
@@ -37,14 +37,37 @@
   background-color: white;
 }
 
-.p-img {
+// .p-img {
+//   height: auto;
+//   width: 100%;
+//   object-fit: fill;
+//   transition: all 3s ease;
+// }
+
+.p-desc {
   height: 100%;
-  // object-fit: cover;
-  transition: all 3s ease;
+  width: 100%;
+  object-fit: scale-down;
+  cursor: pointer;
 }
 
-.p:hover .p-img {
-  transform: translateY(-100%);
+.p-hover {
+  height: 100%;
+  width: 100%;
+  transition: background-color 350ms ease;
+  transform: translate3d(0,0,0);
+  background-color: transparent;
+  z-index: 2;
+
+  .p-hover h1 {
+    font-size: 18px;
+    color: white;
+    transform: translate3d(0,50px,0);
+  }
+  .p-hover p {
+    font-size: 14px;
+    transform: translate3d(0, 50px, 0);
+  }
 }
 
 @media screen and (max-width: 480px) {

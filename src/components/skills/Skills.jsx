@@ -1,36 +1,57 @@
 import './skills.scss';
-import React from 'react';
 import { Cloud, renderSimpleIcon } from 'react-icon-cloud';
-import { siGithub,
-        siPostgresql,
-        siCss3,
-        siGit,
-        siBootstrap,
-        siNpm,
-        siMicrosoftoffice,
-        siHeroku,
-        siRubyonrails,
-        siReact,
-        siHtml5,
-        siJava,
-        siVisualstudiocode,
-        siJavascript, } from 'simple-icons/icons/';
+import React from 'react';
+import {
+  siBootstrap,
+  siCss3,
+  siDjango,
+  siFigma,
+  siGit,
+  siGithub,
+  siHeroku,
+  siHtml5,
+  siJava,
+  siJavascript,
+  siJquery,
+  siLeetcode,
+  siMicrosoftexcel,
+  siMicrosoftoffice,
+  siMysql,
+  siNpm,
+  siPostgresql,
+  siPython,
+  siReact,
+  siRuby,
+  siRubyonrails,
+  siVisualstudiocode,
+  siYarn
+        } from 'simple-icons/icons/';
 
 function makeIcons() {
-  [ siGithub,
-    siPostgresql,
-    siGit,
+  return [
     siBootstrap,
-    siNpm,
-    siMicrosoftoffice,
-    siHeroku,
-    siRubyonrails,
-    siReact,
     siCss3,
+    siDjango,
+    siFigma,
+    siGit,
+    siGithub,
+    siHeroku,
     siHtml5,
     siJava,
-    siVisualstudiocode,
     siJavascript,
+    siJquery,
+    siLeetcode,
+    siMicrosoftexcel,
+    siMicrosoftoffice,
+    siMysql,
+    siNpm,
+    siPostgresql,
+    siPython,
+    siReact,
+    siRuby,
+    siRubyonrails,
+    siVisualstudiocode,
+    siYarn
   ].map(icon => {
     return renderSimpleIcon({
       icon,
@@ -149,7 +170,7 @@ export default function Skills() {
         </div>
         <div id='icon-cloud'>
           <Cloud options={options}>
-            { makeIcons }
+            { makeIcons() }
           </Cloud>
         </div>
     </div>

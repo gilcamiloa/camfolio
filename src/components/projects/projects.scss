@@ -38,38 +38,10 @@
 
     .pl-list {
       width: 100%;
+      height: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-    }
-
-    .p-img {
-    width: 100%;
-    // transition: all 3s ease;
-  }
-
-    .p-img div{
-    width: 100%;
-    background: gray;
-    transition: all 3s ease;
-    }
-
-    .p:hover .p-img {
-      transform: translateY(-100%);
-    }
-
-    @media screen and (max-width: 480px) {
-      .pl {
-        padding: 10px;
-      }
-
-      .pl-texts {
-        width: 100%;
-      }
-
-      .pl-desc {
-        display: none;
-      }
     }
   }
 }

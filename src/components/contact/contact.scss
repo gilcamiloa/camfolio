@@ -74,7 +74,7 @@
 
 
     .contact_right {
-      display: flex;
+      display: flex-start;
       flex-direction: column;
       padding: 30px;
 
@@ -101,6 +101,7 @@
           :hover {
             cursor: pointer;
             background-color: rgba(58, 2, 77, 0.4);
+            border-radius: 10px;
             pointer-events: stroke;
             width: auto;
             transition: 0.2s ease-in-out;
