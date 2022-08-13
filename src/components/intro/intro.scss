@@ -1,57 +1,213 @@
 @import '../../global.scss';
 
-    .intro {
-      background-color: $maincolor;
-      background-image: url('https://res.cloudinary.com/cgilv6/image/upload/v1644181827/camfolio/joshua-sky-nobg_xk4gln.png');
-      background-size: 100%;
-      // box-shadow: 20px 1px 10px gray;
-      height: 100vh;
-      display: flex;
-      scroll-snap-align: start;
-      align-items: center;
-      justify-content: center;
-      // overflow: hidden;
+.intro {
+  background-color: $maincolor;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 20px 1px 10px gray;
+  scroll-snap-align: start;
+  z-index: 1;
+  @include mobile {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
 
-      @include mobile {
-        background-size: cover;
-        background-position: center;
-      }
   .intro_container{
     display: flex;
+    align-items: center;
+    padding-top: 100px;
+    top: 70;
+    background-color: none;
+    display: flex;
     @include mobile {
-      flex-direction: column;
+      width: 100%;
+      height: 85%;
+      padding-top: 0px;
+      padding-left: 20px;
+      justify-content: start;
     }
 
-    .left{
-      top: 12.5%;
-      padding-top: 150px;
+    .intro_left {
+      top: 0;
+      padding-right: 100px;
+      display: grid;
 
       @include mobile{
-        padding-left: 15px;
+        h1 {
+          font-size: 28px;
+        }
+        h2 {
+          font-size: 22px;
+        }
+        padding-right: 0px;
         padding-bottom: 75px;
       }
 
       h1{ overflow: hidden; }
 
       h2{ overflow: hidden; }
-    }
-    .right{
 
-      @include mobile{
-        max-width: 240px;
-        height: 50vh;
-
+      p{
+        font-style: normal;
+        font-size: 24px;
+        overflow: hidden;
+        @include mobile {
+          font-size: 14px;
+        }
       }
 
-      img{
-        padding-top: 240px;
+      .intro_to_contact {
+        display: flex;
+        justify-content: center;
+        .intro_to_contact_button {
+          width: 150px;
+          height: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;;
+          a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            border: 2px solid;
+            font-size: 18px;
+            color: black;
+            border-radius: 15px;
+            background-color: rgba(58, 2, 77, 0.2);
+          }
+          :hover {
+            border: 2.5px solid;
+            font-size: 19px;
+            background-color: rgba(58, 2, 77, 0.3);
+            transition: all 40ms 250ms;
+          }
 
-        @include mobile{
-          max-width: 300px;
-          height: 100%;
-          padding-bottom: 75px;
         }
       }
     }
-  }
+
+    .intro_right{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1.5px solid grey;
+      box-shadow: 5px 5px 10px grey;
+      border-radius: 50%;
+      position:  relative;
+      background-color: rgba(154, 149, 149, 0.4);
+      @include mobile{
+        display: block;
+        width: 25%;
+        align-items: start;
+      }
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
     }
+  }
+
+  .arrow_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+    @include mobile {
+      height: 30px;
+        padding-top: 0px;
+        justify-content: center;
+        padding-right: 50px;
+      }
+
+    span {
+      display: block;
+      width: 30px;
+      height: 30px;
+      border-bottom: 2px solid #000000;
+      border-right: 2px solid #000000;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      margin: -20px;
+      // animation: animate;
+      // -webkit-animation: animate;
+      // animation-duration: 1.5s infinite;
+      // -webkit-animation: 1.5s infinite;
+
+      // span:nth-child(2) {
+        // animation-delay: 0.2s;
+        // -webkit-animation-delay: 0.2s;
+        // animation-direction: alternate;
+        // -webkit-animation-direction: alternate;
+      // }
+
+      // span:nth-child(3) {
+        // -webkit-animation-delay: 0.4s;
+        // animation-delay: 0.4s;
+        // animation-direction: alternate;
+        // -webkit-animation-direction: alternate;
+      // }
+
+      @keyframes animate {
+        0% {
+          opacity: 0;
+          -webkit-transform: rotate(45deg) translate(-5px, -5px);
+          transform: rotate(45deg) translate(-5px, -5px);
+        }
+
+        50% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0;
+          -webkit-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
+        }
+      }
+
+      @-webkit-keyframes animate {
+        0% {
+          opacity: 0;
+          -webkit-transform: rotate(45deg) translate(-5px, -5px);
+          transform: rotate(45deg) translate(-5px, -5px);
+        }
+
+        50% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0;
+          -webkit-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
+        }
+      }
+    }
+
+    a {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

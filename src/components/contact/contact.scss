@@ -16,10 +16,6 @@
     justify-content: space-between;
     align-items: center;
 
-    @include mobile{
-      flex: none;
-      flex-direction: column;
-    }
 
     .contact_left {
     overflow: hidden;
@@ -27,24 +23,21 @@
     align-items: start;
     margin: 30px;
 
-    @include mobile {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
     h4{
       font-style: italic;
       font-size: 48px;
       margin: 30px;
-      text-align: right;
+      text-align: left;
       font: italic small-caps bold 48px;
+    }
 
-      @include mobile{
-        font-size: 36px;
-        margin: 5px;
-        margin-bottom: 20px;
-      }
+    p {
+      width: 30vw;
+      font-style: italic;
+      font-size: 24px;
+      margin: 30px;
+      text-align: left;
+      font: italic small-caps bold 48px;
     }
 
     h5 {
@@ -52,46 +45,29 @@
       font-style: italic;
       font-size: 32px;
       margin: 30px;
-      text-align: right;
+      text-align: left;
       font: italic small-caps bold 48px;
-      @include mobile{
-        font-size: 24px;
-        margin: 5px;
-      }
+
     }
 
     img {
       width: 600px;
       height: auto;
-
-      @include mobile{
-        height: 100%;
-        max-width: 400px;
-        height: auto;
-        }
+      // eslint-disable-next-line
       }
     }
-
-
     .contact_right {
       display: flex-start;
       flex-direction: column;
       padding: 30px;
 
-      @include mobile{
-        flex: none;
-        max-width: 320px;
-        margin: 0px;
-      }
-
       .contact_links_style {
-        .contact_links_style:hover{
-          background-color: rgba(58, 2, 77, 1);
-        }
+        // .contact_links_style:hover{
+        //   background-color: rgba(58, 2, 77, 1);
+        // }
 
         a {
           display: flex;
-          font-size: 22px;
           text-decoration: none;
           color: black;
           z-index: 1;
@@ -107,34 +83,83 @@
             transition: 0.2s ease-in-out;
             align-items: center;
           }
+            .contact_links_text {
+              font-size: 12px;
+              padding: 10px;
+              margin: 10px;
+            }
+            #github {
+              display: flex;
+              padding: 10px;
+              align-items: center;
+            }
+            #linkedin {
+              display: flex;
+              padding: 10px;
+              align-items: center;
+            }
+            #email {
+              display: flex;
+              padding: 10px;
+              align-items: center;
+            }
+            #resume {
+              display: flex;
+              padding: 10px;
+              align-items: center;
+            }
+            #link-icon {
+              padding: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 
-          h1 {
-            font-size: inherit;
-            padding: 10px;
-            margin: 10px;
-          }
-          #github {
-            display: flex;
-            padding: 10px;
-            align-items: center;
-          }
-          #linkedin {
-            display: flex;
-            padding: 10px;
-            align-items: center;
-          }
-          #email {
-            display: flex;
-            padding: 10px;
-            align-items: center;
-          }
-          #resume {
-            display: flex;
-            padding: 10px;
-            align-items: center;
-          }
-          #link-icon {
-            padding: 20px;
+@media screen and (max-width: 480px) {
+  .contact{
+    display: flex;
+    align-items: end;
+    .contact_container {
+      height: 75vh;
+      width: 100%;
+      padding-top: 100px;
+      flex: none;
+      flex-direction: column;
+      .contact_left {
+        align-items: center;
+        h5 {
+          font-size: 10px;
+          margin: 0px;
+        }
+        h4 {
+          font-size: 36px;
+          margin: 5px;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 12px;
+        }
+        img {
+          height: 100%;
+          max-width: 400px;
+          height: auto;
+        }
+      }
+    }
+      .contact_right {
+        height: 50%;
+        flex: none;
+        max-width: 320px;
+        margin: 0px;
+        .contact_links_style {
+          a {
+            .contact_links_text {
+              font-size: 8px;
+            }
+          #linkedin{
+            font-size: 18px;
           }
         }
       }

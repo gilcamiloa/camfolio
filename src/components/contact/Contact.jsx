@@ -43,6 +43,8 @@ export default function Contact() {
       <div className="contact_container">
         <div className="contact_left">
           <h5>Any questions?..</h5>
+          <p>If you're looking to get in touch, shoot me an email. I'm open to new opportunities, feedback on my portfolio, or just chatting and connecting with like-minded people.</p>
+          <br/>
           <h4>Let's connect!</h4>
         </div>
          <div className="contact_right">
@@ -59,9 +61,7 @@ const ContactLinks = ({ name, icon, link, desc }) => {
   return (
       <div className='contact_links_style'>
         <a href={link} target="_blank" rel="noopener noreferrer" >
-          <div id={name}>
-            <FontAwesomeIcon icon={icon}></FontAwesomeIcon>
-          </div>
+          <div id={name}><FontAwesomeIcon icon={icon}></FontAwesomeIcon></div>
           <h1>{desc}</h1>
         </a>
       </div>

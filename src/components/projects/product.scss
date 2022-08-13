@@ -2,8 +2,9 @@
   width: 40vh;
   height: 40vh;
   margin: 20px 10px;
-  border: 2px solid rgb(243, 242, 242);
-  border-radius: 10px 10px 0px 0px;
+  border: 3px solid rgb(154, 149, 149);
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 8px 5px 10px gray;
   overflow: hidden;
   .p span{
     position: absolute;
@@ -22,7 +23,7 @@
 
 .p-browser {
   height: 20px;
-  background-color: rgb(243, 242, 242);
+  background-color: rgb(154, 149, 149);
   display: flex;
   align-items: center;
   position: sticky;
@@ -37,42 +38,39 @@
   background-color: white;
 }
 
-// .p-img {
-//   height: auto;
-//   width: 100%;
-//   object-fit: fill;
-//   transition: all 3s ease;
-// }
-
 .p-desc {
   height: 100%;
   width: 100%;
-  object-fit: scale-down;
+  object-fit: contain;
   cursor: pointer;
 }
 
 .p-hover {
   height: 100%;
   width: 100%;
-  transition: background-color 350ms ease;
-  transform: translate3d(0,0,0);
-  background-color: transparent;
+  align-content: space-around;
+  filter: brightness(90%);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 2;
+  color: white;
 
-  .p-hover h1 {
-    font-size: 18px;
-    color: white;
-    transform: translate3d(0,50px,0);
+  h1 {
+    top: 50;
+    padding: 30px 30px;
+    font-size: 28px;
+    transition: transform 350ms ease;
   }
-  .p-hover p {
-    font-size: 14px;
-    transform: translate3d(0, 50px, 0);
+
+  p {
+    font-size: 18px;
+    transition: transform 350ms ease;
+    padding: 0px 30px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .p {
-    width: 40%;
-    height: 20vh;
+    width: 35%;
+    height: 25%;
   }
 }

@@ -1,5 +1,6 @@
 $maincolor: rgba(58, 2, 77, 0.1);
 $width: 768px;
+$fontcolor: rgb(43, 43, 50);
 
 @mixin mobile {
     @media (max-width: #{$width}){

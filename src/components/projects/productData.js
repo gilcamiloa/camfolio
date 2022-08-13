@@ -20,7 +20,7 @@ export const products = [
     id: 3,
     name: 'React Portfolio',
     img: "https://res.cloudinary.com/cgilv6/image/upload/v1643858078/camfolio/projects-images/camfolio-skills_ondfoi.png",
-    link: "http://www.camilo-gil.com",
+    link: "http://www.camilo-gil.com/",
     desc: "Camilo's personal project portfolio build using React.js, HTML5, and CSS3",
   },
   {

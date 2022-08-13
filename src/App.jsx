@@ -12,17 +12,17 @@ function App() {
   return (
     <div className="app">
       <div className="row">
-        <div className="col-2 col-lg-2 sidebar">
+        <div className="col-push-2 col-lg-2 sidebar">
           <Sidebar/>
         </div>
-        <div className="col-10 col-lg-10 sections">
+        <div className="col-pull-10 col-lg-10 sections">
           <div id='intro'><Intro exact path="/"/></div>
           <div id='skills'><Skills path="/skills"/></div>
-          <div id='projects'></div><Projects path="/projects" />
-          <div id='about'></div><About path="/about"/>
-          <div id='contact'></div><Contact path="/contact"/>
+          <div id='projects'><Projects path="/projects" /></div>
+          <div id='about'><About path="/about"/></div>
+          <div id='contact'><Contact path="/contact"/></div>
         </div>
-    </div>
+      </div>
     </div>
   );
 }

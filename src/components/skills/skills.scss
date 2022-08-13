@@ -8,12 +8,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @include mobile {
+    padding-left: 20px;
+    justify-content: center;
+  }
 
   .title h1{
     text-align: center;
     overflow: none;
     font-size: 50px;
     font-weight: 700;
+    @include mobile {
+      font-size: 40px;
+    }
+  }
+
+  #icon-cloud {
+    @include mobile {
+      width: 90vw;
+    }
   }
 
   // #icon-cloud{

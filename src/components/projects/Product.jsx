@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 const Product = ({ name, img, link, desc }) => {
 
   const [isShown, setIsShown] = useState(false);
+  // useEffect(() => {
+  // });
 
   return (
     <div className="p">
@@ -14,15 +16,16 @@ const Product = ({ name, img, link, desc }) => {
       </div>
       <div className="p-desc" onClick={() => window.open(link)}
                               style={{  backgroundImage: `url(${img})`,
-                                        objectFit: 'cover'}}
+                                        backgroundSize: 'cover'}}
                               onMouseOver={() => setIsShown(true)}
-                              onMouseLeave={() => setIsShown(false)}
-                              >
+                              onMouseLeave={() => setIsShown(false)}>
           {isShown && (
           <div className='p-hover'>
-              <h1>{name}</h1>
-              <p>{desc}</p>
-            </div>
+            <h1>{name}</h1>
+            <p>{desc}</p>
+            <break/>
+            <h1>View More +</h1>
+          </div>
           )}
       </div>
     </div>

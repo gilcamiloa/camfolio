@@ -14,31 +14,18 @@ export default function Sidebar() {
         <a href='#intro' className="a_logo"><img src={logo} alt='' className="img_logo"/></a>
       </div>
       <div className="sidebar_router">
-        {/* <div className='intro_link'>
-          <a href='#intro'>
-            <span>Intro</span>
-          </a>
-        </div> */}
-        <div className='skills_link'>
           <a href='#skills'>
             <span>Skills</span>
           </a>
-        </div>
-        <div className='projects_link'>
           <a href='#projects'>
             <span>Projects</span>
           </a>
-        </div>
-        <div className='about_link'>
           <a href='#about'>
             <span>About</span>
           </a>
-        </div>
-        <div className='contact_link'>
           <a href='#contact'>
             <span>Contact</span>
           </a>
-        </div>
       </div>
       <div className="sidebar_links">
         <div className='link__wrapper'>
