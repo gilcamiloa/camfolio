@@ -25,7 +25,6 @@
 
     h4{
       font-style: italic;
-      font-size: 48px;
       margin: 30px;
       text-align: left;
       font: italic small-caps bold 48px;
@@ -59,13 +58,12 @@
     .contact_right {
       display: flex-start;
       flex-direction: column;
+      margin-top: 50px;
       padding: 30px;
+      height: 100%;
 
       .contact_links_style {
-        // .contact_links_style:hover{
-        //   background-color: rgba(58, 2, 77, 1);
-        // }
-
+        padding: 10px;
         a {
           display: flex;
           text-decoration: none;
@@ -83,11 +81,6 @@
             transition: 0.2s ease-in-out;
             align-items: center;
           }
-            .contact_links_text {
-              font-size: 12px;
-              padding: 10px;
-              margin: 10px;
-            }
             #github {
               display: flex;
               padding: 10px;
@@ -117,7 +110,7 @@
     }
   }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .contact{
     display: flex;
     align-items: end;
@@ -134,7 +127,7 @@
           margin: 0px;
         }
         h4 {
-          font-size: 36px;
+          font-size: 24px;
           margin: 5px;
           margin-bottom: 20px;
         }
@@ -155,14 +148,13 @@
         margin: 0px;
         .contact_links_style {
           a {
-            .contact_links_text {
-              font-size: 8px;
+            h1 {
+                font-size: 12px;
+                padding: 10px;
+                margin: 10px;
+              }
             }
-          #linkedin{
-            font-size: 18px;
           }
         }
-      }
     }
   }
-}
