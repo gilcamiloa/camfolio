@@ -60,7 +60,6 @@
       flex-direction: column;
       margin-top: 50px;
       padding: 30px;
-      height: 100%;
 
       .contact_links_style {
         padding: 10px;
@@ -115,46 +114,82 @@
     display: flex;
     align-items: end;
     .contact_container {
+      display: flex;
       height: 75vh;
       width: 100%;
       padding-top: 100px;
       flex: none;
       flex-direction: column;
       .contact_left {
-        align-items: center;
+        height: 50%;
+        width: 80%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        margin: 0px;
+        padding: 0px 30px;
         h5 {
-          font-size: 10px;
+          font-size: 20px;
           margin: 0px;
         }
         h4 {
-          font-size: 24px;
+          font-size: 26px;
           margin: 5px;
           margin-bottom: 20px;
         }
         p {
-          font-size: 12px;
-        }
-        img {
-          height: 100%;
-          max-width: 400px;
-          height: auto;
+          width: 100%;
+          display: inline-block;
+          font-size: 14px;
+          margin: 0px;
+          padding: 10px 0px;
         }
       }
-    }
       .contact_right {
-        height: 50%;
-        flex: none;
-        max-width: 320px;
         margin: 0px;
+        height: 50%;
+        width: 80%;
+        align-items: center;
         .contact_links_style {
           a {
-            h1 {
-                font-size: 12px;
-                padding: 10px;
-                margin: 10px;
-              }
+            margin: 0px;
+            align-items: center;
+            justify-content: start;
+            & > * {
+              font-size: 14px;
+              text-align: left;
+            }
+            h5 {
+              padding: 0px 10px;
+            }
+            #github {
+
+            }
+
+            #linkedin {
+              display: flex;
+              padding: 10px;
+              align-items: center;
+            }
+
+            #email {
+              display: flex;
+              padding: 10px;
+              align-items: center;
+            }
+
+            #resume {
+              display: flex;
+              padding: 10px;
+              align-items: center;
+            }
+
+            #link-icon {
+              padding: 20px;
             }
           }
         }
+      }
     }
   }
+}
