@@ -52,11 +52,10 @@
     img {
       width: 600px;
       height: auto;
-      // eslint-disable-next-line
       }
     }
     .contact_right {
-      display: flex-start;
+      display: flex;
       flex-direction: column;
       margin-top: 50px;
       padding: 30px;
