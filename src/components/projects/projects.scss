@@ -49,16 +49,16 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      @include mobile {
-        height: 70%;
-        width: 100%;
-      }
     }
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 992px) {
   .pl-title {
     font-size: 28px;
+  }
+  .pl-list {
+    max-height: 100%;
+    max-width: auto;
   }
 }

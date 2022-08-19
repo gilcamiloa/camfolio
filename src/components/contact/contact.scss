@@ -16,7 +16,6 @@
     justify-content: space-between;
     align-items: center;
 
-
     .contact_left {
     overflow: hidden;
     justify-content: start;
@@ -162,7 +161,9 @@
               padding: 0px 10px;
             }
             #github {
-
+              display: flex;
+              padding: 10px;
+              align-items: center;
             }
 
             #linkedin {

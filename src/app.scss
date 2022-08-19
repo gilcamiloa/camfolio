@@ -13,15 +13,6 @@
     display:none;
     width: none;
   }
-
-  @include mobile {
-    .row {
-      display: block;
-      width:100vw;
-      margin-right: 0px;
-      margin-left: 0px;
-    }
-  }
 }
 
 .sidebar {
@@ -37,11 +28,6 @@
   box-shadow: 0px 0px 6px black, inset 0px 0px 1px black;
   cursor: pointer;
   pointer-events: none;
-  @include mobile {
-    max-width: 100vw;
-    max-height: 15vh;
-    z-index: 3;
-  }
 }
 
 .sections {
@@ -55,9 +41,25 @@
     display: flex;
     width: none;
   }
-  @include mobile {
-    max-width: 100vw;
-    max-height: 500vh;
-    padding-right: 0px;
+}
+
+@media screen and (max-width: 992px) {
+  .app {
+    .row {
+        display: block;
+        width: 100vw;
+        margin-right: 0px;
+        margin-left: 0px;
+      }
+    .sidebar {
+      max-width: 100vw;
+      max-height: 15vh;
+      z-index: 3;
+    }
+    .sections {
+      max-width: 100vw;
+      max-height: 500vh;
+      padding-right: 0px;
+    }
   }
 }
