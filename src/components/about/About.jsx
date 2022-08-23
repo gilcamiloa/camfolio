@@ -1,6 +1,6 @@
 import './about.scss'
 import React from 'react';
-import Typed from 'react-typed'
+import Typewriter from 'typewriter-effect';
 import cam from '../../images/cam-images/cam-linkedin-nobg.png';
 
 export default function About() {
@@ -24,7 +24,18 @@ export default function About() {
               <p>Having attained a Bachelor's of Science in Civil Engineering from the University of Central Florida, he is on course to complete his MSCS in 2025.</p>
               <div className="typed_wrapper">
                 <span className="typed_left">In his free time, he is a&#40;n&#41;&nbsp;</span>
-                <span className="typed_right"><s/><Typed typeSpeed={50} backSpeed={40} strings={strings} loop='true' /><s/></span>
+                <span className="typed_right"><s/>
+                <Typewriter onInit={(typewriter) => {
+                  typewriter.typeString('avid reader 📚')
+                  .pauseFor(500)
+                  .deleteAll()
+                  typewriter.typeString('lover of all things music 🎷🎼')
+                  .pauseFor(500)
+                  .deleteAll()
+                  typewriter.typeString('soccer enthusiast ⚽️')
+                  .start();
+                  }}/>
+                <s/></span>
               </div>
           </div>
         </div>

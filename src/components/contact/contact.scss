@@ -58,54 +58,58 @@
       flex-direction: column;
       margin-top: 50px;
       padding: 30px;
-
       .contact_links_style {
         padding: 10px;
-        a {
-          display: flex;
-          text-decoration: none;
-          color: black;
-          z-index: 1;
-          justify-content: start;
-          margin: 0px 100px;
-          padding-right: 0px 20px;
-          :hover {
-            cursor: pointer;
-            background-color: rgba(58, 2, 77, 0.4);
-            border-radius: 10px;
-            pointer-events: stroke;
-            width: auto;
-            transition: 0.2s ease-in-out;
-            align-items: center;
-          }
-            #github {
-              display: flex;
-              padding: 10px;
-              align-items: center;
-            }
-            #linkedin {
-              display: flex;
-              padding: 10px;
-              align-items: center;
-            }
-            #email {
-              display: flex;
-              padding: 10px;
-              align-items: center;
-            }
-            #resume {
-              display: flex;
-              padding: 10px;
-              align-items: center;
-            }
-            #link-icon {
-              padding: 20px;
-            }
-          }
+        :hover {
+          cursor: pointer;
+          background-color: rgba(58, 2, 77, 0.4);
+          border-radius: 10px;
+          pointer-events: stroke;
+          width: auto;
+          transition: 0.2s ease-in-out;
+          align-items: center;
+          z-index: 2;
+        }
+      }
+      a {
+        display: flex;
+        text-decoration: none;
+        color: black;
+        z-index: 1;
+        justify-content: start;
+        margin: 0px 100px;
+        padding-right: 0px 20px;
+        h5 {
+          pointer-events: none;
         }
       }
     }
   }
+}
+#linkedin {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  pointer-events: none;
+}
+#github {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  pointer-events: none;
+}
+#email {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  pointer-events: none;
+}
+#resume {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  pointer-events: none;
+}
 
 @media screen and (max-width: 768px) {
   .contact{
