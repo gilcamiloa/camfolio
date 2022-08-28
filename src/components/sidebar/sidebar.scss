@@ -85,11 +85,15 @@
       #a-github {
         color: black;
         border-radius: 50%;
+        opacity: none;
+        pointer-events: stroke;
       }
 
       #a-email {
         color: black;
         border-radius: 50%;
+        opacity: none;
+        pointer-events: stroke;
       }
 
       #a-resume {
