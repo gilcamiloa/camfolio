@@ -5,11 +5,11 @@ import cam from '../../images/cam-images/cam-linkedin-nobg.png';
 
 export default function About() {
 
-  const strings = [
-    'avid reader 📚',
-    'lover of all things music 🎷🎼',
-    'soccer enthusiast ⚽️'
-  ];
+  // const strings = [
+  //   'avid reader 📚',
+  //   'lover of all things music 🎷🎼',
+  //   'soccer enthusiast ⚽️'
+  // ];
 
   return (
       <div className='about'>

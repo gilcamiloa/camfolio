@@ -1,5 +1,5 @@
-import './skills.scss';
-import { Cloud, renderSimpleIcon } from 'react-icon-cloud';
+import './skills.scss'
+import { Cloud, renderSimpleIcon } from 'react-icon-cloud'
 import React from 'react';
 import {
   siBootstrap,
@@ -25,7 +25,7 @@ import {
   siRubyonrails,
   siVisualstudiocode,
   siYarn
-        } from 'simple-icons/icons/';
+        } from 'simple-icons/icons'
 
 function makeIcons() {
   return [
