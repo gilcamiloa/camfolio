@@ -29,13 +29,13 @@ export default function Contact() {
       link: "mailto:cgilv6@gmail.com",
       desc: "Shoot me an email"
     },
-    {
-      id: 4,
-      name: 'resume',
-      icon: faFile,
-      link: "https://drive.google.com/file/d/1WRmISIuZONc6EHOZwdzkxUKru2B4K0RY/view?usp=sharing",
-      desc: "Download my resume"
-    }
+    // {
+    //   id: 4,
+    //   name: 'resume',
+    //   icon: faFile,
+    //   link: "https://drive.google.com/file/d/1WRmISIuZONc6EHOZwdzkxUKru2B4K0RY/view?usp=sharing",
+    //   desc: "Download my resume"
+    // }
   ];
 
   return (
