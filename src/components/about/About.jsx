@@ -5,12 +5,6 @@ import cam from '../../images/cam-images/cam-linkedin-nobg.png';
 
 export default function About() {
 
-  // const strings = [
-  //   'avid reader 📚',
-  //   'lover of all things music 🎷🎼',
-  //   'soccer enthusiast ⚽️'
-  // ];
-
   return (
       <div className='about'>
         <div className="about_container">
@@ -25,15 +19,15 @@ export default function About() {
               <div className="typed_wrapper">
                 <span className="typed_left">In his free time, he is a&#40;n&#41;&nbsp;</span>
                 <span className="typed_right"><s/>
-                <Typewriter onInit={(typewriter) => {
-                  typewriter.typeString('avid reader 📚')
-                  .pauseFor(500)
-                  .deleteAll()
-                  typewriter.typeString('lover of all things music 🎷🎼')
-                  .pauseFor(500)
-                  .deleteAll()
-                  typewriter.typeString('soccer enthusiast ⚽️')
-                  .start();
+                <Typewriter
+                  options = {{
+                    strings: [
+                      'avid reader 📚',
+                      'lover of all things music 🎷🎼',
+                      'soccer enthusiast ⚽️'
+                    ],
+                    autoStart: true,
+                    loop: true,
                   }}/>
                 <s/></span>
               </div>
