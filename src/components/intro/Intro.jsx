@@ -1,9 +1,6 @@
 import './intro.scss';
 import React from 'react';
-import camBlue from '../../images/cam-images/cam-blue.jpeg'
-// import { AnimatePresence, motion } from 'framer-motion/dist'
 import { animated, useSpring } from '@react-spring/web'
-
 
 export default function Intro() {
   const styles = useSpring({
@@ -34,7 +31,7 @@ export default function Intro() {
           </div>
         </div>
         <div className="intro_right">
-          <img src={camBlue} alt="" />
+          <img src="https://res.cloudinary.com/cgilv6/image/upload/v1664392654/camfolio/cam-images/cam-blue_mszlhw.png" alt="" />
         </div>
       </div>
       <div className="arrow_button">

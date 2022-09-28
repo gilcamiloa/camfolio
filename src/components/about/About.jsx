@@ -1,7 +1,6 @@
 import './about.scss'
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import cam from '../../images/cam-images/cam-linkedin-nobg.png';
 
 export default function About() {
 
@@ -9,7 +8,7 @@ export default function About() {
       <div className='about'>
         <div className="about_container">
           <div className="about_left">
-              <img src={cam} alt=""/>
+          <img src="https://res.cloudinary.com/cgilv6/image/upload/v1664392654/camfolio/cam-images/cam-linkedin-nobg_vuuhz4.png" alt=""/>
           </div>
           <div className="about_right">
               <h1><u>CAMILO IS A FULL STACK DEVELOPER AND ENGINEER..</u></h1>

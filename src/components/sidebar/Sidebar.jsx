@@ -1,32 +1,30 @@
 import './sidebar.scss'
 import React from 'react'
-import logo from '../../images/cloud-images/logo2-apple-touch-icon.png'
 import ReactTooltip from 'react-tooltip'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faMailBulk } from '@fortawesome/free-solid-svg-icons'
-// // import { faFile } from '@fortawesome/free-solid-svg-icons'
 
 export default function Sidebar() {
   return (
     <div className='container'>
       <div className="sidebar_logo">
-        <a href='#intro' className="a_logo"><img src={logo} alt='' className="img_logo"/></a>
+        <a href='#intro' className="a_logo"><img src="https://res.cloudinary.com/cgilv6/image/upload/v1664395399/camfolio/cloud-images/logo2-apple-touch-icon_xxcod7.png" alt='' className="img_logo"/></a>
       </div>
-      <div className="sidebar_router">
-          <a href='#skills'>
-            <span>Skills</span>
-          </a>
-          <a href='#projects'>
-            <span>Projects</span>
-          </a>
-          <a href='#about'>
-            <span>About</span>
-          </a>
-          <a href='#contact'>
-            <span>Contact</span>
-          </a>
-      </div>
+        <div className="sidebar_router">
+            <a href='#skills'>
+              <span>Skills</span>
+            </a>
+            <a href='#projects'>
+              <span>Projects</span>
+            </a>
+            <a href='#about'>
+              <span>About</span>
+            </a>
+            <a href='#contact'>
+              <span>Contact</span>
+            </a>
+        </div>
       <div className="sidebar_links">
         <div className='link__wrapper'>
           <a href="https://www.linkedin.com/in/camilo-gil" target="_blank" rel="noopener noreferrer" id='a-linkedin' data-tip data-for="tip-linkedin">
@@ -41,10 +39,6 @@ export default function Sidebar() {
             <FontAwesomeIcon icon={faMailBulk}></FontAwesomeIcon>
             <ReactTooltip id="tip-email" place="top" effect="solid" backgroundColor='none' data-delay-show='700'>Email</ReactTooltip>
           </a>
-          {/* <a href="https://drive.google.com/file/d/1WRmISIuZONc6EHOZwdzkxUKru2B4K0RY/view?usp=sharing" target="_blank" rel="noreferrer" id='a-resume' data-tip data-for="resume">
-        <FontAwesomeIcon icon={faFile}></FontAwesomeIcon>
-        <ReactTooltip id="tip-resume" place="top" effect="solid" backgroundColor='none' data-delay-show='700'>Resume / CV</ReactTooltip>
-      </a> */}
         </div>
       </div>
     </div>

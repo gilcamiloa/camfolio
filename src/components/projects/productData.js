@@ -4,7 +4,7 @@ export const products = [
     name: 'Virtual Drum Kit',
     img: 'https://res.cloudinary.com/cgilv6/image/upload/v1661270500/camfolio/projects-images/virtual-drum-kit_nny4mv.png',
     link: "https://github.com/gilcamiloa/virtual-drum-kit",
-    desc: "Virtual drum kit created using using built in React hooks. Technologies used: react.js, HTML and CSS."
+    desc: "Virtual drum kit created using using JS. Technologies used: react.js, HTML and CSS."
   },
   {
     id: 2,
