@@ -31,7 +31,7 @@ export default function Intro() {
           </div>
         </div>
         <div className="intro_right">
-          <img src="https://res.cloudinary.com/cgilv6/image/upload/v1664392654/camfolio/cam-images/cam-blue_mszlhw.png" alt="" />
+          <img src="https://res.cloudinary.com/cgilv6/image/upload/v1666401415/camfolio/cam-images/cam_berlin_nobg_vp2pza.png" alt="" />
         </div>
       </div>
       <div className="arrow_button">

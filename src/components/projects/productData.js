@@ -32,13 +32,14 @@ export const products = [
     name:'Leetcode Progress',
     img: "https://res.cloudinary.com/cgilv6/image/upload/v1661282262/camfolio/projects-images/cam-leetcode_jqrwzb.png",
     link: "https://github.com/gilcamiloa/LeetCodePush",
-    desc: "View my Leetcode progress on Github! Languages used: JavaScript, Python, C++ amongst others..",
+    desc: "View my Leetcode progress on Github! Languages used: JavaScript, Python, C++ among others.",
   },
   // {
   //   id: 6,
   //   name: 'React Portfolio',
   //   img: "https://res.cloudinary.com/cgilv6/image/upload/v1643858078/camfolio/projects-images/camfolio-skills_ondfoi.png",
   //   link: "http://www.camilo-gil.com",
-  //   desc: "Camilo's personal project portfolio build using React.js, HTML5, and CSS3."
+  //   desc: "Stackatto, founded in 2022, is a website that allows users to receive anonymous feedback on their musical performance clips from other users.
+  //   Users can either pay for the service or earn credit by rating others' submissions. The site is broken down into begineer, intermediate, and advanced groups via a complex algorithm allowing a safe space for all users. All users are rated for different qualities."
   // },
 ];
