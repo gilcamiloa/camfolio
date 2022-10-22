@@ -10,7 +10,7 @@ export default function Intro() {
     to: {
       opacity: 1
     },
-    delay: 400,
+    delay: 600,
   })
   return (
     <animated.div style={styles} className='intro'>
