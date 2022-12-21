@@ -17,14 +17,14 @@ export const products = [
     id: 3,
     name: 'React Portfolio',
     img: "https://res.cloudinary.com/cgilv6/image/upload/v1643858078/camfolio/projects-images/camfolio-skills_ondfoi.png",
-    link: "http://www.camilo-gil.com/",
+    link: "https://github.com/gilcamiloa/camfolio",
     desc: "Camilo's personal project portfolio build using React.js, HTML5, and CSS3.",
   },
   {
     id: 4,
     name: 'theGreenRoom',
     img: 'https://res.cloudinary.com/cgilv6/image/upload/v1643857749/camfolio/projects-images/greenroom-intro_kqvbzp.png',
-    link: "http://www.enterthegreenroom.co.uk",
+    link: "http://enterthegreenroom.herokuapp.com/",
     desc: "This app simulates up and coming musical acts being able to book performing venues directly with owners avoiding the need for third party management."
   },
   {

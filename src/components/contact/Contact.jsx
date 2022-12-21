@@ -8,13 +8,13 @@ import { faFile } from '@fortawesome/free-solid-svg-icons'
 export default function Contact() {
 
   const contact_data = [
-    // {
-    //   id: 1,
-    //   name: 'linkedin',
-    //   icon: faLinkedin,
-    //   link: "https://www.linkedin.com/in/camilo-gil/",
-    //   desc: "Connect on LinkedIn"
-    // },
+    {
+      id: 1,
+      name: 'linkedin',
+      icon: faLinkedin,
+      link: "https://www.linkedin.com/in/camilo-gil/",
+      desc: "Connect on LinkedIn"
+    },
     {
       id: 2,
       name: 'github',

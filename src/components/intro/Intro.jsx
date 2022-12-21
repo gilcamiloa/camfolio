@@ -20,7 +20,7 @@ export default function Intro() {
           <br />
           <h2>Full Stack Developer</h2>
           <br />
-          <p>Currently, I am focused on designing <br /> and developing full stack apps <br /> as I search for a team of devs to join.</p>
+          {/* <p>Currently, I am focused on designing <br /> and developing full stack apps <br /> as I search for a team of devs to join.</p> */}
           <br />
           <div className='intro_to_contact'>
             <div className='intro_to_contact_button'>

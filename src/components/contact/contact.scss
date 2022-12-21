@@ -76,7 +76,7 @@
         text-decoration: none;
         color: black;
         z-index: 1;
-        justify-content: start;
+        justify-content: flex-end;
         margin: 0px 100px;
         padding-right: 0px 20px;
         h5 {
@@ -114,7 +114,7 @@
 @media screen and (max-width: 768px) {
   .contact{
     display: flex;
-    align-items: end;
+    align-items: flex-endend;
     .contact_container {
       display: flex;
       height: 75vh;
@@ -156,7 +156,7 @@
           a {
             margin: 0px;
             align-items: center;
-            justify-content: start;
+            justify-content: flex-end;
             & > * {
               font-size: 14px;
               text-align: left;
