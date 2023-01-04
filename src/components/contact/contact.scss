@@ -14,7 +14,6 @@
     width: 80vw;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 
     .contact_left {
     overflow: hidden;
@@ -28,7 +27,6 @@
       text-align: left;
       font: italic small-caps bold 48px;
     }
-
     p {
       width: 30vw;
       font-style: italic;
@@ -37,7 +35,6 @@
       text-align: left;
       font: italic small-caps bold 48px;
     }
-
     h5 {
       top: 0%;
       font-style: italic;
@@ -47,7 +44,6 @@
       font: italic small-caps bold 48px;
 
     }
-
     img {
       width: 600px;
       height: auto;
@@ -62,12 +58,11 @@
         padding: 10px;
         :hover {
           cursor: pointer;
-          background-color: rgba(58, 2, 77, 0.4);
+          background-color: rgba(58, 2, 77, 0.3);
           border-radius: 10px;
           pointer-events: stroke;
           width: auto;
           transition: 0.2s ease-in-out;
-          align-items: center;
           z-index: 2;
         }
       }
@@ -76,10 +71,10 @@
         text-decoration: none;
         color: black;
         z-index: 1;
-        justify-content: flex-end;
+        justify-content: flex-start;
         margin: 0px 100px;
-        padding-right: 0px 20px;
-        h5 {
+        & > * {
+          padding: 10px;
           pointer-events: none;
         }
       }
@@ -88,19 +83,19 @@
 }
 #linkedin {
   display: flex;
-  padding: 10px;
+  // padding: 10px;
   align-items: center;
   pointer-events: none;
 }
 #github {
   display: flex;
-  padding: 10px;
+  // padding: 10px;
   align-items: center;
   pointer-events: none;
 }
 #email {
   display: flex;
-  padding: 10px;
+  // padding: 10px;
   align-items: center;
   pointer-events: none;
 }
@@ -123,9 +118,8 @@
       flex: none;
       flex-direction: column;
       .contact_left {
-        height: 50%;
-        width: 80%;
-        display: grid;
+        max-width: 100%;
+        height: auto;
         justify-content: center;
         align-content: center;
         margin: 0px;

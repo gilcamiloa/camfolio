@@ -42,10 +42,10 @@ export default function Contact() {
     <div className="contact" >
       <div className="contact_container">
         <div className="contact_left">
-          <h5>Any questions?..</h5>
-          <p>If you're looking to get in touch, shoot me an email. I'm open to new opportunities, feedback on my portfolio, or just chatting and connecting with like-minded people.</p>
+          <h5>Contact me</h5>
+          <p>Feel free to get in touch or shoot me an email. I'm always open for a friendly chat and answer any questions you may have..</p>
           <br/>
-          <h5>Let's connect!</h5>
+          <h4>Let's connect!</h4>
         </div>
          <div className="contact_right">
           {contact_data.map((item) => (

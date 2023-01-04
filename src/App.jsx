@@ -6,10 +6,13 @@ import Skills from './components/skills/Skills'
 import About from './components/about/About'
 import Projects from './components/projects/Projects'
 import Contact from './components/contact/Contact'
+// import ParticleBackground from './particleBackground';
+// <ParticleBackground />
 
 function App() {
 
   return (
+
     <div className="app">
       <div className="row">
         <div className="col-push-2 col-lg-2 sidebar">

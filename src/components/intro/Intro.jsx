@@ -25,7 +25,7 @@ export default function Intro() {
           <div className='intro_to_contact'>
             <div className='intro_to_contact_button'>
               <a href='#contact'>
-                Contact Me!
+                Contact Info
               </a>
             </div>
           </div>
