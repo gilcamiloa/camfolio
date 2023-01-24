@@ -21,13 +21,6 @@ export const products = [
     desc: "This collab simulates up and coming musical acts being able to book performing venues directly with owners avoiding the need for third party management."
   },
   {
-    id: 6,
-    name:'Leetcode Progress',
-    img: "https://res.cloudinary.com/cgilv6/image/upload/v1661282262/camfolio/projects-images/cam-leetcode_jqrwzb.png",
-    link: "https://github.com/gilcamiloa/LeetCodePush",
-    desc: "View my Leetcode progress on Github! Languages used: JavaScript, Python, C++ among others.",
-  },
-  {
     id: 4,
     name: 'Minesweeper Clone',
     img: "https://res.cloudinary.com/cgilv6/image/upload/v1672794374/camfolio/projects-images/minesweeper-clone_yvzbsh.png",
@@ -40,6 +33,13 @@ export const products = [
     img: "https://res.cloudinary.com/cgilv6/image/upload/v1643857748/camfolio/projects-images/bustin-main_s3itsk.png",
     link: "https://github.com/gilcamiloa/thegreenroom",
     desc: "This collab simulates user rentals for private lavatory facilities within a specified city radius built using a built-in map API to select desired preference.",
+  },
+  {
+    id: 6,
+    name:'Leetcode Progress',
+    img: "https://res.cloudinary.com/cgilv6/image/upload/v1661282262/camfolio/projects-images/cam-leetcode_jqrwzb.png",
+    link: "https://github.com/gilcamiloa/LeetCodePush",
+    desc: "View my Leetcode progress on Github! Languages used: JavaScript, Python, C++ among others.",
   },
   // {
   //   id: 6,
